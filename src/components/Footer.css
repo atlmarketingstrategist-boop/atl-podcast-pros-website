@@ -1,0 +1,162 @@
+/* ==========================================
+   FOOTER — Premium Design
+   ========================================== */
+
+.footer {
+  background: #111111;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  border-top: 3px solid var(--color-primary);
+}
+
+.footer__inner {
+  padding: 72px 0 0;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1.4fr;
+  gap: 56px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+/* Brand */
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__logo-img {
+  height: 42px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.footer__tagline {
+  font-size: 0.9rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 300px;
+  margin-bottom: 28px;
+  color: rgba(255,255,255,0.5);
+}
+
+.footer__social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__social a {
+  color: rgba(255,255,255,0.4);
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social a:hover {
+  color: var(--color-primary);
+}
+
+/* Nav column */
+.footer__nav-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 24px;
+}
+
+.footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__nav-link {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+  transition: color 0.2s ease;
+}
+
+.footer__nav-link:hover {
+  color: var(--color-primary);
+}
+
+/* Contact column */
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__contact-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.footer__contact-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.28);
+  font-weight: 700;
+}
+
+.footer__contact-list a,
+.footer__contact-list span {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.6);
+  transition: color 0.2s ease;
+}
+
+.footer__contact-list a:hover {
+  color: var(--color-primary);
+}
+
+/* Bottom bar */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.25);
+  font-family: 'Lato', sans-serif;
+}
+
+.footer__bottom-right {
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 540px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

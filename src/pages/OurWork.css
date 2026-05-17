@@ -1,0 +1,295 @@
+/* ==========================================
+   OUR WORK — Premium Design
+   ========================================== */
+
+.ow-hero {
+  background: #111111;
+}
+
+/* Before / After */
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.before-after__col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.before-after__label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.before-after__label--before {
+  background: rgba(0,0,0,0.07);
+  color: var(--color-text-muted);
+}
+
+.before-after__label--after {
+  background: rgba(166,30,49,0.1);
+  color: var(--color-primary);
+}
+
+.before-after__arrow {
+  color: var(--color-primary);
+  opacity: 0.7;
+}
+
+.before-after__caption {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Stats Strip */
+.stats-strip {
+  padding: 72px 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-item__num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 7vw, 5.5rem);
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.stat-item__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Case study */
+.case-study {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.case-study__image {
+  position: relative;
+}
+
+.case-study__tag {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+
+.case-study__thumbnail-link {
+  display: block;
+  margin-top: 16px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: opacity 0.2s;
+}
+
+.case-study__thumbnail-link:hover {
+  opacity: 0.88;
+}
+
+.case-study__thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-lg);
+}
+
+.case-study__content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 4px;
+}
+
+.case-study__show {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  display: block;
+  letter-spacing: 0.02em;
+}
+
+.case-study__summary {
+  font-family: 'Lato', sans-serif;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.case-study__results {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.case-result {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.case-result__num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.case-result__label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.case-study__quote {
+  background: rgba(166,30,49,0.04);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 20px 24px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.case-study__quote cite {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--color-primary);
+}
+
+/* Testimonials */
+.testimonials-grid-ow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card-ow {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card-ow__quote {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  color: var(--color-primary);
+  line-height: 0.7;
+  margin-bottom: 18px;
+  opacity: 0.65;
+}
+
+.testimonial-card-ow__text {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.75;
+  flex: 1;
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.testimonial-card-ow__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.testimonial-card-ow__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-white);
+}
+
+.testimonial-card-ow__show {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .before-after {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .before-after__arrow {
+    transform: rotate(90deg);
+    margin: 0 auto;
+  }
+
+  .case-study {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .testimonials-grid-ow {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}

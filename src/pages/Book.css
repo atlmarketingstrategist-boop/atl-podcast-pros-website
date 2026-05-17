@@ -1,0 +1,228 @@
+/* ==========================================
+   BOOK A CALL — Premium Design
+   ========================================== */
+
+.book-page {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  min-height: calc(100vh - 72px);
+  margin-top: 72px;
+}
+
+/* Left panel */
+.book-page__left {
+  background: #1A1A1A;
+  display: flex;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.book-page__left-inner {
+  max-width: 460px;
+}
+
+/* Section heading accent bar for book page */
+.book-heading-wrap {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.book-heading-wrap::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.book-page__headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  color: var(--color-white);
+  line-height: 1.0;
+  letter-spacing: 0.04em;
+}
+
+.book-page__sub {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.75;
+  margin-bottom: 40px;
+}
+
+/* Trust points */
+.book-trust {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 52px;
+}
+
+.book-trust__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+}
+
+.book-trust__check {
+  width: 26px;
+  height: 26px;
+  background: rgba(166,30,49,0.15);
+  border: 1px solid rgba(166,30,49,0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* Contact */
+.book-page__contact {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 36px;
+}
+
+.book-page__contact-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.book-page__contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 12px;
+  transition: color 0.2s ease;
+}
+
+.book-page__contact-link:hover {
+  color: var(--color-primary);
+}
+
+/* Right panel */
+.book-page__right {
+  background: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 56px;
+}
+
+/* Calendly placeholder */
+.calendly-placeholder {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 520px;
+}
+
+.calendly-placeholder__inner {
+  padding: 52px 44px;
+  text-align: center;
+}
+
+.calendly-placeholder__icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(166,30,49,0.1);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin: 0 auto 24px;
+}
+
+.calendly-placeholder__inner h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--color-white);
+}
+
+.calendly-placeholder__inner > p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.93rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+}
+
+.calendly-placeholder__sub {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.65;
+}
+
+.calendly-placeholder__sub strong {
+  color: rgba(255,255,255,0.55);
+}
+
+.calendly-placeholder__sub code {
+  background: rgba(255,255,255,0.06);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  color: var(--color-primary);
+}
+
+/* Footer trust */
+.book-footer-trust {
+  background: var(--color-dark-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 18px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.38);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.book-footer-trust .dot {
+  color: var(--color-primary);
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .book-page {
+    grid-template-columns: 1fr;
+  }
+
+  .book-page__left {
+    padding: 64px 28px;
+  }
+
+  .book-page__left-inner {
+    max-width: 100%;
+  }
+
+  .book-page__right {
+    padding: 48px 24px;
+    min-height: 60vh;
+  }
+
+  .book-footer-trust {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

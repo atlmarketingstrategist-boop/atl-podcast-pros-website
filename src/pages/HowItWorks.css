@@ -1,0 +1,157 @@
+/* ==========================================
+   HOW IT WORKS — Premium Design
+   ========================================== */
+
+.hiw-hero {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Phases */
+.hiw-phases {}
+
+.hiw-phase {
+  padding: 56px 24px;
+}
+
+@media (max-width: 768px) {
+  .hiw-phase {
+    padding: 40px 20px;
+  }
+}
+
+.hiw-phase__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.hiw-phase__inner--flip {
+  direction: rtl;
+}
+
+.hiw-phase__inner--flip > * {
+  direction: ltr;
+}
+
+/* Watermark step number */
+.hiw-phase__num-wrap {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.hiw-phase__num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(80px, 12vw, 120px);
+  line-height: 0.85;
+  color: var(--color-primary);
+  display: block;
+  opacity: 0.15;
+  user-select: none;
+  pointer-events: none;
+}
+
+.hiw-phase__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.section-neutral .hiw-phase__title {
+  color: var(--color-dark);
+}
+
+.section-dark .hiw-phase__title {
+  color: var(--color-white);
+}
+
+.hiw-phase__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--color-primary);
+  margin-bottom: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hiw-subtitle--light {
+  color: var(--color-primary);
+}
+
+.hiw-phase__body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+}
+
+.hiw-body--light {
+  color: rgba(255,255,255,0.65);
+}
+
+.hiw-phase__img-placeholder {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+}
+
+.section-neutral .hiw-phase__img-placeholder {
+  background: rgba(0,0,0,0.04);
+  border-color: rgba(0,0,0,0.08);
+  color: rgba(0,0,0,0.25);
+}
+
+/* FAQ */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.faq-card {
+  padding: 32px;
+}
+
+.faq-card__q {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 14px;
+}
+
+.faq-card__a {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .hiw-phase__inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hiw-phase__inner--flip {
+    direction: ltr;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -109,7 +109,7 @@ export default function Home() {
       {/* SCROLL ANIMATION PLACEHOLDER — Re-insert ScrollAnimation component here when new video is ready */}
 
       {/* ======= HOW IT WORKS TEASER ======= */}
-      <section className="section section-neutral">
+      <section className="section section-neutral" style={{ paddingTop: '48px' }}>
         <div className="container">
           <div className="text-center mb-12" ref={fadeRef}>
             <div className="fade-up section-heading-wrap centered">

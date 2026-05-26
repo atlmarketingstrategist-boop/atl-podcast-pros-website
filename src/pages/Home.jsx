@@ -106,12 +106,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ======= SCROLL ANIMATION PLACEHOLDER =======
-          Step 13: Insert custom image-sequence scroll animation here.
-          This section should sit between the differentiator banner above
-          and the How It Works teaser below.
-          Replace this comment block with the ScrollSequence component.
-      ======= END PLACEHOLDER ======= */}
+      {/* SCROLL ANIMATION PLACEHOLDER — Re-insert ScrollAnimation component here when new video is ready */}
 
       {/* ======= HOW IT WORKS TEASER ======= */}
       <section className="section section-neutral">

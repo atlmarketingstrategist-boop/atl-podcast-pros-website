@@ -76,7 +76,51 @@ export default function HowItWorks() {
   return (
     <>
       <title>How Our Podcast Studio Setup Process Works | ATL Podcast Pros</title>
-      <meta name="description" content="From your first call to your first published episode, ATL Podcast Pros handles every step. See how we turn your podcast idea into a fully launched, professionally managed show." />
+      <meta name="description" content="See exactly how ATL Podcast Pros transforms your space into a professional podcast studio. Discovery, setup, launch and ongoing management. Book a free call." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ATL Podcast Pros" />
+      <meta property="og:title" content="How Our Podcast Studio Setup Process Works | ATL Podcast Pros" />
+      <meta property="og:description" content="See exactly how ATL Podcast Pros transforms your space into a professional podcast studio. Discovery, setup, launch and ongoing management. Book a free call." />
+      <meta property="og:url" content="https://atlpodcastpros.com/how-it-works" />
+      <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need to buy my own equipment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We do not purchase equipment for you. We provide a carefully crafted equipment list and you order everything directly to your home or office. When our team arrives on setup day, we unbox every item, install and configure all equipment, and take the packaging and trash with us when we leave. It is a fully white-glove experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does setup take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most studio installations are completed in a single day. Complex multi-camera setups or larger rooms may require two days. We will give you an accurate timeline during the Discovery call."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you work outside Atlanta?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we do. We work with clients across the country. For clients outside of the Atlanta metro area, we add a travel fee to the setup package. Our ongoing management is handled fully remotely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Am I locked into a contract?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No long-term contracts required. Our ongoing management packages are month-to-month. We earn your business every month by delivering results, not by trapping you in an agreement."
+            }
+          }
+        ]
+      }) }} />
 
       {/* Hero */}
       <section
@@ -86,7 +130,7 @@ export default function HowItWorks() {
         <div className="page-hero__overlay" />
         <div className="container">
           <span className="section-eyebrow hero-line-1" style={{ color: 'rgba(166,30,49,0.9)' }}>The Process</span>
-          <h1 className="hero-line-2">You Have the Idea.<br />We Handle Everything Else.</h1>
+          <h1 className="hero-line-2">Your Podcast Studio Setup,<br />Handled End to End.</h1>
           <p className="hero-sub">
             We take your idea and turn it into a fully produced podcast with a professional studio, a complete digital footprint, and a distribution strategy that puts you in front of your audience. By the time we are done, you are not just a podcaster. You are an authority in your niche.
           </p>

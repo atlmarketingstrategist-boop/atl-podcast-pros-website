@@ -66,7 +66,13 @@ export default function About() {
   return (
     <>
       <title>About ATL Podcast Pros | Atlanta's Podcast Production Agency</title>
-      <meta name="description" content="ATL Podcast Pros is Atlanta's done-for-you in-home podcast studio setup and management agency. We build permanent studios inside your home so you can record anytime." />
+      <meta name="description" content="ATL Podcast Pros is Atlanta's premier done-for-you podcast production agency. We build in-home studios and manage podcasts for busy professionals and creators." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ATL Podcast Pros" />
+      <meta property="og:title" content="About ATL Podcast Pros | Atlanta's Podcast Production Agency" />
+      <meta property="og:description" content="ATL Podcast Pros is Atlanta's premier done-for-you podcast production agency. We build in-home studios and manage podcasts for busy professionals and creators." />
+      <meta property="og:url" content="https://atlpodcastpros.com/about" />
+      <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 
       {/* Hero */}
       <section
@@ -88,7 +94,7 @@ export default function About() {
             <div className="about-story__image">
               <img
                 src="/assets/images/about-team1.jpg"
-                alt="ATL Podcast Pros studio setup"
+                alt="professional in-home podcast studio setup Atlanta"
                 style={{ width: '100%', borderRadius: 'var(--radius-lg)', display: 'block', objectFit: 'cover', aspectRatio: '4/3' }}
               />
             </div>

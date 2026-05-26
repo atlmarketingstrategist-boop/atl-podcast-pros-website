@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atlpodcastpros.com/sitemap.xml

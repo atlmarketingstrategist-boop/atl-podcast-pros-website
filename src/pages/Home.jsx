@@ -67,7 +67,13 @@ export default function Home() {
   return (
     <>
       <title>In-Home Podcast Studio Setup Atlanta | ATL Podcast Pros</title>
-      <meta name="description" content="ATL Podcast Pros designs, installs, and manages professional in-home podcast studio setups in Atlanta. Done-for-you. No tech headaches." />
+      <meta name="description" content="Atlanta's done-for-you in-home podcast studio service. We design, install and manage your studio. One button to record. Starting at $10K. Book your free intro call today." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ATL Podcast Pros" />
+      <meta property="og:title" content="In-Home Podcast Studio Setup Atlanta | ATL Podcast Pros" />
+      <meta property="og:description" content="Atlanta's done-for-you in-home podcast studio service. We design, install and manage your studio. One button to record. Starting at $10K. Book your free intro call today." />
+      <meta property="og:url" content="https://atlpodcastpros.com/" />
+      <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 
       {/* ======= HERO ======= */}
       <section className="home-hero grain-overlay">

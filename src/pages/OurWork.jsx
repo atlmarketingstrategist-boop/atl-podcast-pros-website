@@ -88,15 +88,21 @@ export default function OurWork() {
 
   return (
     <>
-      <title>Podcast Studio Portfolio and Client Results | ATL Podcast Pros</title>
-      <meta name="description" content="Our clients generate millions of views, build global audiences, and win business directly from their podcast. See real results from ATL Podcast Pros." />
+      <title>Podcast Studio Portfolio & Client Results | ATL Podcast Pros</title>
+      <meta name="description" content="See real podcast studios built by ATL Podcast Pros. 1M+ YouTube views generated. Clients in every country. Building studios and managing productions since 2010." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ATL Podcast Pros" />
+      <meta property="og:title" content="Podcast Studio Portfolio & Client Results | ATL Podcast Pros" />
+      <meta property="og:description" content="See real podcast studios built by ATL Podcast Pros. 1M+ YouTube views generated. Clients in every country. Building studios and managing productions since 2010." />
+      <meta property="og:url" content="https://atlpodcastpros.com/our-work" />
+      <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 
       {/* Hero -- text only, dark background with grain */}
       <section className="page-hero ow-hero grain-overlay">
         <div className="page-hero__overlay" style={{ background: 'rgba(17,17,17,0.9)' }} />
         <div className="container">
           <span className="section-eyebrow hero-line-1" style={{ color: 'rgba(166,30,49,0.9)' }}>Portfolio</span>
-          <h1 className="hero-line-2">Real Studios.<br />Real Results.</h1>
+          <h1 className="hero-line-2">Real Podcast Studios.<br />Real Results.</h1>
           <p className="hero-sub">
             Our clients do not just have a podcast. They have a platform. A growing audience. A credibility signal that opens doors before a single sales conversation begins.
           </p>
@@ -119,7 +125,7 @@ export default function OurWork() {
             <div className="before-after__col">
               <img
                 src="/Beforeafter4.png"
-                alt="Empty room before studio installation"
+                alt="home living room before podcast studio installation"
                 style={{ borderRadius: 'var(--radius-lg)', width: '100%', boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}
               />
               <p className="before-after__caption">A spare bedroom, home office, or empty corner. The starting point for every project.</p>
@@ -133,7 +139,7 @@ export default function OurWork() {
             <div className="before-after__col">
               <img
                 src="/beforeafter2.png"
-                alt="Completed professional podcast studio"
+                alt="professional podcast studio installed in Atlanta home"
                 style={{ borderRadius: 'var(--radius-lg)', width: '100%', boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}
               />
               <p className="before-after__caption">A broadcast-quality studio that is camera-ready and operational with one button. No tech knowledge required.</p>
@@ -183,7 +189,7 @@ export default function OurWork() {
               >
                 <img
                   src="/socratesthumbnail.png"
-                  alt="Watch Socrates Charos on YouTube"
+                  alt="Good News with Socrates podcast by ATL Podcast Pros"
                   className="case-study__thumbnail"
                 />
               </a>

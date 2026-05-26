@@ -21,7 +21,13 @@ export default function Book() {
   return (
     <>
       <title>Schedule a Free Podcast Studio Consultation | ATL Podcast Pros</title>
-      <meta name="description" content="Book a free 20-minute intro call with ATL Podcast Pros. We will assess your space, understand your goals, and recommend the right studio setup. No pressure." />
+      <meta name="description" content="Book a free 20-minute intro call with ATL Podcast Pros. No pressure. No long-term contracts. Just a conversation about your podcast goals." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ATL Podcast Pros" />
+      <meta property="og:title" content="Schedule a Free Podcast Studio Consultation | ATL Podcast Pros" />
+      <meta property="og:description" content="Book a free 20-minute intro call with ATL Podcast Pros. No pressure. No long-term contracts. Just a conversation about your podcast goals." />
+      <meta property="og:url" content="https://atlpodcastpros.com/book" />
+      <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 
       <div className="book-page">
         {/* Left panel */}
@@ -29,7 +35,7 @@ export default function Book() {
           <div className="book-page__left-inner">
             <span className="section-eyebrow" style={{ color: 'rgba(166,30,49,0.9)' }}>Free Consultation</span>
             <div className="book-heading-wrap">
-              <h1 className="book-page__headline display-text">Let's Build<br />Your Studio</h1>
+              <h1 className="book-page__headline display-text">Book a Free<br />Podcast Studio Consultation</h1>
             </div>
             <p className="book-page__sub">
               Pick a time that works for you. Our intro calls are free, 20 minutes, and zero pressure. We'll ask about your goals, walk through your space, and tell you exactly what we'd recommend.

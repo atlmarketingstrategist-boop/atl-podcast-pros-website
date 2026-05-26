@@ -87,8 +87,14 @@ export default function Blog() {
 
   return (
     <>
-      <title>Podcast Studio Tips, Guides and Insights | ATL Podcast Pros Blog</title>
-      <meta name="description" content="Expert podcast studio tips, equipment guides, and setup strategies from ATL Podcast Pros, Atlanta's in-home podcast studio agency." />
+      <title>Podcast Studio Tips & Guides | ATL Podcast Pros Blog</title>
+      <meta name="description" content="Podcast studio setup guides, gear reviews and production tips from Atlanta's leading in-home podcast experts. Learn how to launch, record and grow your podcast." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ATL Podcast Pros" />
+      <meta property="og:title" content="Podcast Studio Tips & Guides | ATL Podcast Pros Blog" />
+      <meta property="og:description" content="Podcast studio setup guides, gear reviews and production tips from Atlanta's leading in-home podcast experts. Learn how to launch, record and grow your podcast." />
+      <meta property="og:url" content="https://atlpodcastpros.com/blog" />
+      <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 
       {/* Hero */}
       <section className="page-hero blog-hero">

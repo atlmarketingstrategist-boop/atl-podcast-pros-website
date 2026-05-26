@@ -20,8 +20,14 @@ export default function Services() {
 
   return (
     <>
-      <title>Podcast Studio Setup and Management Services Atlanta | ATL Podcast Pros</title>
-      <meta name="description" content="Professional podcast studio setup starting at $10,000 and ongoing management from $698/mo. No long-term contracts. Serving Atlanta professionals and creators." />
+      <title>Podcast Studio Setup & Management Services Atlanta | ATL Podcast Pros</title>
+      <meta name="description" content="Professional in-home podcast studio installation starting at $10K and ongoing podcast management from $698/mo. Serving Atlanta and beyond. Book a free call." />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="ATL Podcast Pros" />
+      <meta property="og:title" content="Podcast Studio Setup & Management Services Atlanta | ATL Podcast Pros" />
+      <meta property="og:description" content="Professional in-home podcast studio installation starting at $10K and ongoing podcast management from $698/mo. Serving Atlanta and beyond. Book a free call." />
+      <meta property="og:url" content="https://atlpodcastpros.com/services" />
+      <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 
       {/* Hero */}
       <section
@@ -31,7 +37,7 @@ export default function Services() {
         <div className="page-hero__overlay" />
         <div className="container">
           <span className="section-eyebrow hero-line-1" style={{ color: 'rgba(166,30,49,0.9)' }}>Pricing and Services</span>
-          <h1 className="hero-line-2">Two Ways We Help<br />You Podcast Like a Pro</h1>
+          <h1 className="hero-line-2">Podcast Studio Setup &amp;<br />Management Services in Atlanta</h1>
           <p className="hero-sub">Start with a studio. Add ongoing management when you are ready. No long-term commitments required.</p>
         </div>
       </section>

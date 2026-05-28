@@ -9,15 +9,25 @@
 /* Before / After */
 .before-after {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
 }
 
 .before-after__col {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.before-after__img-wrap {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
 
 .before-after__label {
@@ -268,16 +278,14 @@
   color: var(--color-primary);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .before-after {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+}
 
-  .before-after__arrow {
-    transform: rotate(90deg);
-    margin: 0 auto;
-  }
+@media (max-width: 900px) {
 
   .case-study {
     grid-template-columns: 1fr;

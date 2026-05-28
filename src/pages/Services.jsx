@@ -159,18 +159,28 @@ export default function Services() {
               </ul>
 
               {/* Short-form content video example */}
-              <div className="shortform-video-wrap">
-                <p className="shortform-label">Example Short-Form Clip</p>
-                <div className="shortform-phone-frame">
-                  <video
-                    src="/shortform-example.mp4"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    className="shortform-video"
-                  />
-                </div>
+              <div style={{
+                width: '100%',
+                maxWidth: '320px',
+                margin: '0 auto',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                boxShadow: '0 20px 60px rgba(0,0,0,0.4)'
+              }}>
+                <video
+                  src="/assets/videos/shortform-example.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block'
+                  }}
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
 
               <Link to="/book" className="btn btn-primary" style={{ marginTop: 28, width: '100%', justifyContent: 'center' }}>

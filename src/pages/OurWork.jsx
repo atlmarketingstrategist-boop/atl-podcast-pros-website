@@ -123,31 +123,25 @@ export default function OurWork() {
           </div>
           <div className="before-after fade-up" ref={fadeRef}>
             <div className="before-after__col">
-              <img
-                src="/Beforeafter4.png"
-                alt="home living room before podcast studio installation"
-                loading="lazy"
-                width="1200"
-                height="900"
-                style={{ borderRadius: 'var(--radius-lg)', width: '100%', boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}
-              />
+              <div className="before-after__img-wrap">
+                <img
+                  src="/Beforeafter4.png"
+                  alt="home living room before podcast studio installation"
+                  loading="lazy"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', maxWidth: '100%' }}
+                />
+              </div>
               <p className="before-after__caption">A spare bedroom, home office, or empty corner. The starting point for every project.</p>
             </div>
-            <div className="before-after__arrow">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="5" y1="12" x2="19" y2="12"/>
-                <polyline points="12 5 19 12 12 19"/>
-              </svg>
-            </div>
             <div className="before-after__col">
-              <img
-                src="/beforeafter2.png"
-                alt="professional podcast studio installed in Atlanta home"
-                loading="lazy"
-                width="1200"
-                height="900"
-                style={{ borderRadius: 'var(--radius-lg)', width: '100%', boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}
-              />
+              <div className="before-after__img-wrap">
+                <img
+                  src="/beforeafter2.png"
+                  alt="professional podcast studio installed in Atlanta home"
+                  loading="lazy"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', maxWidth: '100%' }}
+                />
+              </div>
               <p className="before-after__caption">A broadcast-quality studio that is camera-ready and operational with one button. No tech knowledge required.</p>
             </div>
           </div>

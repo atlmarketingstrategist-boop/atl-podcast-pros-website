@@ -60,6 +60,7 @@ const faqs = [
 
 export default function HowItWorks() {
   const fadeRefs = useRef([])
+  const videoRef = useRef(null)
   const { openModal } = useBookingModal()
 
   useEffect(() => {
@@ -68,6 +69,27 @@ export default function HowItWorks() {
       { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     )
     fadeRefs.current.forEach((el) => el && observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
+  // Lazy-load video src only when it scrolls into view
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          const src = video.dataset.src
+          if (src && !video.src) {
+            video.src = src
+            video.load()
+          }
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.1 }
+    )
+    observer.observe(video)
     return () => observer.disconnect()
   }, [])
 
@@ -158,8 +180,10 @@ export default function HowItWorks() {
               <div className="hiw-phase__image fade-up fade-up-delay-1" ref={fadeRef}>
                 {phase.video ? (
                   <video
-                    src={phase.video}
+                    ref={videoRef}
+                    data-src={phase.video}
                     poster={phase.image}
+                    preload="none"
                     autoPlay
                     muted
                     loop
@@ -170,6 +194,9 @@ export default function HowItWorks() {
                   <img
                     src={phase.image}
                     alt={phase.title}
+                    loading="lazy"
+                    width="1920"
+                    height="1440"
                     style={{ width: '100%', borderRadius: 'var(--radius-lg)', display: 'block', objectFit: 'cover', aspectRatio: '4/3' }}
                   />
                 )}

@@ -144,6 +144,9 @@ export default function LocationPage({ locations }) {
               <img
                 src="/assets/images/afterroom1.jpeg"
                 alt={`Professional podcast studio installed in ${loc.location} home`}
+                loading="lazy"
+                width="1920"
+                height="1440"
                 style={{ width: '100%', borderRadius: 'var(--radius-lg)', display: 'block', objectFit: 'cover', aspectRatio: '4/3' }}
               />
             </div>

@@ -188,7 +188,7 @@ export default function BlogPost() {
                   ref={fadeRef}
                 >
                   <div className="post-related-card__image">
-                    <img src="/assets/images/blog-default.jpg" alt={rp.title} />
+                    <img src="/assets/images/blog-default.jpg" alt={rp.title} loading="lazy" width="800" height="450" />
                     <span
                       className="post-related-card__cat"
                       style={{ background: categoryColors[rp.category] || 'var(--color-primary)' }}

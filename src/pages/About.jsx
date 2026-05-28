@@ -95,6 +95,9 @@ export default function About() {
               <img
                 src="/assets/images/about-team1.jpg"
                 alt="professional in-home podcast studio setup Atlanta"
+                loading="lazy"
+                width="1920"
+                height="1440"
                 style={{ width: '100%', borderRadius: 'var(--radius-lg)', display: 'block', objectFit: 'cover', aspectRatio: '4/3' }}
               />
             </div>
@@ -173,6 +176,9 @@ export default function About() {
               <img
                 src="/assets/images/about-atlanta.jpg"
                 alt="Atlanta Georgia skyline"
+                loading="lazy"
+                width="1920"
+                height="1440"
                 style={{ width: '100%', borderRadius: 'var(--radius-lg)', display: 'block', objectFit: 'cover', aspectRatio: '4/3' }}
               />
             </div>

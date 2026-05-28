@@ -163,6 +163,7 @@ export default function Services() {
                 <div className="shortform-phone-frame">
                   <video
                     src="/shortform-example.mp4"
+                    preload="none"
                     autoPlay
                     muted
                     loop

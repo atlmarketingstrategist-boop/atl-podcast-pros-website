@@ -247,7 +247,7 @@ export default function Home() {
                 ref={fadeRef}
               >
                 <div className="home-client-card__thumb">
-                  <img src={c.image} alt={c.show} />
+                  <img src={c.image} alt={c.show} loading="lazy" width="400" height="400" />
                 </div>
                 <div className="home-client-card__body">
                   <h3 className="home-client-card__show">{c.show}</h3>

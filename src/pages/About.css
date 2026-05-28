@@ -10,6 +10,12 @@
   align-items: start;
 }
 
+.about-story__image {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
 .about-story__img-placeholder {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -83,6 +89,12 @@
   grid-template-columns: 1.3fr 1fr;
   gap: 80px;
   align-items: center;
+}
+
+.about-atl__img {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
 }
 
 .about-atl h2 {

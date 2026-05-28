@@ -27,6 +27,16 @@
   align-items: center;
 }
 
+.hiw-phase__image {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.hiw-phase__text {
+  min-width: 0;
+}
+
 .hiw-phase__inner--flip {
   direction: rtl;
 }

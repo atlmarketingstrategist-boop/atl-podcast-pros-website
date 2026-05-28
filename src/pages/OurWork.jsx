@@ -73,7 +73,6 @@ function StatItem({ num, label }) {
 
 export default function OurWork() {
   const fadeRefs = useRef([])
-  const caseVideoRef = useRef(null)
   const { openModal } = useBookingModal()
 
   useEffect(() => {
@@ -82,27 +81,6 @@ export default function OurWork() {
       { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     )
     fadeRefs.current.forEach((el) => el && observer.observe(el))
-    return () => observer.disconnect()
-  }, [])
-
-  // Lazy-load case study video only when in view
-  useEffect(() => {
-    const video = caseVideoRef.current
-    if (!video) return
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          const src = video.dataset.src
-          if (src && !video.src) {
-            video.src = src
-            video.load()
-          }
-          observer.disconnect()
-        }
-      },
-      { threshold: 0.1 }
-    )
-    observer.observe(video)
     return () => observer.disconnect()
   }, [])
 
@@ -200,33 +178,21 @@ export default function OurWork() {
           </div>
           <div className="case-study fade-up" ref={fadeRef}>
             <div className="case-study__image">
-              <video
-                ref={caseVideoRef}
-                data-src="/timelapse-landscape.mov"
-                poster="/assets/images/afterroom1.jpeg"
-                preload="none"
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{ width: '100%', borderRadius: 'var(--radius-lg)', display: 'block' }}
-              />
-              <div className="case-study__tag">pastor turned podcaster</div>
               <a
                 href="https://youtu.be/bimC4i60L-E"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="case-study__thumbnail-link"
+                style={{ marginTop: 0 }}
               >
                 <img
                   src="/socratesthumbnail.png"
                   alt="Good News with Socrates podcast by ATL Podcast Pros"
                   className="case-study__thumbnail"
                   loading="lazy"
-                  width="320"
-                  height="180"
                 />
               </a>
+              <div className="case-study__tag">pastor turned podcaster</div>
             </div>
             <div className="case-study__content">
               <h3>Socrates Charos</h3>

@@ -1,68 +1,17 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useBookingModal } from '../components/BookingModal'
+import { blogPosts } from '../data/blogPosts'
 import './Blog.css'
 
-const posts = [
-  {
-    slug: 'podcast-studio-setup-cost-2026',
-    category: 'Budgeting',
-    title: 'How Much Does a Podcast Studio Setup Cost in 2026?',
-    excerpt: "From DIY setups under $500 to broadcast-quality studios over $10k: here's the full breakdown of what you should expect to spend.",
-    date: 'April 1, 2026',
-    image: null,
-  },
-  {
-    slug: 'renting-vs-building-podcast-studio',
-    category: 'Strategy',
-    title: 'Renting a Podcast Studio vs. Building Your Own: The True Cost Comparison',
-    excerpt: "Studio rentals feel affordable, until you do the math over 12 months. Here's a side-by-side comparison every podcaster should read.",
-    date: 'March 24, 2026',
-    image: null,
-  },
-  {
-    slug: 'home-podcast-studio-setup-guide',
-    category: 'Setup Guide',
-    title: 'How to Set Up a Professional Podcast Studio at Home: Step-by-Step',
-    excerpt: 'A complete guide to building a broadcast-quality home studio: room selection, acoustic treatment, microphone placement, and recording software.',
-    date: 'March 10, 2026',
-    image: null,
-  },
-  {
-    slug: 'busy-professional-podcast-guide',
-    category: 'For Professionals',
-    title: "The Busy Professional's Guide to Launching a Podcast Without the Tech Headache",
-    excerpt: "If you're running a business, leading a team, or building a practice, this guide shows you the fastest and simplest path from idea to published episode.",
-    date: 'February 28, 2026',
-    image: null,
-  },
-  {
-    slug: 'best-podcast-equipment-home-studio-2026',
-    category: 'Equipment',
-    title: 'The Best Podcast Equipment for a Home Studio in 2026',
-    excerpt: "We've tested and installed hundreds of gear combinations. These are the mics, interfaces, cameras, and accessories our team recommends for every budget tier.",
-    date: 'February 14, 2026',
-    image: null,
-  },
-  {
-    slug: 'podcast-studio-interior-design-ideas',
-    category: 'Design',
-    title: 'Podcast Studio Interior Design: 15 Ideas to Make Your Space Camera-Ready',
-    excerpt: 'Your studio is your brand on camera. These 15 design ideas will make your background look intentional, professional, and uniquely yours.',
-    date: 'January 30, 2026',
-    image: null,
-  },
-]
-
-const categories = ['All', 'Budgeting', 'Strategy', 'Setup Guide', 'For Professionals', 'Equipment', 'Design']
+const categories = ['All', 'Studio Setup', 'Production', 'Equipment', 'Strategy', 'Case Study']
 
 const categoryColors = {
-  Budgeting: '#2a7a2a',
-  Strategy: '#1a5aa6',
-  'Setup Guide': '#7a3a1a',
-  'For Professionals': '#4a1a7a',
-  Equipment: '#1a6a6a',
-  Design: '#7a1a4a',
+  'Studio Setup': '#7a3a1a',
+  Production: '#1a6a6a',
+  Equipment: '#1a5aa6',
+  Strategy: '#2a7a2a',
+  'Case Study': '#4a1a7a',
 }
 
 export default function Blog() {
@@ -82,16 +31,16 @@ export default function Blog() {
   const fadeRef = (el) => { if (el && !fadeRefs.current.includes(el)) fadeRefs.current.push(el) }
 
   const filteredPosts = activeCategory === 'All'
-    ? posts
-    : posts.filter((p) => p.category === activeCategory)
+    ? blogPosts
+    : blogPosts.filter((p) => p.category === activeCategory)
 
   return (
     <>
-      <title>Podcast Studio Tips & Guides | ATL Podcast Pros Blog</title>
+      <title>Podcast Studio Tips &amp; Guides | ATL Podcast Pros Blog</title>
       <meta name="description" content="Podcast studio setup guides, gear reviews and production tips from Atlanta's leading in-home podcast experts. Learn how to launch, record and grow your podcast." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />
-      <meta property="og:title" content="Podcast Studio Tips & Guides | ATL Podcast Pros Blog" />
+      <meta property="og:title" content="Podcast Studio Tips &amp; Guides | ATL Podcast Pros Blog" />
       <meta property="og:description" content="Podcast studio setup guides, gear reviews and production tips from Atlanta's leading in-home podcast experts. Learn how to launch, record and grow your podcast." />
       <meta property="og:url" content="https://atlpodcastpros.com/blog" />
       <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />

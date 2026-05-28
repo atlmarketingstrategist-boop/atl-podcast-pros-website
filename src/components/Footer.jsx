@@ -11,6 +11,14 @@ const navLinks = [
   { to: '/blog', label: 'Blog' },
 ]
 
+const serviceAreas = [
+  { to: '/locations/podcast-studio-setup-buckhead', label: 'Buckhead' },
+  { to: '/locations/podcast-studio-setup-midtown-atlanta', label: 'Midtown Atlanta' },
+  { to: '/locations/podcast-studio-setup-decatur', label: 'Decatur' },
+  { to: '/locations/podcast-studio-setup-alpharetta', label: 'Alpharetta' },
+  { to: '/locations/podcast-studio-setup-sandy-springs', label: 'Sandy Springs' },
+]
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -41,6 +49,18 @@ export default function Footer() {
               <h4 className="footer__nav-heading">Pages</h4>
               <ul>
                 {navLinks.map(({ to, label }) => (
+                  <li key={to}>
+                    <Link to={to} className="footer__nav-link">{label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Service Areas col */}
+            <div className="footer__nav">
+              <h4 className="footer__nav-heading">Service Areas</h4>
+              <ul>
+                {serviceAreas.map(({ to, label }) => (
                   <li key={to}>
                     <Link to={to} className="footer__nav-link">{label}</Link>
                   </li>

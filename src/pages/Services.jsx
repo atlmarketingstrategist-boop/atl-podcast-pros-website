@@ -5,6 +5,7 @@ import './Services.css'
 
 export default function Services() {
   const fadeRefs = useRef([])
+  const shortformVideoRef = useRef(null)
   const { openModal } = useBookingModal()
 
   useEffect(() => {
@@ -13,6 +14,27 @@ export default function Services() {
       { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
     )
     fadeRefs.current.forEach((el) => el && observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
+  // Lazy-load shortform video only when it enters the viewport
+  useEffect(() => {
+    const video = shortformVideoRef.current
+    if (!video) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          const src = video.dataset.src
+          if (src && !video.src) {
+            video.src = src
+            video.load()
+          }
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.1 }
+    )
+    observer.observe(video)
     return () => observer.disconnect()
   }, [])
 
@@ -162,7 +184,8 @@ export default function Services() {
                 <p className="shortform-label">Example Short-Form Clip</p>
                 <div className="shortform-phone-frame">
                   <video
-                    src="/shortform-example.mp4"
+                    ref={shortformVideoRef}
+                    data-src="/shortform-example.mp4"
                     preload="none"
                     autoPlay
                     muted

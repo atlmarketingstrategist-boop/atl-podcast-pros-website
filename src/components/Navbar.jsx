@@ -36,6 +36,8 @@ export default function Navbar() {
             src="/LogoAPPWhiteATL.png"
             alt="ATL Podcast Pros"
             className="navbar__logo-img"
+            width="3991"
+            height="2797"
           />
         </Link>
 

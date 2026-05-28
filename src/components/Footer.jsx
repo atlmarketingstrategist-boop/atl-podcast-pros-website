@@ -32,6 +32,8 @@ export default function Footer() {
                   src="/LogoAPPWhiteATL.png"
                   alt="ATL Podcast Pros"
                   className="footer__logo-img"
+                  width="3991"
+                  height="2797"
                 />
               </Link>
               <p className="footer__tagline">

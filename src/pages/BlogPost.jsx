@@ -185,6 +185,7 @@ export default function BlogPost() {
                   to={`/blog/${rp.slug}`}
                   key={rp.slug}
                   className={`post-related-card fade-up fade-up-delay-${i + 1}`}
+                  aria-label={`Read article: ${rp.title}`}
                   ref={fadeRef}
                 >
                   <div className="post-related-card__image">
@@ -199,9 +200,9 @@ export default function BlogPost() {
                   <div className="post-related-card__body">
                     <time className="post-related-card__date">{rp.date}</time>
                     <h3 className="post-related-card__title">{rp.title}</h3>
-                    <span className="post-related-card__cta">
+                    <span className="post-related-card__cta" aria-hidden="true">
                       Read More
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
                         <line x1="5" y1="12" x2="19" y2="12"/>
                         <polyline points="12 5 19 12 12 19"/>
                       </svg>

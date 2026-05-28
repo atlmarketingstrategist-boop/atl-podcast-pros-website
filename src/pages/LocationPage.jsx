@@ -194,9 +194,9 @@ export default function LocationPage({ locations }) {
               <div className={`loc-service-card loc-fade loc-fade-delay-${i + 1}`} key={svc.title}>
                 <h3 className="loc-service-card__title">{svc.title}</h3>
                 <p className="loc-service-card__desc">{svc.desc}</p>
-                <Link to="/services" className="loc-service-card__link">
+                <Link to="/services" className="loc-service-card__link" aria-label={`Learn more about our ${svc.title} service`}>
                   Learn More
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
                     <line x1="5" y1="12" x2="19" y2="12"/>
                     <polyline points="12 5 19 12 12 19"/>
                   </svg>

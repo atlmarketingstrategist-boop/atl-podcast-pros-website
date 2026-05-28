@@ -208,7 +208,7 @@ export default function Home() {
                 <ul className="service-card__list">
                   {svc.bullets.map((b) => <li key={b}>{b}</li>)}
                 </ul>
-                <Link to="/services" className="btn btn-primary" style={{ marginTop: 28 }}>Learn More</Link>
+                <Link to="/services" className="btn btn-primary" style={{ marginTop: 28 }} aria-label={`Learn more about our ${svc.title} service`}>Learn More</Link>
               </div>
             ))}
           </div>

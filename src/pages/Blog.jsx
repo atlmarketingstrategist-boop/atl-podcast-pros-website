@@ -95,9 +95,9 @@ export default function Blog() {
                   <time className="blog-card__date">{post.date}</time>
                   <h2 className="blog-card__title">{post.title}</h2>
                   <p className="blog-card__excerpt">{post.excerpt}</p>
-                  <Link to={`/blog/${post.slug}`} className="blog-card__cta">
+                  <Link to={`/blog/${post.slug}`} className="blog-card__cta" aria-label={`Read more about ${post.title}`}>
                     Read More
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
                       <line x1="5" y1="12" x2="19" y2="12"/>
                       <polyline points="12 5 19 12 12 19"/>
                     </svg>

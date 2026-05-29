@@ -7,7 +7,7 @@ export const sfaPartnersPage = {
     :root{--ink:#1A1A1A;--paper:#F4F4F4;--accent:#213775;--muted:#6B6B6B;--border:rgba(26,26,26,0.1);--white:#FFFFFF;}
     .client-page-doc *,.client-page-doc *::before,.client-page-doc *::after{box-sizing:border-box;}
     .client-page-doc{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh;}
-    .client-page-doc .header{background:var(--ink);padding:32px 48px 28px;display:flex;justify-content:space-between;align-items:flex-end;}
+    .client-page-doc .header{background:var(--ink);padding:104px 48px 36px;display:flex;justify-content:space-between;align-items:flex-end;}
     .client-page-doc .header-left .eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#72BF44;margin-bottom:8px;}
     .client-page-doc .header-left .title{font-family:'Bebas Neue',sans-serif;font-size:44px;line-height:.95;color:#fff;}
     .client-page-doc .header-left .title span{color:#213775;}
@@ -40,7 +40,7 @@ export const sfaPartnersPage = {
     .client-page-doc .footer-brand{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
     .client-page-doc .footer-note{font-size:10px;color:rgba(26,26,26,.35);}
     @media(max-width:768px){
-      .client-page-doc .header{padding:24px;flex-direction:column;align-items:flex-start;gap:12px;}
+      .client-page-doc .header{padding:96px 24px 28px;flex-direction:column;align-items:flex-start;gap:12px;}
       .client-page-doc .main{padding:20px 16px 48px;}
       .client-page-doc .summary-row{grid-template-columns:repeat(2,1fr);}
       .client-page-doc .notice{padding:12px 16px;}

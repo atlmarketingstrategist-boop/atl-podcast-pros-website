@@ -142,12 +142,10 @@ export default function LocationPage({ locations }) {
             </div>
             <div className="loc-intro__image">
               <img
-                src="/assets/images/afterroom1.jpeg"
-                alt={`Professional podcast studio installed in ${loc.location} home`}
+                src={loc.image}
+                alt={`Aerial view of ${loc.location}, ${loc.state}`}
                 loading="lazy"
-                width="1920"
-                height="1440"
-                style={{ width: '100%', borderRadius: 'var(--radius-lg)', display: 'block', objectFit: 'cover', aspectRatio: '4/3' }}
+                style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '8px', display: 'block' }}
               />
             </div>
           </div>

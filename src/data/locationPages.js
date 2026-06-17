@@ -1,6 +1,7 @@
 export const locationPages = [
   {
     slug: 'podcast-studio-setup-buckhead',
+    image: '/assets/images/location-buckhead.jpg',
     location: 'Buckhead',
     state: 'GA',
     heroHeading: 'In-Home Podcast Studio Setup in Buckhead, Atlanta',
@@ -16,6 +17,7 @@ export const locationPages = [
   },
   {
     slug: 'podcast-studio-setup-midtown-atlanta',
+    image: '/assets/images/location-midtown.jpg',
     location: 'Midtown',
     state: 'GA',
     heroHeading: 'In-Home Podcast Studio Setup in Midtown Atlanta',
@@ -31,6 +33,7 @@ export const locationPages = [
   },
   {
     slug: 'podcast-studio-setup-decatur',
+    image: '/assets/images/location-decatur.jpg',
     location: 'Decatur',
     state: 'GA',
     heroHeading: 'In-Home Podcast Studio Setup in Decatur, GA',
@@ -46,6 +49,7 @@ export const locationPages = [
   },
   {
     slug: 'podcast-studio-setup-alpharetta',
+    image: '/assets/images/location-alpharetta.jpg',
     location: 'Alpharetta',
     state: 'GA',
     heroHeading: 'In-Home Podcast Studio Setup in Alpharetta, GA',
@@ -61,6 +65,7 @@ export const locationPages = [
   },
   {
     slug: 'podcast-studio-setup-sandy-springs',
+    image: '/assets/images/location-sandy-springs.jpg',
     location: 'Sandy Springs',
     state: 'GA',
     heroHeading: 'In-Home Podcast Studio Setup in Sandy Springs, GA',

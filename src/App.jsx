@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Outlet, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -24,13 +24,11 @@ function ScrollToTop() {
   return null
 }
 
-function ConditionalLayout({ children }) {
-  const { pathname } = useLocation()
-  const isStandalone = pathname === '/thank-you' || pathname.startsWith('/client/')
-  return isStandalone ? <>{children}</> : (
+function MainLayout() {
+  return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main><Outlet /></main>
       <Footer />
     </>
   )
@@ -41,9 +39,10 @@ export default function App() {
     <BrowserRouter>
       <BookingModalProvider>
         <ScrollToTop />
-        <ConditionalLayout>
-          <Suspense fallback={<div style={{ background: '#1A1A1A', height: '100vh' }} />}>
-            <Routes>
+        <Suspense fallback={<div style={{ background: '#1A1A1A', height: '100vh' }} />}>
+          <Routes>
+            {/* All routes that get Navbar + Footer */}
+            <Route element={<MainLayout />}>
               <Route path="/" element={<Home />} />
               <Route path="/how-it-works" element={<HowItWorks />} />
               <Route path="/services" element={<Services />} />
@@ -53,11 +52,13 @@ export default function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/locations/:slug" element={<LocationPage locations={locationPages} />} />
-              <Route path="/client/:slug" element={<ClientPage />} />
-              <Route path="/thank-you" element={<ThankYou />} />
-            </Routes>
-          </Suspense>
-        </ConditionalLayout>
+            </Route>
+
+            {/* Standalone routes — no Navbar, no Footer */}
+            <Route path="/client/:slug" element={<ClientPage />} />
+            <Route path="/thank-you" element={<ThankYou />} />
+          </Routes>
+        </Suspense>
       </BookingModalProvider>
     </BrowserRouter>
   )

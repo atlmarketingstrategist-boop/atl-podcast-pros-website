@@ -1,5 +1,192 @@
 export const blogPosts = [
   {
+    id: 12,
+    slug: 'podcast-studio-setup-checklist',
+    category: 'Studio Setup',
+    title: 'Podcast Studio Setup Checklist: Everything You Need Before Your First Recording',
+    excerpt: 'The complete checklist covering equipment, acoustics, software, distribution, and creative assets. Everything you need before you hit record for the first time.',
+    date: 'June 16, 2026',
+    readTime: '8 min read',
+    image: '/assets/images/blog-default.jpg',
+    metaTitle: 'Podcast Studio Setup Checklist: Everything You Need | ATL Podcast Pros',
+    metaDescription: 'The complete podcast studio setup checklist covering equipment, acoustics, software, distribution, and creative assets. Check off every item before you record.',
+    content: `
+      <p>Most podcasters skip steps. Not because they are careless but because no one gave them a complete list before they hit record for the first time. They figure out what they missed when an episode comes back with echo, when the audio levels are uneven, or when they realize they have no cover art for launch day. This checklist exists so that does not happen to you.</p>
+
+      <p>Work through every section before your first recording session. Each item is here for a reason.</p>
+
+      <h2>Why Skipping Steps Costs You More Later</h2>
+
+      <p>The podcasters who rush to launch without a proper setup consistently face the same problems three to six months in: audio that sounds amateurish compared to competitors, technical issues that interrupt recording sessions, a distribution setup that is incomplete, and a brand that looks unfinished. Fixing these things retroactively is harder than doing them right the first time. Listeners who find your show during the rough early period form an impression that is difficult to reverse. If you are using your podcast for business development, that first impression is tied directly to your credibility.</p>
+
+      <p>Go through each section below and check off every item before you schedule your first episode.</p>
+
+      <h2>Section 1: Equipment Checklist</h2>
+
+      <p>Equipment is the most visible part of a podcast setup and also the most commonly over-discussed. The items below are the minimum for a professional-quality recording environment.</p>
+
+      <p><strong>Microphone:</strong> Choose an XLR dynamic microphone for untreated rooms. The Shure SM7B and Rode PodMic are reliable choices at $399 and $99 respectively. Avoid cheap USB condenser microphones in home environments -- they pick up every room noise and air conditioning hum. If you are recording in a well-treated space, a condenser microphone is acceptable. If you are not sure, go dynamic.</p>
+
+      <p><strong>Audio interface or mixer:</strong> If you are using an XLR microphone, you need an interface to connect it to your computer. The Focusrite Scarlett 2i2 handles one or two microphones cleanly for $180. For a full production workflow with multiple inputs and onboard processing, the Rodecaster Pro II at $699 is a professional-grade solution.</p>
+
+      <p><strong>Headphones:</strong> Closed-back monitoring headphones let you hear exactly what is being recorded without bleed into the microphone. The Sony MDR-7506 at $100 is a studio standard. The Beyerdynamic DT 770 Pro at $160 is another proven option.</p>
+
+      <p><strong>Camera:</strong> If you are recording video, a mirrorless camera like the Sony ZV-E10 or FX30 paired with a capture card gives you cinematic image quality. A high-quality webcam like the Logitech Brio works as an entry point. Avoid using a built-in laptop camera for anything professional.</p>
+
+      <p><strong>Lighting:</strong> At minimum, one key light in front of you and one fill or back light. LED panels with adjustable color temperature give you control over the look. The Amaran 100d is a reliable professional option. Ring lights work in a pinch but produce a flat, less professional image.</p>
+
+      <p><strong>Acoustic panels:</strong> Acoustic panels are not optional for home studios. Even four to six panels on the wall behind and beside you will noticeably reduce room echo. NRC-rated panels at 0.85 or higher absorb the frequencies that create that hollow, roomy sound.</p>
+
+      <p><strong>Cables and stands:</strong> XLR cables from your microphone to your interface. A quality boom arm like the Rode PSA1+ mounts to your desk and positions the microphone correctly without occupying your workspace. Cable management ties and raceways to keep everything clean on camera.</p>
+
+      <h2>Section 2: Room and Acoustics Checklist</h2>
+
+      <p>Equipment accounts for about forty percent of your audio quality. The room accounts for the other sixty. A great microphone in a bad room sounds worse than a decent microphone in a treated room.</p>
+
+      <p><strong>Identify echo sources:</strong> Hard parallel walls, bare wood floors, and uncovered windows are the main culprits. Clap once in your recording space and listen for a flutter or decay. If you hear anything, you need treatment.</p>
+
+      <p><strong>Add soft surfaces:</strong> Bookshelves filled with books, thick rugs, upholstered furniture, and heavy curtains all absorb sound. These do not replace acoustic panels but they supplement them.</p>
+
+      <p><strong>Address background noise:</strong> HVAC, traffic, appliances, and pets are common noise sources that ruin recordings. Test the ambient noise level in your space at the time of day you plan to record. Turn off HVAC if possible during sessions. A dynamic microphone's directional pickup pattern helps reject ambient noise from the sides and rear.</p>
+
+      <p><strong>Window management:</strong> Windows are thin and highly reflective. Blackout curtains or removable window shades reduce both light bleed for video and acoustic reflections for audio. This is especially important if you are recording in a room with exterior-facing windows.</p>
+
+      <h2>Section 3: Software and Recording Checklist</h2>
+
+      <p>The software layer determines how your audio is captured, monitored, and edited. Gaps here cause problems that feel mysterious but are entirely preventable.</p>
+
+      <p><strong>DAW or recording platform:</strong> Adobe Audition, GarageBand, and Reaper are common digital audio workstations. For remote recording, Riverside.fm and Squadcast record each participant locally and upload the high-quality file automatically, which prevents the audio quality degradation you get from recording over a video call.</p>
+
+      <p><strong>Test levels before every session:</strong> Set your gain so your voice peaks around -12 to -6 dBFS. Too hot and you will clip. Too quiet and you will introduce noise when you boost the levels in post. Do a 30-second test recording and play it back before your guest joins.</p>
+
+      <p><strong>Headphone monitoring:</strong> Monitor your own voice through headphones while recording. This lets you catch problems in real time rather than discovering them after the session ends.</p>
+
+      <p><strong>Backup recording:</strong> Record a local backup on a second device simultaneously. If your primary recording fails, you have a fallback. This has saved more podcasters than any other single habit.</p>
+
+      <h2>Section 4: Distribution and Platform Checklist</h2>
+
+      <p>Your distribution setup determines where your show lives and how listeners find it. Incomplete distribution means lost reach from day one.</p>
+
+      <p><strong>Podcast hosting account:</strong> Choose a host that generates an RSS feed and distributes to all major platforms. Buzzsprout, Transistor, and Captivate are well-regarded options with clean analytics.</p>
+
+      <p><strong>Apple Podcasts:</strong> Submit your RSS feed to Apple Podcasts Connect. Approval takes 24 to 72 hours. Do this before you plan to launch.</p>
+
+      <p><strong>Spotify:</strong> Submit through Spotify for Podcasters. Approval is typically same-day.</p>
+
+      <p><strong>YouTube channel:</strong> A YouTube channel for your video recordings gives you a second distribution channel and benefits from YouTube's search algorithm. Set up your channel with proper branding, a keyword-rich description, and relevant playlists before your first upload.</p>
+
+      <p><strong>RSS feed:</strong> Confirm your RSS feed is validating correctly and that all episode metadata, title, description, artwork, and categories, are complete before submitting anywhere.</p>
+
+      <h2>Section 5: Creative Assets Checklist</h2>
+
+      <p>Creative assets are the brand layer of your show. They are the first things a new listener sees before they press play.</p>
+
+      <p><strong>Podcast cover art:</strong> 3000x3000 pixels, JPEG or PNG, under 500KB. Must be legible at small sizes, as most listeners will see it as a small square thumbnail. Your show name and a visual that communicates the topic should be immediately readable. Generic or amateur-looking cover art is a conversion killer.</p>
+
+      <p><strong>Intro and outro music:</strong> A short music bed that opens and closes each episode creates a professional, consistent listener experience. Use royalty-free music or commission original music. Avoid music with lyrics that will compete with your voice.</p>
+
+      <p><strong>Show description:</strong> Your show description appears on every platform and in search results. Write it to speak directly to your target listener in the first sentence. Include the core topic, the audience it serves, and the format. Lead with value, not with your credentials.</p>
+
+      <p><strong>Episode title format:</strong> Decide on a consistent title format before you publish episode one. Most successful shows use a format like: "Episode 12: How to Do X" or just a descriptive title without a number. Consistent formatting makes your feed look intentional.</p>
+
+      <h2>Section 6: First Episode Checklist</h2>
+
+      <p>The episode itself needs its own checklist. Being technically prepared does not mean you are creatively prepared.</p>
+
+      <p><strong>Topic decided:</strong> Your first episode should be a clear demonstration of what your show is about. Do not spend the first episode explaining why you started a podcast. Record something that immediately delivers value to the listener you are trying to reach.</p>
+
+      <p><strong>Outline ready:</strong> Even a conversational podcast benefits from a rough outline. Know your opening, the three or four main points you want to cover, and your closing before you hit record.</p>
+
+      <p><strong>Guest confirmed if applicable:</strong> If your format includes guests, confirm your first guest in advance. Have a clear pre-interview process to align on topics, timing, and tech setup before the recording session.</p>
+
+      <p><strong>Test recording done:</strong> Record a five-minute test session in your final setup and listen back with headphones. Check levels, check the room, check that everything is clean. Fix any issues before your real session.</p>
+
+      <h2>How ATL Podcast Pros Handles All of This for You</h2>
+
+      <p>Every item on this checklist is something our team handles for clients during a studio build and launch. We assess the space, specify the equipment, source every item, install the setup, treat the acoustics, and configure the software stack. We help clients establish their distribution accounts, review their cover art, and do a full technical test session before they record anything that goes public.</p>
+
+      <p>For busy professionals, the value is not just in having it done right. It is in not spending 60 hours of your time figuring out which XLR cable matters and why your room sounds hollow. We have done this enough times to move through the checklist quickly and get it right the first time.</p>
+
+      <p>If you want to walk through this list with us and understand exactly what your specific space needs, book a free call. We will tell you plainly what you have, what you need, and what it will take to get you recording cleanly.</p>
+    `,
+  },
+  {
+    id: 11,
+    slug: 'podcast-microphone-home-studio-guide',
+    category: 'Equipment',
+    title: 'How to Choose the Right Podcast Microphone for a Home Studio',
+    excerpt: 'Not every microphone is right for every space. We break down the top podcast microphones at every price point so you can choose with confidence.',
+    date: 'June 16, 2026',
+    readTime: '7 min read',
+    image: '/assets/images/blog-default.jpg',
+    metaTitle: 'How to Choose the Right Podcast Microphone for a Home Studio | ATL Podcast Pros',
+    metaDescription: 'Not sure which podcast microphone is right for your home studio? We break down the top options at every price point so you can choose with confidence.',
+    content: `
+      <p>The microphone question comes up in every studio consultation we do. People have done some research, seen a few YouTube comparisons, and want to know which one to buy. The answer is always the same: the best podcast microphone for your home studio depends on the room you are recording in more than it depends on the microphone itself. Get that backwards and you will spend $400 on a microphone that makes your recordings sound worse than a $99 option would have.</p>
+
+      <p>This guide covers the dynamic versus condenser question, the top five microphone recommendations at different price points, the USB versus XLR decision, and what to avoid. By the end, you will know exactly what to buy and why.</p>
+
+      <h2>Why Room Acoustics Matter More Than Microphone Price</h2>
+
+      <p>A microphone does not create sound. It captures whatever is in the room. In an untreated home environment, that means it captures your voice plus the reflections bouncing off hard walls, the hum of an HVAC unit, and the ambient noise from the street or building. No microphone eliminates this. The most expensive condenser microphone in the world will make a bad-sounding room sound worse, not better, because it will capture every reflection and noise source with exceptional clarity.</p>
+
+      <p>Before you spend money on a microphone, spend ten minutes assessing your recording space. Hardwood floors, bare walls, and low ceilings are the enemy of clean home studio audio. A spare bedroom with carpet, curtains, a bookshelf, and even a few acoustic panels behind you will produce dramatically better recordings than a kitchen or a bright office with nothing on the walls. If your room is untreated, your microphone choice matters even more because the wrong type will expose every acoustic problem you have.</p>
+
+      <h2>Dynamic vs Condenser Microphones: Which Is Right for Home Studios</h2>
+
+      <p>This is the most important decision in the microphone category, and most guides get it wrong by treating both types as equally valid options regardless of environment.</p>
+
+      <p>Dynamic microphones use electromagnetic induction to convert sound into an electrical signal. They have a tighter pickup pattern, require more sound pressure to activate, and are inherently less sensitive to ambient noise and room reflections. For home studios, this makes them the default correct answer for most situations. A dynamic microphone placed correctly will reject the noise coming from behind and beside it, giving you a focused capture of your voice and little else.</p>
+
+      <p>Condenser microphones use a charged capacitor plate to capture sound. They are significantly more sensitive, have a wider frequency response, and capture more detail across the full audio spectrum. In a professionally treated recording environment, a condenser microphone produces exceptionally natural and detailed audio. In an untreated home room, that same sensitivity means it captures every room reflection, every distant sound, and every imperfection in the acoustic environment. The result is often a hollow, roomy, or reverberant recording that no amount of editing will fully fix.</p>
+
+      <p>The rule is simple: if your room is treated or near-professionally acoustic, a condenser microphone is a great choice. If your room is a typical home environment with hard surfaces and no acoustic panels, use a dynamic microphone.</p>
+
+      <h2>Top 5 Podcast Microphone Recommendations</h2>
+
+      <h3>Shure SM7B ($399)</h3>
+      <p>The Shure SM7B is the benchmark for podcast microphones. It is a cardioid dynamic microphone that has been used in broadcast radio and recording studios for decades. Its frequency response is tuned for the human voice, with a presence peak in the upper midrange that adds clarity and presence without harshness. Its rejection of off-axis noise is excellent, which is critical for home environments. It requires a good amount of gain from your interface or preamp, so pair it with an interface that has clean, high-gain preamps or add an inline preamp like the Cloudlifter. The SM7B is the best podcast microphone home studio option at the professional tier and the one we specify most often for client builds.</p>
+
+      <h3>Rode PodMic ($99)</h3>
+      <p>The Rode PodMic is the best value dynamic microphone in the podcast category. At $99, it delivers audio quality that competes with microphones at two to three times the price. Its built-in pop filter handles plosives cleanly, and the internal shock mounting reduces handling noise from the stand or desk. The frequency response is slightly warmer than the SM7B, which some voices prefer. It has a built-in mount that works with most boom arms. If you are building your first XLR setup on a limited budget, the PodMic is the right starting point for podcast microphone 2026 builds.</p>
+
+      <h3>Electro-Voice RE20 ($449)</h3>
+      <p>The Electro-Voice RE20 is a broadcast staple. Variable-D technology reduces the proximity effect, which is the bass boost that occurs when you get very close to most microphones. This makes it more forgiving of microphone positioning and gives it a consistent sound across a wider range of distances from the capsule. It is larger and heavier than the SM7B, which matters for boom arm compatibility. For voices that tend to be thin or bright, the RE20 often produces a warmer, fuller result. If you have a deeper voice and want to avoid over-processing in post, the RE20 is worth the slight premium over the SM7B.</p>
+
+      <h3>Audio-Technica ATR2100x ($79)</h3>
+      <p>The Audio-Technica ATR2100x is unique in this category because it offers both USB and XLR outputs simultaneously. This makes it a genuinely versatile option for podcasters who are starting with a simple USB workflow and plan to upgrade to XLR later. The audio quality at this price point is respectable for a home studio, especially with the natural room rejection that comes from a dynamic capsule. It is not a long-term professional solution, but for someone testing the format before committing to a full XLR setup, it is a pragmatic starting point.</p>
+
+      <h3>Shure MV7 ($249)</h3>
+      <p>The Shure MV7 is the USB-focused sibling of the SM7B, designed specifically for podcasting with a hybrid USB/XLR output. It connects directly to a computer without an audio interface and includes a companion app with onboard DSP processing, including tone adjustment and limiter controls. The audio quality is noticeably better than budget USB microphones, and the cardioid dynamic capsule handles typical home studio environments well. For podcasters who want quality without the complexity of an XLR chain, the MV7 is the cleanest option at its price point.</p>
+
+      <h2>USB vs XLR: When Each Makes Sense</h2>
+
+      <p>USB microphones connect directly to a computer and require no additional hardware. They are simpler to set up, typically more affordable as a starting kit, and perfectly functional for solo recordings. The limitation is flexibility. USB microphones cannot be integrated into a professional mixer or audio interface chain, which limits your ability to add processing hardware, monitor through a mixer, or record multiple inputs simultaneously.</p>
+
+      <p>XLR microphones require an audio interface or mixer between the microphone and the computer. This adds cost and complexity but also adds significant capability. You can control gain from a dedicated preamp, add hardware processing, monitor in real time with zero latency, connect multiple microphones for guest interviews, and integrate with a professional production workflow. For anyone building a serious podcast studio, XLR is the right architecture.</p>
+
+      <p>The simple decision tree: if you are testing the concept or recording solo on a minimal budget, USB is fine. If you are building for professional use, for business development, or for video, go XLR from the start.</p>
+
+      <h2>What to Avoid</h2>
+
+      <p>Cheap USB microphones in the $20 to $50 range use condenser capsules with minimal quality control and no acoustic rejection. They capture everything in the room equally, amplify background noise, and produce recordings that sound hollow and unprofessional even in a good room. Avoid them entirely.</p>
+
+      <p>Condenser microphones in untreated rooms are a recurring mistake. The Blue Yeti, Blue Snowball, and similar large-diaphragm condensers show up everywhere because they are heavily marketed. In a treated recording studio, they produce excellent audio. In a typical home office or bedroom, they capture room reflections with precision, resulting in a reverberant, roomy sound that is difficult to correct in post-production.</p>
+
+      <p>Microphones with aggressive built-in processing or heavy onboard EQ can mask problems in the short term but limit your flexibility in post. Record flat and process in your DAW where you have full control.</p>
+
+      <h2>How ATL Podcast Pros Selects Microphones for Client Builds</h2>
+
+      <p>Every studio build we do starts with the room assessment before equipment selection. We look at the acoustic environment, the recording format (solo, two-host, video, or audio-only), the client's voice character, and the technical complexity they are comfortable managing. Based on that, we specify the exact microphone, interface, and mounting solution for their space.</p>
+
+      <p>Most of our professional client builds include the Shure SM7B as the primary microphone, paired with a Rodecaster Pro II or a quality XLR interface depending on the production workflow. For clients who prefer simplicity, we sometimes specify the Shure MV7 as a clean, high-quality USB option that does not require interface management.</p>
+
+      <p>We source, install, and configure every piece of equipment as part of the build. Clients do not spend time researching cables, gain settings, or interface compatibility. They show up on recording day and it works.</p>
+
+      <p>If you want a recommendation for your specific space and recording goals, book a free call with our team. We will tell you exactly what we would put in your room and why, with no obligation.</p>
+    `,
+  },
+  {
     id: 1,
     slug: 'podcast-studio-setup-cost-2026',
     category: 'Strategy',

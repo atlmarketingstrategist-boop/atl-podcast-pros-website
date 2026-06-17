@@ -20,7 +20,7 @@ export default function ThankYou() {
       <div style={{
         background: '#1A1A1A',
         textAlign: 'center',
-        paddingTop: '60px',
+        paddingTop: '80px',
         paddingBottom: '40px',
         paddingLeft: '24px',
         paddingRight: '24px',

@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import { BookingModalProvider } from './components/BookingModal'
 import { locationPages } from './data/locationPages'
 import ClientPage from './pages/ClientPage'
+import ThankYou from './pages/ThankYou'
 
 const Home = lazy(() => import('./pages/Home'))
 const HowItWorks = lazy(() => import('./pages/HowItWorks'))
@@ -23,13 +24,26 @@ function ScrollToTop() {
   return null
 }
 
+const STANDALONE_ROUTES = ['/thank-you']
+
+function ConditionalLayout({ children }) {
+  const { pathname } = useLocation()
+  const isStandalone = STANDALONE_ROUTES.includes(pathname)
+  return isStandalone ? <>{children}</> : (
+    <>
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
+    </>
+  )
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <BookingModalProvider>
         <ScrollToTop />
-        <Navbar />
-        <main>
+        <ConditionalLayout>
           <Suspense fallback={<div style={{ background: '#1A1A1A', height: '100vh' }} />}>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -42,10 +56,10 @@ export default function App() {
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/locations/:slug" element={<LocationPage locations={locationPages} />} />
               <Route path="/client/:slug" element={<ClientPage />} />
+              <Route path="/thank-you" element={<ThankYou />} />
             </Routes>
           </Suspense>
-        </main>
-        <Footer />
+        </ConditionalLayout>
       </BookingModalProvider>
     </BrowserRouter>
   )

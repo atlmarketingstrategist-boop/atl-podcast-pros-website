@@ -24,11 +24,9 @@ function ScrollToTop() {
   return null
 }
 
-const STANDALONE_ROUTES = ['/thank-you']
-
 function ConditionalLayout({ children }) {
   const { pathname } = useLocation()
-  const isStandalone = STANDALONE_ROUTES.includes(pathname)
+  const isStandalone = pathname === '/thank-you' || pathname.startsWith('/client/')
   return isStandalone ? <>{children}</> : (
     <>
       <Navbar />

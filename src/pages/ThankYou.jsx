@@ -26,7 +26,7 @@ export default function ThankYou() {
         paddingRight: '24px',
       }}>
         <img
-          src="/assets/images/LogoAPPWhiteATL.png"
+          src="/LogoAPPWhiteATL.png"
           alt="ATL Podcast Pros"
           style={{ height: '50px', display: 'block', margin: '0 auto 24px', objectFit: 'contain' }}
         />

@@ -22,6 +22,7 @@ export default function Services() {
   return (
     <>
       <title>Podcast Studio Setup & Management Services Atlanta | ATL Podcast Pros</title>
+      <link rel="canonical" href="https://atlpodcastpros.com/services" />
       <meta name="description" content="Professional in-home podcast studio installation starting at $10K and ongoing podcast management from $698/mo. Serving Atlanta and beyond. Book a free call." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

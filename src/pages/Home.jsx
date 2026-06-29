@@ -67,6 +67,7 @@ export default function Home() {
   return (
     <>
       <title>In-Home Podcast Studio Setup Atlanta | ATL Podcast Pros</title>
+      <link rel="canonical" href="https://atlpodcastpros.com/" />
       <meta name="description" content="Atlanta's done-for-you in-home podcast studio service. We design, install and manage your studio. One button to record. Starting at $10K. Book your free intro call today." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

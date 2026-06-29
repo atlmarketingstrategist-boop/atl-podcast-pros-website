@@ -93,6 +93,7 @@ export default function LocationPage({ locations }) {
   return (
     <>
       <title>{loc.metaTitle}</title>
+      <link rel="canonical" href={`https://atlpodcastpros.com/locations/${loc.slug}`} />
       <meta name="description" content={loc.metaDescription} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

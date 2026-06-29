@@ -75,6 +75,7 @@ export default function HowItWorks() {
   return (
     <>
       <title>How Our Podcast Studio Setup Process Works | ATL Podcast Pros</title>
+      <link rel="canonical" href="https://atlpodcastpros.com/how-it-works" />
       <meta name="description" content="See exactly how ATL Podcast Pros transforms your space into a professional podcast studio. Discovery, setup, launch and ongoing management. Book a free call." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

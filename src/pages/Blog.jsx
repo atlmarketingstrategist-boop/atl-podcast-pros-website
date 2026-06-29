@@ -37,6 +37,7 @@ export default function Blog() {
   return (
     <>
       <title>Podcast Studio Tips &amp; Guides | ATL Podcast Pros Blog</title>
+      <link rel="canonical" href="https://atlpodcastpros.com/blog" />
       <meta name="description" content="Podcast studio setup guides, gear reviews and production tips from Atlanta's leading in-home podcast experts. Learn how to launch, record and grow your podcast." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

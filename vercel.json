@@ -1,8 +1,16 @@
 {
+  "redirects": [
+    { "source": "/podcast-equipment-list", "destination": "/services", "permanent": true },
+    { "source": "/podcast-equipment-list/", "destination": "/services", "permanent": true },
+    { "source": "/faqs", "destination": "/how-it-works", "permanent": true },
+    { "source": "/faqs/", "destination": "/how-it-works", "permanent": true },
+    { "source": "/contact", "destination": "/book", "permanent": true },
+    { "source": "/contact/", "destination": "/book", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/about-us/", "destination": "/about", "permanent": true },
+    { "source": "/home", "destination": "/", "permanent": true }
+  ],
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

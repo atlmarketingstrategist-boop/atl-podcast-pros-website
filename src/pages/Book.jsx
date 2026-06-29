@@ -21,6 +21,7 @@ export default function Book() {
   return (
     <>
       <title>Schedule a Free Podcast Studio Consultation | ATL Podcast Pros</title>
+      <link rel="canonical" href="https://atlpodcastpros.com/book" />
       <meta name="description" content="Book a free 20-minute intro call with ATL Podcast Pros. No pressure. No long-term contracts. Just a conversation about your podcast goals." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

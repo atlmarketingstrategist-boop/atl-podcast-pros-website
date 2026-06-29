@@ -46,6 +46,7 @@ export default function BlogPost() {
   return (
     <>
       <title>{post.metaTitle}</title>
+      <link rel="canonical" href={`https://atlpodcastpros.com/blog/${post.slug}`} />
       <meta name="description" content={post.metaDescription} />
       <meta property="og:type" content="article" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

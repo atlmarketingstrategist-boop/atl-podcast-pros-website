@@ -66,6 +66,7 @@ export default function About() {
   return (
     <>
       <title>About ATL Podcast Pros | Atlanta's Podcast Production Agency</title>
+      <link rel="canonical" href="https://atlpodcastpros.com/about" />
       <meta name="description" content="ATL Podcast Pros is Atlanta's premier done-for-you podcast production agency. We build in-home studios and manage podcasts for busy professionals and creators." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

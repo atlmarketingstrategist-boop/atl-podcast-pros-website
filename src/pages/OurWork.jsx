@@ -89,6 +89,7 @@ export default function OurWork() {
   return (
     <>
       <title>Podcast Studio Portfolio & Client Results | ATL Podcast Pros</title>
+      <link rel="canonical" href="https://atlpodcastpros.com/our-work" />
       <meta name="description" content="See real podcast studios built by ATL Podcast Pros. 1M+ YouTube views generated. Clients in every country. Building studios and managing productions since 2010." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />

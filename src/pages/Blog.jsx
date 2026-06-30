@@ -84,7 +84,7 @@ export default function Blog() {
                 ref={fadeRef}
               >
                 <div className="blog-card__image">
-                  <img src="/assets/images/blog-default.jpg" alt={post.title} loading="lazy" width="800" height="450" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src={post.image || '/assets/images/blog-default.jpg'} alt={post.title} loading="lazy" width="800" height="450" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                   <span
                     className="blog-card__category"
                     style={{ background: categoryColors[post.category] || 'var(--color-primary)' }}

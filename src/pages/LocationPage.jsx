@@ -66,7 +66,7 @@ export default function LocationPage({ locations }) {
     name: 'ATL Podcast Pros',
     description: loc.metaDescription,
     url: `https://atlpodcastpros.com/locations/${loc.slug}`,
-    telephone: '+18555291404',
+    telephone: '(855) 529-1404',
     email: 'info@atlpodcastpros.com',
     address: {
       '@type': 'PostalAddress',
@@ -146,7 +146,7 @@ export default function LocationPage({ locations }) {
                 src={loc.image}
                 alt={`Aerial view of ${loc.location}, ${loc.state}`}
                 loading="lazy"
-                style={{ width: '100%', height: '400px', objectFit: 'cover', borderRadius: '8px', display: 'block' }}
+                style={{ width: '100%', height: 'auto', aspectRatio: '16/9', objectFit: 'cover', borderRadius: '8px', display: 'block' }}
               />
             </div>
           </div>

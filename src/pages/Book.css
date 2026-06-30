@@ -218,7 +218,11 @@
 
   .book-page__right {
     padding: 48px 24px;
-    min-height: 60vh;
+    min-height: 600px;
+  }
+
+  .book-page__right iframe {
+    min-height: 600px;
   }
 
   .book-footer-trust {

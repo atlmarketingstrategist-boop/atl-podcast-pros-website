@@ -8,8 +8,8 @@ export const blogPosts = [
     date: 'June 29, 2026',
     readTime: '12 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'In-Home Podcast Studio Setup Atlanta | Done-For-You Installation | ATL Podcast Pros',
-    metaDescription: 'Professional in-home podcast studio setup in Atlanta. Done-for-you installation and management for busy professionals in Buckhead, Midtown, Decatur, Sandy Springs, and Alpharetta. Book a free call.',
+    metaTitle: 'In-Home Podcast Studio Setup Atlanta | ATL Podcast Pros',
+    metaDescription: 'Done-for-you in-home podcast studio setup in Atlanta. Professional installation and management in Buckhead, Midtown, Decatur, and more. Book a free call.',
     content: `
       <p>Atlanta is one of the fastest growing cities in the country for podcasting. Professionals across every industry are launching shows to build authority, generate leads, grow their ministries, and create lasting content that works for them around the clock. But for most of these professionals, the biggest obstacle is not the desire to podcast. It is the logistics. Finding a studio, booking time, learning the technology, and fitting it all into a schedule that is already full.</p>
 
@@ -133,7 +133,7 @@ export const blogPosts = [
     date: 'June 16, 2026',
     readTime: '8 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Podcast Studio Setup Checklist: Everything You Need | ATL Podcast Pros',
+    metaTitle: 'Podcast Studio Setup Checklist | ATL Podcast Pros',
     metaDescription: 'The complete podcast studio setup checklist covering equipment, acoustics, software, distribution, and creative assets. Check off every item before you record.',
     content: `
       <p>Most podcasters skip steps. Not because they are careless but because no one gave them a complete list before they hit record for the first time. They figure out what they missed when an episode comes back with echo, when the audio levels are uneven, or when they realize they have no cover art for launch day. This checklist exists so that does not happen to you.</p>
@@ -244,7 +244,7 @@ export const blogPosts = [
     date: 'June 16, 2026',
     readTime: '7 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'How to Choose the Right Podcast Microphone for a Home Studio | ATL Podcast Pros',
+    metaTitle: 'Best Podcast Microphone for Home Studios | ATL Podcast Pros',
     metaDescription: 'Not sure which podcast microphone is right for your home studio? We break down the top options at every price point so you can choose with confidence.',
     content: `
       <p>The microphone question comes up in every studio consultation we do. People have done some research, seen a few YouTube comparisons, and want to know which one to buy. The answer is always the same: the best podcast microphone for your home studio depends on the room you are recording in more than it depends on the microphone itself. Get that backwards and you will spend $400 on a microphone that makes your recordings sound worse than a $99 option would have.</p>
@@ -320,8 +320,8 @@ export const blogPosts = [
     date: 'April 1, 2026',
     readTime: '7 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'How Much Does a Podcast Studio Setup Cost in 2026? | ATL Podcast Pros',
-    metaDescription: 'A complete cost breakdown for podcast studio setups in 2026. From budget-friendly $500 DIY rigs to professional $10,000+ broadcast studios. Know before you invest.',
+    metaTitle: 'Podcast Studio Setup Cost in 2026 | ATL Podcast Pros',
+    metaDescription: 'Complete cost breakdown for podcast studio setups in 2026. From $500 DIY builds to $10K+ professional studios. Know what to expect before you invest.',
     content: `
       <p>One of the first questions every new podcaster asks is simple: how much is this going to cost? The honest answer is that it depends entirely on what kind of studio you are building and what level of quality you need to support your goals. But there are clear price tiers, and knowing where each one lands will save you from both overspending and under-investing.</p>
 
@@ -398,7 +398,7 @@ export const blogPosts = [
     date: 'March 24, 2026',
     readTime: '8 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Renting vs. Building a Podcast Studio: True Cost Comparison 2026 | ATL Podcast Pros',
+    metaTitle: 'Renting vs Building a Podcast Studio | ATL Podcast Pros',
     metaDescription: 'Is it cheaper to rent a podcast studio or build your own? A complete 12-month cost analysis comparing studio rental fees against a permanent in-home setup.',
     content: `
       <p>Renting a podcast studio feels like the smart, low-commitment option. You pay per session, you have no equipment to maintain, and you can cancel anytime. But when you run the numbers over 12 months, the picture changes significantly. This guide does that math clearly so you can make an informed decision before you commit to either path.</p>
@@ -476,8 +476,8 @@ export const blogPosts = [
     date: 'March 10, 2026',
     readTime: '10 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'How to Set Up a Professional Podcast Studio at Home (Step-by-Step) | ATL Podcast Pros',
-    metaDescription: 'Complete step-by-step guide to setting up a professional podcast studio at home. Room selection, acoustic treatment, microphone placement, cameras, lighting, and software.',
+    metaTitle: 'Home Podcast Studio Setup Guide | ATL Podcast Pros',
+    metaDescription: 'Step-by-step guide to setting up a professional podcast studio at home. Room selection, acoustic treatment, microphone placement, lighting, and software.',
     content: `
       <p>Setting up a professional podcast studio at home is one of the most valuable investments a content creator or business owner can make. When it is done correctly, you eliminate the friction of booking studio time, create a space that represents your brand on video, and build the kind of consistent recording environment that leads to consistent audio quality. This guide walks through every step of the process from choosing the right room to configuring your recording software.</p>
 
@@ -564,7 +564,7 @@ export const blogPosts = [
     date: 'February 28, 2026',
     readTime: '8 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: "Busy Professional's Guide to Launching a Podcast | ATL Podcast Pros",
+    metaTitle: "Busy Professional's Podcast Launch Guide | ATL Podcast Pros",
     metaDescription: "How to launch a professional podcast without learning tech, managing equipment, or spending hours editing. The done-for-you path from idea to published episode.",
     content: `
       <p>Most podcasting guides are written for people who enjoy tinkering with gear. They assume you have time to research XLR cables, compare audio interfaces, and spend weekends learning Audacity. If that describes you, great. But it does not describe most of the professionals who would benefit most from having a podcast.</p>
@@ -627,8 +627,8 @@ export const blogPosts = [
     date: 'February 14, 2026',
     readTime: '9 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Best Podcast Equipment for a Home Studio in 2026 | ATL Podcast Pros',
-    metaDescription: 'The best podcast microphones, audio interfaces, cameras, and accessories for every budget in 2026. Tested recommendations from professional podcast studio installers.',
+    metaTitle: 'Best Podcast Equipment for Home Studios | ATL Podcast Pros',
+    metaDescription: 'The best podcast microphones, interfaces, cameras, and accessories for home studios in 2026. Tested recommendations from professional installers.',
     content: `
       <p>We install professional podcast studios for a living. Over the years, our team has tested, installed, and tuned hundreds of equipment combinations across dozens of home studios. The gear landscape changes every year, and the options available in 2026 are better than ever across every budget tier. This guide covers our current top recommendations for every major equipment category, from entry-level setups to broadcast-quality rigs.</p>
 
@@ -714,7 +714,7 @@ export const blogPosts = [
     date: 'January 30, 2026',
     readTime: '7 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Podcast Studio Interior Design: 15 Ideas for a Camera-Ready Studio | ATL Podcast Pros',
+    metaTitle: 'Podcast Studio Interior Design Ideas | ATL Podcast Pros',
     metaDescription: '15 podcast studio interior design ideas that make your background look intentional and professional on video. From bookshelves to lighting to branded signage.',
     content: `
       <p>Your podcast studio background is not neutral. Every time you publish a video episode, your studio environment communicates something about your brand, your standards, and your personality. A cluttered, generic, or poorly lit background tells viewers one thing. An intentional, well-designed studio tells them something entirely different. These 15 design ideas will help you build a background that reinforces your brand every single time you appear on screen.</p>
@@ -790,8 +790,8 @@ export const blogPosts = [
     date: 'January 15, 2026',
     readTime: '9 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Acoustic Treatment for Home Podcast Studios: What You Actually Need | ATL Podcast Pros',
-    metaDescription: 'A practical guide to acoustic treatment for home podcast studios. Learn what panels you need, where to place them, and how to spend your treatment budget effectively.',
+    metaTitle: 'Acoustic Treatment for Podcast Studios | ATL Podcast Pros',
+    metaDescription: 'Acoustic treatment guide for home podcast studios. Learn what panels you need, where to place them, and how to budget for professional sound.',
     content: `
       <p>Acoustic treatment is the most misunderstood element of home podcast studio design. Many podcasters either skip it entirely (and wonder why their expensive microphone still sounds roomy and muddy) or overcorrect and turn their recording space into a dead, suffocating chamber that sounds worse than a treated room. This guide explains the science, the practical options, and how to build a treatment plan that solves real problems without making new ones.</p>
 
@@ -866,8 +866,8 @@ export const blogPosts = [
     date: 'January 5, 2026',
     readTime: '10 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Complete Podcast Production Workflow: Recording to Published Episode | ATL Podcast Pros',
-    metaDescription: 'A step-by-step podcast production workflow covering editing, audio processing, show notes, episode art, and distribution. For both DIY podcasters and done-for-you clients.',
+    metaTitle: 'Podcast Production Workflow Guide | ATL Podcast Pros',
+    metaDescription: 'A complete podcast production workflow from recording to published episode. Editing, audio processing, show notes, and distribution explained.',
     content: `
       <p>Publishing a podcast episode involves more steps than most new podcasters expect. Recording is the visible part. The production workflow that follows is what separates professional-sounding shows from amateur ones, and consistent shows from inconsistent ones. This guide walks through every step of a professional podcast production workflow, from the moment you stop recording to the moment the episode goes live.</p>
 
@@ -951,7 +951,7 @@ export const blogPosts = [
     date: 'December 18, 2025',
     readTime: '9 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'How to Set Up a Video Podcast: Complete Guide 2026 | ATL Podcast Pros',
+    metaTitle: 'Video Podcast Setup Guide 2026 | ATL Podcast Pros',
     metaDescription: 'A complete guide to setting up a professional video podcast in 2026. Cameras, lighting, backgrounds, multi-camera setups, and remote video recording tools.',
     content: `
       <p>The podcast landscape shifted significantly toward video over the past three years. Spotify, YouTube, and Apple Podcasts all now support video-native podcast formats, and data consistently shows that video episodes outperform audio-only content in discoverability, listener retention, and clip shareability. For professionals building a podcast as a credibility and business development tool, video is no longer optional. This guide covers everything you need to build a professional video podcast setup in 2026.</p>
@@ -1034,8 +1034,8 @@ export const blogPosts = [
     date: 'December 5, 2025',
     readTime: '8 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Case Study: Atlanta Financial Advisor Podcast That Generates Clients | ATL Podcast Pros',
-    metaDescription: 'How an Atlanta financial advisor used a done-for-you podcast studio and production system to build a show that generates consistent qualified leads. A real case study.',
+    metaTitle: 'Atlanta Podcast Case Study | ATL Podcast Pros',
+    metaDescription: 'How an Atlanta financial advisor built a done-for-you podcast that generates consistent qualified leads. A real client case study with results.',
     content: `
       <p>This case study is a composite portrait drawn from our experience with multiple clients in financial services, presented here with identifying details changed. The story is representative of how the done-for-you model works in practice for busy professionals using their podcast as a primary business development tool.</p>
 

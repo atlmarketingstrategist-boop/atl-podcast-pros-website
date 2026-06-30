@@ -78,7 +78,7 @@ export default function ThankYou() {
         <iframe
           src="https://api.leadconnectorhq.com/widget/booking/Z9ZcWHCcJobfpeM0Z3oy"
           style={{ width: '100%', border: 'none', overflow: 'hidden', minHeight: '700px', display: 'block' }}
-          scrolling="no"
+          title="Schedule Your Call"
           id="Z9ZcWHCcJobfpeM0Z3oy_1781662845256"
         />
       </div>

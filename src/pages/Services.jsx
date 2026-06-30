@@ -135,9 +135,9 @@ export default function Services() {
                 <li>Monthly listener analytics report</li>
                 <li>Dedicated producer, one point of contact</li>
               </ul>
-              <Link to="/book" className="btn btn-primary" style={{ marginTop: 36, width: '100%', justifyContent: 'center' }}>
+              <button onClick={openModal} className="btn btn-primary" style={{ marginTop: 36, width: '100%', justifyContent: 'center' }}>
                 Get Started
-              </Link>
+              </button>
             </div>
 
             {/* Tier 2: Complete Production + Social (Most Popular) */}
@@ -184,9 +184,9 @@ export default function Services() {
                 </video>
               </div>
 
-              <Link to="/book" className="btn btn-primary" style={{ marginTop: 28, width: '100%', justifyContent: 'center' }}>
+              <button onClick={openModal} className="btn btn-primary" style={{ marginTop: 28, width: '100%', justifyContent: 'center' }}>
                 Get Started
-              </Link>
+              </button>
             </div>
           </div>
 

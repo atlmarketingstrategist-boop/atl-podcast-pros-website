@@ -78,7 +78,7 @@ export default function Book() {
         <div className="book-page__right">
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/d17mhp7YoUyfl7EUTAdQ"
-            style={{ width: '100%', height: '923px', border: 'none', borderRadius: '0px' }}
+            style={{ width: '100%', height: '100%', minHeight: '700px', border: 'none', borderRadius: '0px' }}
             id="inline-d17mhp7YoUyfl7EUTAdQ"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"

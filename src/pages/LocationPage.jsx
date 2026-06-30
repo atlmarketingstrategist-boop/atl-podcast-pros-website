@@ -269,6 +269,39 @@ export default function LocationPage({ locations }) {
         </div>
       </section>
 
+      {/* From the Blog */}
+      <section className="section section-dark">
+        <div className="container">
+          <div className="text-center mb-12 loc-fade">
+            <div className="section-heading-wrap centered">
+              <span className="section-eyebrow" style={{ color: 'rgba(166,30,49,0.9)' }}>From the Blog</span>
+              <h2 style={{ color: '#fff', fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', fontWeight: 800 }}>
+                Resources for {loc.location} Podcasters
+              </h2>
+            </div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: 24 }}>
+            {[
+              { title: 'In-Home Podcast Studio Setup in Atlanta', slug: 'in-home-podcast-studio-setup-atlanta' },
+              { title: 'Podcast Studio Setup Checklist', slug: 'podcast-studio-setup-checklist' },
+              { title: 'How Much Does a Studio Setup Cost in 2026?', slug: 'podcast-studio-setup-cost-2026' },
+            ].map(post => (
+              <Link
+                key={post.slug}
+                to={`/blog/${post.slug}`}
+                className="loc-fade"
+                style={{ display: 'block', padding: '24px 28px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 12, textDecoration: 'none', transition: 'border-color 0.2s ease' }}
+              >
+                <h3 style={{ fontFamily: 'var(--font-body)', fontSize: '1rem', fontWeight: 700, color: '#fff', marginBottom: 8, lineHeight: 1.4 }}>{post.title}</h3>
+                <span style={{ fontFamily: 'var(--font-body)', fontSize: '0.82rem', fontWeight: 600, color: 'var(--color-primary)' }}>
+                  Read Article →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="cta-section">
         <div className="container loc-fade">

@@ -216,6 +216,30 @@ export default function BlogPost() {
         </section>
       )}
 
+      {/* Service Areas */}
+      <section className="section section-neutral" style={{ paddingTop: 40, paddingBottom: 40 }}>
+        <div className="container fade-up" ref={fadeRef}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '0.85rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'rgba(0,0,0,0.35)', marginBottom: 12, textAlign: 'center' }}>Service Areas We Cover</p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
+            {[
+              { label: 'Buckhead', slug: 'podcast-studio-setup-buckhead' },
+              { label: 'Midtown', slug: 'podcast-studio-setup-midtown-atlanta' },
+              { label: 'Decatur', slug: 'podcast-studio-setup-decatur' },
+              { label: 'Alpharetta', slug: 'podcast-studio-setup-alpharetta' },
+              { label: 'Sandy Springs', slug: 'podcast-studio-setup-sandy-springs' },
+            ].map(area => (
+              <Link
+                key={area.slug}
+                to={`/locations/${area.slug}`}
+                style={{ display: 'inline-block', padding: '6px 16px', borderRadius: 100, border: '1px solid rgba(0,0,0,0.12)', fontFamily: 'var(--font-body)', fontSize: '0.82rem', fontWeight: 600, color: 'var(--color-primary)', transition: 'all 0.2s ease', textDecoration: 'none' }}
+              >
+                {area.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="cta-section">
         <div className="container fade-up" ref={fadeRef}>

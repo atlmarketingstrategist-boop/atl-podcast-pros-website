@@ -7,6 +7,7 @@ import { BookingModalProvider } from './components/BookingModal'
 import { locationPages } from './data/locationPages'
 import ClientPage from './pages/ClientPage'
 import ThankYou from './pages/ThankYou'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const Home = lazy(() => import('./pages/Home'))
 const HowItWorks = lazy(() => import('./pages/HowItWorks'))
@@ -52,6 +53,7 @@ export default function App() {
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/locations/:slug" element={<LocationPage locations={locationPages} />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Route>
 
             {/* Standalone routes — no Navbar, no Footer */}

@@ -91,7 +91,7 @@ export default function Footer() {
           </div>
 
           <div className="footer__bottom">
-            <p>&copy; {new Date().getFullYear()} ATL Podcast Pros. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} ATL Podcast Pros. All rights reserved. <Link to="/privacy-policy" style={{ color: 'rgba(255,255,255,0.55)', textDecoration: 'underline' }}>Privacy Policy</Link></p>
             <p className="footer__bottom-right">Built for Atlanta's boldest voices.</p>
           </div>
         </div>

@@ -128,21 +128,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ======= CHECKLIST DOWNLOAD BANNER ======= */}
-      <section className="checklist-banner">
-        <p className="checklist-banner__text">
-          Free Download: The Complete Podcast Studio Setup Checklist
-        </p>
-        <a
-          className="checklist-banner__btn"
-          href="https://api.leadconnectorhq.com/widget/form/35xjK13efvByA1hPYwdn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download Free
-        </a>
-      </section>
-
       {/* SCROLL ANIMATION PLACEHOLDER — Re-insert ScrollAnimation component here when new video is ready */}
 
       {/* ======= HOW IT WORKS TEASER ======= */}

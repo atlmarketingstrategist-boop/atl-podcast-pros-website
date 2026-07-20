@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { BookingModalProvider } from './components/BookingModal'
+import FloatingChecklistBanner from './components/FloatingChecklistBanner'
 import { locationPages } from './data/locationPages'
 import ClientPage from './pages/ClientPage'
 import ThankYou from './pages/ThankYou'
@@ -61,6 +62,7 @@ export default function App() {
             <Route path="/thank-you" element={<ThankYou />} />
           </Routes>
         </Suspense>
+        <FloatingChecklistBanner />
       </BookingModalProvider>
     </BrowserRouter>
   )

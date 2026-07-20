@@ -115,46 +115,6 @@
   flex-shrink: 0;
 }
 
-/* ---- CHECKLIST DOWNLOAD BANNER ---- */
-.checklist-banner {
-  background: #111111;
-  border-left: 4px solid #A61E31;
-  padding: 16px 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.checklist-banner__text {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: #ffffff;
-  margin: 0;
-}
-
-.checklist-banner__btn {
-  background: #A61E31;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  padding: 12px 28px;
-  border-radius: 4px;
-  white-space: nowrap;
-  transition: background 0.25s ease;
-}
-
-.checklist-banner__btn:hover,
-.checklist-banner__btn:focus {
-  background: #C73248;
-  color: #ffffff;
-}
-
 /* ---- HOW IT WORKS TEASER ---- */
 .steps-heading {
   font-family: 'Montserrat', sans-serif;
@@ -505,10 +465,4 @@
     padding: 4px 12px;
   }
 
-  .checklist-banner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 16px 24px;
-  }
 }

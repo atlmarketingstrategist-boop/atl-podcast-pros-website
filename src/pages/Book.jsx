@@ -2,9 +2,9 @@ import { useEffect } from 'react'
 import './Book.css'
 
 const trustPoints = [
-  { text: 'Month-to-month, no long-term contracts' },
-  { text: 'You retain 100% ownership of your content' },
-  { text: 'Free 20-minute intro call, zero pressure' },
+  { text: 'Free and no commitment required' },
+  { text: '20 minutes, focused on your goals' },
+  { text: 'We come prepared with real answers, not a pitch deck' },
 ]
 
 export default function Book() {
@@ -20,13 +20,13 @@ export default function Book() {
 
   return (
     <>
-      <title>Schedule a Free Podcast Studio Consultation | ATL Podcast Pros</title>
+      <title>Book Your Free Intro Call | ATL Podcast Pros</title>
       <link rel="canonical" href="https://atlpodcastpros.com/book" />
-      <meta name="description" content="Book a free 20-minute intro call with ATL Podcast Pros. No pressure. No long-term contracts. Just a conversation about your podcast goals." />
+      <meta name="description" content="Book a free 20-minute intro call with ATL Podcast Pros. No pressure and no commitment. Just a conversation about your podcast goals." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />
-      <meta property="og:title" content="Schedule a Free Podcast Studio Consultation | ATL Podcast Pros" />
-      <meta property="og:description" content="Book a free 20-minute intro call with ATL Podcast Pros. No pressure. No long-term contracts. Just a conversation about your podcast goals." />
+      <meta property="og:title" content="Book Your Free Intro Call | ATL Podcast Pros" />
+      <meta property="og:description" content="Book a free 20-minute intro call with ATL Podcast Pros. No pressure and no commitment. Just a conversation about your podcast goals." />
       <meta property="og:url" content="https://atlpodcastpros.com/book" />
       <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 
@@ -34,12 +34,16 @@ export default function Book() {
         {/* Left panel */}
         <div className="book-page__left">
           <div className="book-page__left-inner">
-            <span className="section-eyebrow" style={{ color: 'rgba(166,30,49,0.9)' }}>Free Consultation</span>
+            <span className="section-eyebrow" style={{ color: 'rgba(166,30,49,0.9)' }}>Free Intro Call</span>
             <div className="book-heading-wrap">
-              <h1 className="book-page__headline display-text">Book a Free<br />Podcast Studio Consultation</h1>
+              <h1 className="book-page__headline display-text">Book Your Free<br />Intro Call</h1>
             </div>
+            <p className="book-page__subhead">Not sure where to start? Start here.</p>
             <p className="book-page__sub">
-              Pick a time that works for you. Our intro calls are free, 20 minutes, and zero pressure. We'll ask about your goals, walk through your space, and tell you exactly what we'd recommend.
+              This is a free, no-pressure 20-minute conversation about your podcast vision. We want to hear about your goals, your audience, your niche, and what you have been waiting on. From there, we can tell you exactly where ATL Podcast Pros fits into your plans and what a partnership could look like.
+            </p>
+            <p className="book-page__sub">
+              This is not a sales call and it is not a consultation. This call is simply a chance for us to meet, ask the right questions, and determine if we are the right fit for each other. No commitment required on either side.
             </p>
 
             <div className="book-trust">
@@ -54,6 +58,10 @@ export default function Book() {
                 </div>
               ))}
             </div>
+
+            <p className="book-page__disclaimer">
+              Note: This call is an intro conversation only. Paid consultations are available separately and start at $500.
+            </p>
 
             <div className="book-page__contact">
               <p className="book-page__contact-label">Prefer to reach out directly?</p>

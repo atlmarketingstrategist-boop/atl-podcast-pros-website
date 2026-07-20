@@ -205,7 +205,7 @@ export default function OurWork() {
                   <span className="case-result__label">Setup Time</span>
                 </div>
                 <div className="case-result">
-                  <span className="case-result__num">1 Year+</span>
+                  <span className="case-result__num">2 Year+</span>
                   <span className="case-result__label">Ongoing Client</span>
                 </div>
               </div>

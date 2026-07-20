@@ -30,16 +30,31 @@ const niches = [
 
 const testimonials = [
   {
-    quote: "Best to do it! Thank you for my setup. Professional and timely service.",
-    name: "Jason Stephens",
-    role: "Owner, 12:16 Entertainment",
+    quote: "ATL Podcast Pros is truly the best of the best. They helped me to do what God has called me to do with the Good News with Socrates podcast.",
+    name: "Socrates",
+    role: "Good News with Socrates",
   },
   {
-    quote: "Taught me not only about the equipment I need to buy but also how to set it up and have it running efficiently with great quality!",
-    name: "Area 31 Podcast",
-    role: "Host, Area 31",
+    quote: "If you are looking for someone who can help you expand your reach, increase your visibility, and connect you with quality podcast hosts, I recommend ATL Podcast Pros without hesitation. If I could give them 10 stars, I would. ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐",
+    name: "Joy",
+    role: "Google Review",
+  },
+  {
+    quote: "I appreciate their help so much. My space has been transformed beautifully and is ready to book. Very kind people with great attention to detail and execute with excellence. Highly recommended.",
+    name: "Laii",
+    role: "Google Review",
   },
 ]
+
+const StarRating = () => (
+  <div className="testimonial-card__stars" aria-label="5 out of 5 stars">
+    {[0, 1, 2, 3, 4].map((n) => (
+      <svg key={n} width="16" height="16" viewBox="0 0 24 24" fill="#FFC107" aria-hidden="true">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z" />
+      </svg>
+    ))}
+  </div>
+)
 
 export default function Home() {
   const fadeRefs = useRef([])
@@ -111,6 +126,21 @@ export default function Home() {
           <span className="diff-bar__divider" />
           <span className="diff-bar__item">One Button to Record</span>
         </div>
+      </section>
+
+      {/* ======= CHECKLIST DOWNLOAD BANNER ======= */}
+      <section className="checklist-banner">
+        <p className="checklist-banner__text">
+          Free Download: The Complete Podcast Studio Setup Checklist
+        </p>
+        <a
+          className="checklist-banner__btn"
+          href="https://api.leadconnectorhq.com/widget/form/35xjK13efvByA1hPYwdn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download Free
+        </a>
       </section>
 
       {/* SCROLL ANIMATION PLACEHOLDER — Re-insert ScrollAnimation component here when new video is ready */}
@@ -279,6 +309,7 @@ export default function Home() {
                 key={i}
                 ref={fadeRef}
               >
+                <StarRating />
                 <div className="testimonial-card__quote">"</div>
                 <p className="testimonial-card__text">{t.quote}</p>
                 <div className="testimonial-card__footer">

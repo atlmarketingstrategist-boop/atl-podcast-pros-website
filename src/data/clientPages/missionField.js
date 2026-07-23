@@ -72,6 +72,7 @@ export const missionFieldPage = {
     .client-page-doc .cat-video td { background: var(--cat-video); }
     .client-page-doc .cat-lighting td { background: var(--cat-lighting); }
     .client-page-doc .cat-audio td { background: var(--cat-audio); }
+    .client-page-doc .cat-acoustic td { background: #555555; }
     .client-page-doc .cat-misc td { background: var(--cat-misc); }
 
     .client-page-doc .gear-table tbody tr:nth-child(odd):not(.cat-row) { background: var(--white); }
@@ -141,17 +142,17 @@ export const missionFieldPage = {
     </div>
     <div class="stat-cell">
       <div class="stat-label">Total Items</div>
-      <div class="stat-val">29</div>
-      <div class="stat-sub">Across 4 categories</div>
+      <div class="stat-val">32</div>
+      <div class="stat-sub">Across 5 categories</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Subtotal</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$4,785</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,140</div>
       <div class="stat-sub">Before tax</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Total</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,073</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,449</div>
       <div class="stat-sub">Includes 6% tax</div>
     </div>
   </div>
@@ -214,6 +215,20 @@ export const missionFieldPage = {
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0FRFKYCT4?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
+        <td><div class="item-name">Elgato Prompter — Teleprompter with Built-in Screen</div><div class="item-desc">Built-in 9" display for scripts and chat. Mounts in front of the camera so talent maintains natural eye contact with the lens.</div></td>
+        <td style="text-align:center;">1</td>
+        <td>$229.00</td>
+        <td>$229.00</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CH3P9K1X?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+      </tr>
+      <tr>
+        <td><div class="item-name">Micro HDMI to HDMI Cable (Coiled, 8K) — Sony ZV-E10 II Output</div><div class="item-desc">Connects the ZV-E10 II Micro HDMI (Type D) port to the RODECaster Video. Coiled cable keeps the run tidy and strain-free off the camera body.</div></td>
+        <td style="text-align:center;">1</td>
+        <td>$18.99</td>
+        <td>$18.99</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=micro+hdmi+to+hdmi+coiled+cable+8k+sony+ZV-E10&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+      </tr>
+      <tr>
         <td><div class="item-name">RODECaster Video All-in-One Production Console</div><div class="item-desc">Multi-camera production switcher and recording hub. One-touch control for meetings, livestreams, and recordings.</div></td>
         <td style="text-align:center;">1</td>
         <td>$934.95</td>
@@ -236,9 +251,9 @@ export const missionFieldPage = {
       </tr>
       <tr>
         <td><div class="item-name">8K HDMI Cable 20ft Braided (48Gbps)</div><div class="item-desc">High-speed HDMI for cameras, switcher, monitor, and display connections.</div></td>
-        <td style="text-align:center;">2</td>
+        <td style="text-align:center;">1</td>
         <td>$18.99</td>
-        <td>$37.98</td>
+        <td>$18.99</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BZVXDXKG?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
 
@@ -341,18 +356,18 @@ export const missionFieldPage = {
       <tr class="cat-row cat-audio"><td colspan="5">Audio</td></tr>
 
       <tr>
-        <td><div class="item-name">Shure SM7B Cardioid Dynamic Microphone</div><div class="item-desc">Industry-standard broadcast microphone. Warm, clear vocal reproduction.</div></td>
+        <td><div class="item-name">Sennheiser MKE 600 Shotgun Microphone Bundle</div><div class="item-desc">Professional boom/shotgun mic with universal shockmount, 20ft XLR cable, and microfiber cloth. Positioned out of frame for clean on-camera look. Includes foam windshield.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$359.00</td>
-        <td>$359.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0002E4Z8M?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$349.00</td>
+        <td>$349.00</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CSM45KBZ?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
-        <td><div class="item-name">RODE PSA1+ Professional Studio Boom Arm</div><div class="item-desc">Desk-clamp boom arm for precise microphone positioning.</div></td>
+        <td><div class="item-name">InnoGear Tripod Boom Arm Floor Mic Stand</div><div class="item-desc">Heavy-base floor stand with adjustable boom arm for positioning the MKE 600 shotgun mic overhead and out of frame.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$169.00</td>
-        <td>$169.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B09JBVR5B4?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$24.99</td>
+        <td>$24.99</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B07GLGJJB8?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">XLR Cable 15ft (Monoprice 16AWG Gold)</div><div class="item-desc">XLR run from microphone to RODECaster Video.</div></td>
@@ -360,6 +375,17 @@ export const missionFieldPage = {
         <td>$17.91</td>
         <td>$17.91</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0031OJ0U2?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+      </tr>
+
+      <!-- ACOUSTIC -->
+      <tr class="cat-row cat-acoustic"><td colspan="5">Acoustic</td></tr>
+
+      <tr>
+        <td><div class="item-name">AudioSilk Acoustic Panels 4-Pack Large 46"x23" Mid Grey</div><div class="item-desc">Studio-grade acoustic treatment panels. NRC 0.91. Reduces echo and room noise for cleaner audio on meetings and livestreams.</div></td>
+        <td style="text-align:center;">2</td>
+        <td>$139.99</td>
+        <td>$279.98</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BQRVXMDX?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
 
       <!-- MISC -->
@@ -408,12 +434,12 @@ export const missionFieldPage = {
   <!-- TOTALS -->
   <div class="totals-block">
     <div class="totals-inner">
-      <div class="totals-row"><span>Subtotal</span><span>$4,785.51</span></div>
+      <div class="totals-row"><span>Subtotal</span><span>$5,140.48</span></div>
       <div class="totals-row"><span>Shipping</span><span>TBD</span></div>
-      <div class="totals-row"><span>Est. Tax (6%)</span><span>$287.13</span></div>
+      <div class="totals-row"><span>Est. Tax (6%)</span><span>$308.43</span></div>
       <div class="totals-grand">
         <div class="totals-grand-label">Estimated Total</div>
-        <div class="totals-grand-val">$5,072.64</div>
+        <div class="totals-grand-val">$5,448.91</div>
       </div>
     </div>
   </div>

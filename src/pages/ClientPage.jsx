@@ -2,9 +2,11 @@ import { useParams, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import ClientPasswordGate from '../components/ClientPasswordGate';
 import { sfaPartnersPage } from '../data/clientPages/sfaPartners';
+import { missionFieldPage } from '../data/clientPages/missionField';
 
 const clientPages = {
   'sfa-partners': sfaPartnersPage,
+  'mission-field': missionFieldPage,
 };
 
 export default function ClientPage() {

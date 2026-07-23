@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import './FloatingChecklistBanner.css'
 
 const FORM_URL = 'https://api.leadconnectorhq.com/widget/form/35xjK13efvByA1hPYwdn'
 const STORAGE_KEY = 'checklistBannerDismissed'
 
 export default function FloatingChecklistBanner() {
+  const { pathname } = useLocation()
   const [visible, setVisible] = useState(false)
   const [dismissed, setDismissed] = useState(false)
 
@@ -28,7 +30,7 @@ export default function FloatingChecklistBanner() {
     setDismissed(true)
   }
 
-  if (dismissed) return null
+  if (dismissed || pathname.startsWith('/client/')) return null
 
   return (
     <aside

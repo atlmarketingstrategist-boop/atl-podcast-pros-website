@@ -61,6 +61,7 @@ export const missionFieldPage = {
     .client-page-doc .design-callout .callout-body strong { color: var(--cat-video); }
 
     /* TABLE */
+    .client-page-doc .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .client-page-doc .gear-table { width: 100%; border-collapse: collapse; margin-bottom: 6px; border-radius: 8px; overflow: hidden; border: 0.5px solid var(--border); }
     .client-page-doc .gear-table thead tr { background: var(--ink); }
     .client-page-doc .gear-table thead th { padding: 10px 14px; font-family: var(--font-mono); font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.7); text-align: left; font-weight: 500; }
@@ -140,17 +141,17 @@ export const missionFieldPage = {
     </div>
     <div class="stat-cell">
       <div class="stat-label">Total Items</div>
-      <div class="stat-val">22</div>
+      <div class="stat-val">29</div>
       <div class="stat-sub">Across 4 categories</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Subtotal</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$4,794</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$4,785</div>
       <div class="stat-sub">Before tax</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Total</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,082</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,073</div>
       <div class="stat-sub">Includes 6% tax</div>
     </div>
   </div>
@@ -168,6 +169,7 @@ export const missionFieldPage = {
   </div>
 
   <!-- GEAR TABLE -->
+  <div class="table-scroll">
   <table class="gear-table">
     <thead>
       <tr>
@@ -262,14 +264,14 @@ export const missionFieldPage = {
         <td style="text-align:center;">1</td>
         <td>$215.60</td>
         <td>$215.60</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0002E4Z8M?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B008OM1FZU?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">NEEWER 2 Pack Super Clamps with 5/8" Stud</div><div class="item-desc">Heavy-duty clamps for attaching lights and accessories to varipoles.</div></td>
         <td style="text-align:center;">1</td>
         <td>$48.89</td>
         <td>$48.89</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B01C3SCKI6?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CJLNH31B?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">GVM RGB LED Panels 800D App Control (2-Pack)</div><div class="item-desc">App-controlled RGB accent panels for branded color ambiance on camera.</div></td>
@@ -375,7 +377,7 @@ export const missionFieldPage = {
         <td style="text-align:center;">4</td>
         <td>$15.95</td>
         <td>$63.80</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B07M9VLH4J?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0078NU4C6?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Cable Ties 60-Pack Reusable</div><div class="item-desc">Cable management and organization throughout the studio.</div></td>
@@ -401,16 +403,17 @@ export const missionFieldPage = {
 
     </tbody>
   </table>
+  </div>
 
   <!-- TOTALS -->
   <div class="totals-block">
     <div class="totals-inner">
-      <div class="totals-row"><span>Subtotal</span><span>$4,794.60</span></div>
+      <div class="totals-row"><span>Subtotal</span><span>$4,785.51</span></div>
       <div class="totals-row"><span>Shipping</span><span>TBD</span></div>
-      <div class="totals-row"><span>Est. Tax (6%)</span><span>$287.68</span></div>
+      <div class="totals-row"><span>Est. Tax (6%)</span><span>$287.13</span></div>
       <div class="totals-grand">
         <div class="totals-grand-label">Estimated Total</div>
-        <div class="totals-grand-val">$5,082.28</div>
+        <div class="totals-grand-val">$5,072.64</div>
       </div>
     </div>
   </div>

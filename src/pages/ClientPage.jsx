@@ -29,7 +29,7 @@ export default function ClientPage() {
 
   return (
     <>
-      <title>{page.clientName} — ATL Podcast Pros</title>
+      <title>{`${page.clientName} — ATL Podcast Pros`}</title>
       <meta name="robots" content="noindex, nofollow" />
       <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"

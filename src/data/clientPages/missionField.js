@@ -68,12 +68,12 @@ export const missionFieldPage = {
     .client-page-doc .gear-table thead th:nth-child(3), .client-page-doc .gear-table thead th:nth-child(4) { text-align: right; }
     .client-page-doc .gear-table thead th:last-child { text-align: center; }
 
-    .client-page-doc .cat-row td { padding: 7px 14px; font-family: var(--font-mono); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: var(--white); font-weight: 700; }
-    .client-page-doc .cat-video td { background: var(--cat-video); }
-    .client-page-doc .cat-lighting td { background: var(--cat-lighting); }
-    .client-page-doc .cat-audio td { background: var(--cat-audio); }
-    .client-page-doc .cat-acoustic td { background: #555555; }
-    .client-page-doc .cat-misc td { background: var(--cat-misc); }
+    .client-page-doc .gear-table tbody .cat-row td { padding: 7px 14px; font-family: var(--font-mono); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #FFFFFF; font-weight: 700; }
+    .client-page-doc .cat-video td { background: #213775; color: #FFFFFF; }
+    .client-page-doc .cat-lighting td { background: #A67C00; color: #FFFFFF; }
+    .client-page-doc .cat-audio td { background: #7B3FA0; color: #FFFFFF; }
+    .client-page-doc .cat-acoustic td { background: #555555; color: #FFFFFF; }
+    .client-page-doc .cat-misc td { background: #333333; color: #FFFFFF; }
 
     .client-page-doc .gear-table tbody tr:nth-child(odd):not(.cat-row) { background: var(--white); }
     .client-page-doc .gear-table tbody tr:nth-child(even):not(.cat-row) { background: #FAFAFA; }
@@ -127,7 +127,7 @@ export const missionFieldPage = {
 <!-- NOTICE BAR -->
 <div class="notice-bar">
   <div class="notice-dot"></div>
-  <p>All items link directly to Amazon for easy ordering. Prices are estimates and may vary. Some items are optional. Affiliate links benefit ATL Podcast Pros at no added cost to you.</p>
+  <p>All items link directly to Amazon for easy ordering. Prices are estimates and may vary. Some items are optional. Affiliate links impose no added cost to you.</p>
 </div>
 
 <!-- BODY -->
@@ -142,17 +142,17 @@ export const missionFieldPage = {
     </div>
     <div class="stat-cell">
       <div class="stat-label">Total Items</div>
-      <div class="stat-val">32</div>
+      <div class="stat-val">31</div>
       <div class="stat-sub">Across 5 categories</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Subtotal</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,140</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,473</div>
       <div class="stat-sub">Before tax</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Total</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,449</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,801</div>
       <div class="stat-sub">Includes 6% tax</div>
     </div>
   </div>
@@ -165,8 +165,8 @@ export const missionFieldPage = {
 
   <!-- DESIGN SERVICE CALLOUT -->
   <div class="design-callout">
-    <div class="callout-title">Optional: Studio Design Service</div>
-    <div class="callout-body">ATL Podcast Pros offers an optional <strong>Studio Design Service ($500 design fee)</strong> in which our designer will select decor and background materials to enhance your on-camera visual. Total design costs include the $500 design fee plus a <strong>design budget determined by the client</strong>. Ask your ATL Podcast Pros contact for details.</div>
+    <div class="callout-title">Optional (Recommended): Studio Design Service</div>
+    <div class="callout-body">ATL Podcast Pros offers an optional <strong>Studio Design Service ($500 design fee)</strong> in which our designer will select decor and background materials to enhance your on-camera visual. Total design costs include the $500 design fee plus a <strong>design budget determined by the client</strong>. Ask your ATL Podcast Pros contact to add on this service and provide a budget for materials.</div>
   </div>
 
   <!-- GEAR TABLE -->
@@ -226,14 +226,14 @@ export const missionFieldPage = {
         <td style="text-align:center;">1</td>
         <td>$18.99</td>
         <td>$18.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=micro+hdmi+to+hdmi+coiled+cable+8k+sony+ZV-E10&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=micro+hdmi+to+hdmi+cable+sony+ZV-E10+II+8K&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">RODECaster Video All-in-One Production Console</div><div class="item-desc">Multi-camera production switcher and recording hub. One-touch control for meetings, livestreams, and recordings.</div></td>
         <td style="text-align:center;">1</td>
         <td>$934.95</td>
         <td>$934.95</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0B17V8NGX?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0DP7SCRYB?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">LG 27" Full HD IPS Confidence Monitor</div><div class="item-desc">Operator confidence monitor for teleprompter text, speaker notes, and live preview.</div></td>
@@ -262,23 +262,23 @@ export const missionFieldPage = {
 
       <tr>
         <td><div class="item-name">Amaran 100dS LED Video Light (Key Light)</div><div class="item-desc">Professional 100W daylight key light. Bowens mount. App controlled. CRI 96+.</div></td>
-        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
         <td>$157.01</td>
-        <td>$157.01</td>
+        <td>$314.02</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BSLD7SLS?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
-        <td><div class="item-name">NEEWER 85cm Lantern Softbox (Bowens Mount)</div><div class="item-desc">360° omnidirectional diffuser for the Amaran key light. Creates flattering, even illumination.</div></td>
-        <td style="text-align:center;">1</td>
+        <td><div class="item-name">NEEWER 35"/90cm Octagonal Softbox with Honeycomb Grid (Bowens Mount)</div><div class="item-desc">Professional grid softbox for the Amaran 100dS key lights. Includes honeycomb grid and dual diffusers. Directs and shapes light for clean, flattering on-camera illumination.</div></td>
+        <td style="text-align:center;">2</td>
         <td>$49.99</td>
-        <td>$49.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CC1KSZG3?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$99.98</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CC1M41T5?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Impact Deluxe Varipole Support System (Black Pair)</div><div class="item-desc">Floor-to-ceiling tension poles for mounting lights without wall holes or drilling.</div></td>
-        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
         <td>$215.60</td>
-        <td>$215.60</td>
+        <td>$431.20</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B008OM1FZU?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
@@ -293,35 +293,35 @@ export const missionFieldPage = {
         <td style="text-align:center;">1</td>
         <td>$189.00</td>
         <td>$189.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B08G3KS8XG?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=GVM+800D+RGB+LED+Panel+Video+Light+2+Pack&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Stage Wash Light Bar 40" 96W RGBA 24LED DMX</div><div class="item-desc">DMX-controlled floor wash lights for color, atmosphere, and branded ambient lighting.</div></td>
         <td style="text-align:center;">2</td>
         <td>$79.99</td>
         <td>$159.98</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Stage+Wash+Light+Bar+40+96W+RGBA+DMX+24LED&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Stage+Wash+Light+Bar+40+inch+96W+RGBA+DMX+24LED&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Enttec DMX USB Pro (DMX to USB Interface)</div><div class="item-desc">Professional DMX controller interface. Connects DMX lighting stack to your computer.</div></td>
         <td style="text-align:center;">1</td>
         <td>$109.00</td>
         <td>$109.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Enttec+DMX+USB+Pro&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Enttec+DMX+USB+Pro+Interface&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">DMX Cables 4-Pack</div><div class="item-desc">Cables to connect the DMX light stack.</div></td>
         <td style="text-align:center;">1</td>
         <td>$24.99</td>
         <td>$24.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=DMX+cables+4+pack&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=DMX+cables+4+pack+XLR+3+pin&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">DMX Terminator</div><div class="item-desc">Prevents signal reflection in the DMX chain. Required for a clean DMX setup.</div></td>
         <td style="text-align:center;">1</td>
         <td>$12.99</td>
         <td>$12.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=DMX+terminator&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=DMX+terminator+3+pin&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">5-Pin to 3-Pin DMX Adapter</div><div class="item-desc">Adapter for connecting 5-pin and 3-pin DMX fixtures in the same chain.</div></td>
@@ -336,13 +336,6 @@ export const missionFieldPage = {
         <td>$249.99</td>
         <td>$249.99</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B09738CV2G?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
-      </tr>
-      <tr>
-        <td><div class="item-name">Elgato Stream Deck Pedal</div><div class="item-desc">Hands-free foot control for muting, going live, and triggering scenes mid-call.</div></td>
-        <td style="text-align:center;">1</td>
-        <td>$89.99</td>
-        <td>$89.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B09R6HPDWY?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">TP-Link Tapo Smart Plugs (4-Pack)</div><div class="item-desc">Smart plugs for Stream Deck control of lighting circuits.</div></td>
@@ -434,12 +427,12 @@ export const missionFieldPage = {
   <!-- TOTALS -->
   <div class="totals-block">
     <div class="totals-inner">
-      <div class="totals-row"><span>Subtotal</span><span>$5,140.48</span></div>
+      <div class="totals-row"><span>Subtotal</span><span>$5,473.09</span></div>
       <div class="totals-row"><span>Shipping</span><span>TBD</span></div>
-      <div class="totals-row"><span>Est. Tax (6%)</span><span>$308.43</span></div>
+      <div class="totals-row"><span>Est. Tax (6%)</span><span>$328.39</span></div>
       <div class="totals-grand">
         <div class="totals-grand-label">Estimated Total</div>
-        <div class="totals-grand-val">$5,448.91</div>
+        <div class="totals-grand-val">$5,801.48</div>
       </div>
     </div>
   </div>

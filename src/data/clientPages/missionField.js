@@ -413,7 +413,7 @@ export const missionFieldPage = {
         <td><a class="btn-amazon" href="https://www.amazon.com/Protector-Widely-Outlets-Heavy-Duty-Extension/dp/B0B16YFTQ4?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
-        <td><div class="item-name">StarTech 10-Port USB-C Hub (HB31C2A8CME)</div><div class="item-desc">10-port USB hub with USB-C and USB-A ports. Connects all studio peripherals — Stream Deck, drives, and accessories — through a single hub to the production system.</div></td>
+        <td><div class="item-name">StarTech 10-Port USB-C Hub (10G8A2CS-USB-C-HUB)</div><div class="item-desc">10-port USB hub with USB-C and USB-A ports. Connects all studio peripherals — Stream Deck, drives, and accessories — through a single hub to the production system.</div></td>
         <td style="text-align:center;">1</td>
         <td>$129.38</td>
         <td>$129.38</td>

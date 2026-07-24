@@ -261,21 +261,21 @@ export const missionFieldPage = {
       <tr class="cat-row cat-lighting"><td colspan="5">Lighting</td></tr>
 
       <tr>
-        <td><div class="item-name">Amaran 200dS LED Video Light (Key Light)</div><div class="item-desc">Professional 100W daylight key light. Bowens mount. App controlled. CRI 96+.</div></td>
+        <td><div class="item-name">Amaran 200dS LED Video Light (Key Light)</div><div class="item-desc">Professional 200W daylight key light. Bowens mount. App controlled. CRI 96+.</div></td>
         <td style="text-align:center;">2</td>
         <td>$212.80</td>
         <td>$425.60</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B08RNW1HL6?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
-        <td><div class="item-name">NEEWER 35"/90cm Octagonal Softbox with Honeycomb Grid (Bowens Mount)</div><div class="item-desc">Professional grid softbox for the Amaran 100dS key lights. Includes honeycomb grid and dual diffusers. Directs and shapes light for clean, flattering on-camera illumination.</div></td>
+        <td><div class="item-name">NEEWER 35"/90cm Octagonal Softbox with Honeycomb Grid (Bowens Mount)</div><div class="item-desc">Professional grid softbox for the Amaran 200dS key lights. Includes honeycomb grid and dual diffusers. Directs and shapes light for clean, flattering on-camera illumination.</div></td>
         <td style="text-align:center;">2</td>
         <td>$75.89</td>
         <td>$151.78</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CC1M41T5?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
-        <td><div class="item-name">Impact Deluxe Varipole Support System (Black Pair)</div><div class="item-desc">Floor-to-ceiling tension poles for mounting lights without wall holes or drilling.</div></td>
+        <td><div class="item-name">Flashpoint Deluxe Telepole Support System (Black Pair)</div><div class="item-desc">Floor-to-ceiling tension poles for mounting lights without wall holes or drilling.</div></td>
         <td style="text-align:center;">2</td>
         <td>$189.00</td>
         <td>$378.00</td>

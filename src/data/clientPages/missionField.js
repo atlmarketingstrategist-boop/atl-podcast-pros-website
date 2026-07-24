@@ -147,12 +147,12 @@ export const missionFieldPage = {
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Subtotal</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,379</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,521</div>
       <div class="stat-sub">Before tax</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Total</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,702</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,852</div>
       <div class="stat-sub">Includes 6% tax</div>
     </div>
   </div>
@@ -189,16 +189,16 @@ export const missionFieldPage = {
       <tr>
         <td><div class="item-name">Sony ZV-E10 II Mirrorless Camera (Body Only)</div><div class="item-desc">Super 35 mirrorless camera. Crisp 4K image quality for meetings and livestreams.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$899.00</td>
-        <td>$899.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0GTRVSYS9?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$1,038.00</td>
+        <td>$1,038.00</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Sony-Alpha-ZVE10-Interchangeable-Mirrorless/dp/B0D92VDW76?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Sigma 16mm f/1.4 DC DN Contemporary Lens (Sony E)</div><div class="item-desc">Wide angle lens. Ideal for single-person desk and meeting room framing.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$489.00</td>
-        <td>$489.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B01C3SCKI6?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$414.00</td>
+        <td>$414.00</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Sigma-16mm-Contemporary-Lens-Sony/dp/B077BWD2BB?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">NP-FW50 Dummy Battery / AC Adapter (ZV-E10 II Compatible)</div><div class="item-desc">Continuous AC power. Eliminates battery swaps during long sessions.</div></td>
@@ -217,43 +217,43 @@ export const missionFieldPage = {
       <tr>
         <td><div class="item-name">Elgato Prompter — Teleprompter with Built-in Screen</div><div class="item-desc">Built-in 9" display for scripts and chat. Mounts in front of the camera so talent maintains natural eye contact with the lens.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$229.00</td>
-        <td>$229.00</td>
+        <td>$229.89</td>
+        <td>$229.89</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CH3P9K1X?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Micro HDMI to HDMI Cable (Coiled, 8K) — Sony ZV-E10 II Output</div><div class="item-desc">Connects the ZV-E10 II Micro HDMI (Type D) port to the RODECaster Video. Coiled cable keeps the run tidy and strain-free off the camera body.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$18.99</td>
-        <td>$18.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=micro+HDMI+to+HDMI+Sony+ZV-E10+Type+D+cable&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$34.19</td>
+        <td>$34.19</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Silkland-Adapter-Compatible-Samsung-Raspberry/dp/B0CQSYB8YW?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">RODECaster Video All-in-One Production Console</div><div class="item-desc">Multi-camera production switcher and recording hub. One-touch control for meetings, livestreams, and recordings.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$934.95</td>
-        <td>$934.95</td>
+        <td>$844.95</td>
+        <td>$844.95</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0DP7SCRYB?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">LG 27" Full HD IPS Confidence Monitor</div><div class="item-desc">Operator confidence monitor for teleprompter text, speaker notes, and live preview.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$109.99</td>
-        <td>$109.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CSQK1D2W?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$199.99</td>
+        <td>$199.99</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BFZLSZ5J?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Perlegear Floor TV Stand for 26-50" TVs</div><div class="item-desc">Floor stand for the confidence monitor. No wall mount required.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$32.99</td>
-        <td>$32.99</td>
+        <td>$34.99</td>
+        <td>$34.99</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CYCLWVGX?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">8K HDMI Cable 20ft Braided (48Gbps)</div><div class="item-desc">High-speed HDMI for cameras, switcher, monitor, and display connections.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$18.99</td>
-        <td>$18.99</td>
+        <td>$21.99</td>
+        <td>$21.99</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BZVXDXKG?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
 
@@ -261,87 +261,87 @@ export const missionFieldPage = {
       <tr class="cat-row cat-lighting"><td colspan="5">Lighting</td></tr>
 
       <tr>
-        <td><div class="item-name">Amaran 100dS LED Video Light (Key Light)</div><div class="item-desc">Professional 100W daylight key light. Bowens mount. App controlled. CRI 96+.</div></td>
+        <td><div class="item-name">Amaran 200dS LED Video Light (Key Light)</div><div class="item-desc">Professional 100W daylight key light. Bowens mount. App controlled. CRI 96+.</div></td>
         <td style="text-align:center;">2</td>
-        <td>$157.01</td>
-        <td>$314.02</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BSLD7SLS?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$212.80</td>
+        <td>$425.60</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B08RNW1HL6?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">NEEWER 35"/90cm Octagonal Softbox with Honeycomb Grid (Bowens Mount)</div><div class="item-desc">Professional grid softbox for the Amaran 100dS key lights. Includes honeycomb grid and dual diffusers. Directs and shapes light for clean, flattering on-camera illumination.</div></td>
         <td style="text-align:center;">2</td>
-        <td>$49.99</td>
-        <td>$99.98</td>
+        <td>$75.89</td>
+        <td>$151.78</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CC1M41T5?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Impact Deluxe Varipole Support System (Black Pair)</div><div class="item-desc">Floor-to-ceiling tension poles for mounting lights without wall holes or drilling.</div></td>
         <td style="text-align:center;">2</td>
-        <td>$215.60</td>
-        <td>$431.20</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B008OM1FZU?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$189.00</td>
+        <td>$378.00</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Flashpoint-Deluxe-Telepole-Support-System/dp/B0CYDS9YX7?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">NEEWER 2 Pack Super Clamps with 5/8" Stud</div><div class="item-desc">Heavy-duty clamps for attaching lights and accessories to varipoles.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$48.89</td>
-        <td>$48.89</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CJLNH31B?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$50.34</td>
+        <td>$50.34</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CTWR1MC1?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">GVM RGB LED Panels 800D App Control (2-Pack)</div><div class="item-desc">App-controlled RGB accent panels for branded color ambiance on camera.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$189.00</td>
-        <td>$189.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=GVM+800D+RGB+LED+video+light+panel+2+pack+app+control&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$179.55</td>
+        <td>$179.55</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/GVM-Video-Photography-Lighting-3200K-5600K/dp/B07ZCYMS3V?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Stage Wash Light Bar 40" 96W RGBA 24LED DMX</div><div class="item-desc">DMX-controlled floor wash lights for color, atmosphere, and branded ambient lighting.</div></td>
         <td style="text-align:center;">2</td>
-        <td>$79.99</td>
-        <td>$159.98</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Stage+Wash+Light+Bar+40+inch+96W+RGBA+DMX+24LED&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$105.73</td>
+        <td>$211.46</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0G4TDXGN1?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Enttec DMX USB Pro (DMX to USB Interface)</div><div class="item-desc">Professional DMX controller interface. Connects DMX lighting stack to your computer.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$109.00</td>
-        <td>$109.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Enttec+DMX+USB+Pro+interface&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$162.00</td>
+        <td>$162.00</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/ENTTEC-DMX-USB-512-Ch-Interface/dp/B077VW1DJH?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">DMX Cables 4-Pack</div><div class="item-desc">Cables to connect the DMX light stack.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$24.99</td>
-        <td>$24.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=DMX+cables+3+pin+XLR+4+pack&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$21.98</td>
+        <td>$21.98</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Gruolin-Cables-Connectors-Lighting-fixtures/dp/B0B35R7MW7?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">DMX Terminator</div><div class="item-desc">Prevents signal reflection in the DMX chain. Required for a clean DMX setup.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$12.99</td>
-        <td>$12.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=DMX+terminator+3+pin&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$15.16</td>
+        <td>$15.16</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Terminator-Terminators-Termination-Resistor-Accessories/dp/B0F637B68N?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">5-Pin to 3-Pin DMX Adapter</div><div class="item-desc">Adapter for connecting 5-pin and 3-pin DMX fixtures in the same chain.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$9.99</td>
-        <td>$9.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=5+pin+to+3+pin+DMX+XLR+adapter&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$14.95</td>
+        <td>$14.95</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Cable-Matters-2-Pack-Lighting-Adapter/dp/B09558BG54?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
-        <td><div class="item-name">Elgato Stream Deck XL (32 Keys)</div><div class="item-desc">One-touch scene control for lights, camera switching, muting, and going live.</div></td>
+        <td><div class="item-name">Elgato Stream Deck MK.2 Studio Controller, 15 Macro Keys</div><div class="item-desc">One-touch scene control for lights, camera switching, muting, and going live.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$249.99</td>
-        <td>$249.99</td>
+        <td>$119.99</td>
+        <td>$119.99</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B09738CV2G?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">TP-Link Tapo Smart Plugs (4-Pack)</div><div class="item-desc">Smart plugs for Stream Deck control of lighting circuits.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$21.99</td>
-        <td>$21.99</td>
+        <td>$39.18</td>
+        <td>$39.18</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0836HL66P?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
 
@@ -351,23 +351,23 @@ export const missionFieldPage = {
       <tr>
         <td><div class="item-name">Sennheiser MKE 600 Shotgun Microphone Bundle</div><div class="item-desc">Professional boom/shotgun mic with universal shockmount, 20ft XLR cable, and microfiber cloth. Positioned out of frame for clean on-camera look. Includes foam windshield.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$349.00</td>
-        <td>$349.00</td>
+        <td>$339.00</td>
+        <td>$339.00</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CSM45KBZ?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">InnoGear Tripod Boom Arm Floor Mic Stand</div><div class="item-desc">Heavy-base floor stand with adjustable boom arm for positioning the MKE 600 shotgun mic overhead and out of frame.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$24.99</td>
-        <td>$24.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=InnoGear+floor+tripod+boom+arm+microphone+stand&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$29.59</td>
+        <td>$29.59</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/InnoGear-Microphone-Adjustable-SoloCast-QuadCast/dp/B0G24DWS2W?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">XLR Cable 15ft (Monoprice 16AWG Gold)</div><div class="item-desc">XLR run from microphone to RODECaster Video.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$17.91</td>
-        <td>$17.91</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Monoprice+XLR+male+female+cable+15ft&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$25.74</td>
+        <td>$25.74</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Monoprice-Premier-XLR-Male-Female/dp/B003L11F36?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
 
       <!-- ACOUSTIC -->
@@ -376,8 +376,8 @@ export const missionFieldPage = {
       <tr>
         <td><div class="item-name">AudioSilk Acoustic Panels 4-Pack Large 46"x23" Mid Grey</div><div class="item-desc">Studio-grade acoustic treatment panels. NRC 0.91. Reduces echo and room noise for cleaner audio on meetings and livestreams.</div></td>
         <td style="text-align:center;">2</td>
-        <td>$139.99</td>
-        <td>$279.98</td>
+        <td>$120.00</td>
+        <td>$240.00</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BQRVXMDX?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
 
@@ -387,37 +387,37 @@ export const missionFieldPage = {
       <tr>
         <td><div class="item-name">Paintable Cable Raceway Kit 26ft</div><div class="item-desc">Wall-mount raceway for concealing HDMI and power cable runs cleanly.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$22.99</td>
-        <td>$22.99</td>
+        <td>$29.99</td>
+        <td>$29.99</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B07M9VLH4J?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">D-Line Floor Cord Cover 6ft (Black)</div><div class="item-desc">Protects and hides floor-run cables cleanly and safely.</div></td>
         <td style="text-align:center;">4</td>
-        <td>$15.95</td>
-        <td>$63.80</td>
+        <td>$16.62</td>
+        <td>$66.48</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0078NU4C6?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Cable Ties 60-Pack Reusable</div><div class="item-desc">Cable management and organization throughout the studio.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$6.63</td>
-        <td>$6.63</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=Nettbe+reusable+cable+ties+60+pack&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$6.98</td>
+        <td>$6.98</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Reusable-Newlan-Adjustable-Organizer-Management/dp/B081HH5X61?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Surge Protector 10ft Power Strip (5 Outlets 3 USB)</div><div class="item-desc">Heavy-duty surge-protected power strip for lights and equipment.</div></td>
-        <td style="text-align:center;">2</td>
-        <td>$22.99</td>
-        <td>$45.98</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=surge+protector+power+strip+10+foot+5+outlet+3+USB&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td style="text-align:center;">1</td>
+        <td>$34.19</td>
+        <td>$34.19</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Protector-Widely-Outlets-Heavy-Duty-Extension/dp/B0B16YFTQ4?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Surge Protector 15ft (6 AC + 3 USB-C)</div><div class="item-desc">Additional surge-protected power strip for desk equipment.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$15.99</td>
-        <td>$15.99</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/s?k=extension+cord+surge+protector+15ft+6+outlet+USB-C&tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$14.24</td>
+        <td>$14.24</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/Extension-Multiple-Protector-Supplies-Essentials/dp/B0G2LZPN6B?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
 
     </tbody>
@@ -427,12 +427,12 @@ export const missionFieldPage = {
   <!-- TOTALS -->
   <div class="totals-block">
     <div class="totals-inner">
-      <div class="totals-row"><span>Subtotal</span><span>$5,379.08</span></div>
+      <div class="totals-row"><span>Subtotal</span><span>$5,521.08</span></div>
       <div class="totals-row"><span>Shipping</span><span>TBD</span></div>
-      <div class="totals-row"><span>Est. Tax (6%)</span><span>$322.74</span></div>
+      <div class="totals-row"><span>Est. Tax (6%)</span><span>$331.26</span></div>
       <div class="totals-grand">
         <div class="totals-grand-label">Estimated Total</div>
-        <div class="totals-grand-val">$5,701.82</div>
+        <div class="totals-grand-val">$5,852.34</div>
       </div>
     </div>
   </div>

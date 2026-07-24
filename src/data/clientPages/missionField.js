@@ -142,17 +142,17 @@ export const missionFieldPage = {
     </div>
     <div class="stat-cell">
       <div class="stat-label">Total Items</div>
-      <div class="stat-val">31</div>
+      <div class="stat-val">32</div>
       <div class="stat-sub">Across 5 categories</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Subtotal</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,521</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,707</div>
       <div class="stat-sub">Before tax</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Total</div>
-      <div class="stat-val" style="font-size:20px;padding-top:3px;">$5,852</div>
+      <div class="stat-val" style="font-size:20px;padding-top:3px;">$6,049</div>
       <div class="stat-sub">Includes 6% tax</div>
     </div>
   </div>
@@ -283,9 +283,9 @@ export const missionFieldPage = {
       </tr>
       <tr>
         <td><div class="item-name">NEEWER 2 Pack Super Clamps with 5/8" Stud</div><div class="item-desc">Heavy-duty clamps for attaching lights and accessories to varipoles.</div></td>
-        <td style="text-align:center;">1</td>
+        <td style="text-align:center;">2</td>
         <td>$50.34</td>
-        <td>$50.34</td>
+        <td>$100.68</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CTWR1MC1?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
@@ -305,9 +305,9 @@ export const missionFieldPage = {
       <tr>
         <td><div class="item-name">Enttec DMX USB Pro (DMX to USB Interface)</div><div class="item-desc">Professional DMX controller interface. Connects DMX lighting stack to your computer.</div></td>
         <td style="text-align:center;">1</td>
-        <td>$162.00</td>
-        <td>$162.00</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/ENTTEC-DMX-USB-512-Ch-Interface/dp/B077VW1DJH?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+        <td>$168.00</td>
+        <td>$168.00</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0BW4LXFVC?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">DMX Cables 4-Pack</div><div class="item-desc">Cables to connect the DMX light stack.</div></td>
@@ -413,6 +413,13 @@ export const missionFieldPage = {
         <td><a class="btn-amazon" href="https://www.amazon.com/Protector-Widely-Outlets-Heavy-Duty-Extension/dp/B0B16YFTQ4?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
+        <td><div class="item-name">StarTech 10-Port USB-C Hub (HB31C2A8CME)</div><div class="item-desc">10-port USB hub with USB-C and USB-A ports. Connects all studio peripherals — Stream Deck, drives, and accessories — through a single hub to the production system.</div></td>
+        <td style="text-align:center;">1</td>
+        <td>$129.38</td>
+        <td>$129.38</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/StarTech-com-10-Port-USB-C-USB-10G8A2CS-USB-C-HUB/dp/B0BQRSJ79B?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+      </tr>
+      <tr>
         <td><div class="item-name">Surge Protector 15ft (6 AC + 3 USB-C)</div><div class="item-desc">Additional surge-protected power strip for desk equipment.</div></td>
         <td style="text-align:center;">1</td>
         <td>$14.24</td>
@@ -427,12 +434,12 @@ export const missionFieldPage = {
   <!-- TOTALS -->
   <div class="totals-block">
     <div class="totals-inner">
-      <div class="totals-row"><span>Subtotal</span><span>$5,521.08</span></div>
+      <div class="totals-row"><span>Subtotal</span><span>$5,706.80</span></div>
       <div class="totals-row"><span>Shipping</span><span>TBD</span></div>
-      <div class="totals-row"><span>Est. Tax (6%)</span><span>$331.26</span></div>
+      <div class="totals-row"><span>Est. Tax (6%)</span><span>$342.41</span></div>
       <div class="totals-grand">
         <div class="totals-grand-label">Estimated Total</div>
-        <div class="totals-grand-val">$5,852.34</div>
+        <div class="totals-grand-val">$6,049.21</div>
       </div>
     </div>
   </div>

@@ -151,12 +151,12 @@ export const jonAlwinsonPage = {
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Subtotal</div>
-      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,260</div>
+      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,203</div>
       <div class="stat-sub">New items only</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Total</div>
-      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,756</div>
+      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,696</div>
       <div class="stat-sub">Includes 6% tax</div>
     </div>
   </div>
@@ -227,9 +227,9 @@ export const jonAlwinsonPage = {
       </tr>
       <tr>
         <td><div class="item-name">SmallRig Camera Boom Arm Clamps — Bookshelf Mounting</div><div class="item-desc">Flexible arm clamps for mounting guest cameras to the built-in floor-to-ceiling bookshelves on either side of the desk.</div></td>
-        <td style="text-align:center;">2</td>
-        <td>$49.99</td>
-        <td>$99.98</td>
+        <td style="text-align:center;">1</td>
+        <td>$43.11</td>
+        <td>$43.11</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0FWKD29VH?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
@@ -455,12 +455,12 @@ export const jonAlwinsonPage = {
   <!-- TOTALS -->
   <div class="totals-block">
     <div class="totals-inner">
-      <div class="totals-row"><span>Subtotal (new items only)</span><span>$8,260.32</span></div>
+      <div class="totals-row"><span>Subtotal (new items only)</span><span>$8,203.45</span></div>
       <div class="totals-row"><span>Shipping</span><span>TBD</span></div>
-      <div class="totals-row"><span>Est. Tax (6%)</span><span>$495.62</span></div>
+      <div class="totals-row"><span>Est. Tax (6%)</span><span>$492.21</span></div>
       <div class="totals-grand">
         <div class="totals-grand-label">Estimated Total</div>
-        <div class="totals-grand-val">$8,755.94</div>
+        <div class="totals-grand-val">$8,695.66</div>
       </div>
     </div>
   </div>

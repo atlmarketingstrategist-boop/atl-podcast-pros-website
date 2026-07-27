@@ -3,10 +3,12 @@ import { useEffect } from 'react';
 import ClientPasswordGate from '../components/ClientPasswordGate';
 import { sfaPartnersPage } from '../data/clientPages/sfaPartners';
 import { missionFieldPage } from '../data/clientPages/missionField';
+import { jonAlwinsonPage } from '../data/clientPages/jonAlwinson';
 
 const clientPages = {
   'sfa-partners': sfaPartnersPage,
   'mission-field': missionFieldPage,
+  'jon-alwinson': jonAlwinsonPage,
 };
 
 export default function ClientPage() {

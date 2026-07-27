@@ -146,17 +146,17 @@ export const jonAlwinsonPage = {
     </div>
     <div class="stat-cell">
       <div class="stat-label">Total Items</div>
-      <div class="stat-val">34</div>
+      <div class="stat-val">35</div>
       <div class="stat-sub">Across 4 categories</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Subtotal</div>
-      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,222</div>
+      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,260</div>
       <div class="stat-sub">New items only</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Est. Total</div>
-      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,716</div>
+      <div class="stat-val" style="font-size:18px;padding-top:4px;">$8,756</div>
       <div class="stat-sub">Includes 6% tax</div>
     </div>
   </div>
@@ -226,18 +226,18 @@ export const jonAlwinsonPage = {
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0DP7SCRYB?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
-        <td><div class="item-name">NEEWER 2 Pack Super Clamps with 5/8" Stud (UA017)</div><div class="item-desc">Heavy-duty clamps for mounting accessories to poles and booms.</div></td>
-        <td style="text-align:center;">2</td>
-        <td>$50.34</td>
-        <td>$100.68</td>
-        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CTWR1MC1?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
-      </tr>
-      <tr>
         <td><div class="item-name">SmallRig Camera Boom Arm Clamps — Bookshelf Mounting</div><div class="item-desc">Flexible arm clamps for mounting guest cameras to the built-in floor-to-ceiling bookshelves on either side of the desk.</div></td>
         <td style="text-align:center;">2</td>
         <td>$49.99</td>
         <td>$99.98</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0FWKD29VH?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+      </tr>
+      <tr>
+        <td><div class="item-name">SmallRig Clamp</div><div class="item-desc">Additional clamp for mounting cameras and accessories in the studio.</div></td>
+        <td style="text-align:center;">2</td>
+        <td>$18.99</td>
+        <td>$37.98</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B087T4T8D5?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">LG 32" UHD IPS Monitor — Confidence Display</div><div class="item-desc">Wall-mounted confidence monitor on the white wall Jon faces. Displays teleprompter text, speaker notes, and live preview.</div></td>
@@ -291,6 +291,13 @@ export const jonAlwinsonPage = {
         <td>$189.00</td>
         <td>$378.00</td>
         <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CYDS9YX7?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
+      </tr>
+      <tr>
+        <td><div class="item-name">NEEWER 2 Pack Super Clamps with 5/8" Stud (UA017)</div><div class="item-desc">Heavy-duty clamps for mounting accessories to poles and booms.</div></td>
+        <td style="text-align:center;">2</td>
+        <td>$50.34</td>
+        <td>$100.68</td>
+        <td><a class="btn-amazon" href="https://www.amazon.com/dp/B0CTWR1MC1?tag=benjaminpaul-20" target="_blank">View on Amazon</a></td>
       </tr>
       <tr>
         <td><div class="item-name">Amaran 200dS LED Video Light (Key Lights)</div><div class="item-desc">Professional 200W daylight key lights mounted on varipoles. One per host position.</div></td>
@@ -448,12 +455,12 @@ export const jonAlwinsonPage = {
   <!-- TOTALS -->
   <div class="totals-block">
     <div class="totals-inner">
-      <div class="totals-row"><span>Subtotal (new items only)</span><span>$8,222.34</span></div>
+      <div class="totals-row"><span>Subtotal (new items only)</span><span>$8,260.32</span></div>
       <div class="totals-row"><span>Shipping</span><span>TBD</span></div>
-      <div class="totals-row"><span>Est. Tax (6%)</span><span>$493.34</span></div>
+      <div class="totals-row"><span>Est. Tax (6%)</span><span>$495.62</span></div>
       <div class="totals-grand">
         <div class="totals-grand-label">Estimated Total</div>
-        <div class="totals-grand-val">$8,715.68</div>
+        <div class="totals-grand-val">$8,755.94</div>
       </div>
     </div>
   </div>

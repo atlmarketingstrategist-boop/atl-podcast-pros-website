@@ -3,7 +3,22 @@ import { useBookingModal } from '../components/BookingModal'
 import { Link } from 'react-router-dom'
 import './OurWork.css'
 
+const StarRating = () => (
+  <div className="testimonial-card-ow__stars" aria-label="5 out of 5 stars">
+    {[0, 1, 2, 3, 4].map((n) => (
+      <svg key={n} width="16" height="16" viewBox="0 0 24 24" fill="#FFC107" aria-hidden="true">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z" />
+      </svg>
+    ))}
+  </div>
+)
+
 const testimonials = [
+  {
+    quote: "From start to finish, Ben with ATL Podcast Pros was professional, friendly, and highly communicative. He went above and beyond, even adjusting his schedule to ensure this very important project was completed successfully and on time. We highly recommend ATL Podcast Pros for your next podcast project!",
+    name: "Executive",
+    show: "2819 Church",
+  },
   {
     quote: "Best to do it! Thank you for my setup. Professional and timely service.",
     name: "Jason Stephens",
@@ -236,6 +251,7 @@ export default function OurWork() {
                 key={i}
                 ref={fadeRef}
               >
+                <StarRating />
                 <div className="testimonial-card-ow__quote">"</div>
                 <p className="testimonial-card-ow__text">{t.quote}</p>
                 <div className="testimonial-card-ow__footer">

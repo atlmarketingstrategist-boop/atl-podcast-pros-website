@@ -238,6 +238,12 @@
   flex-direction: column;
 }
 
+.testimonial-card-ow__stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
 .testimonial-card-ow__quote {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 4rem;

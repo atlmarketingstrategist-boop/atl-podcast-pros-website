@@ -1,5 +1,15 @@
 {
   "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.atlpodcastpros.com" }],
+      "destination": "https://atlpodcastpros.com/$1",
+      "permanent": true
+    },
+    { "source": "/podcast-pro-packages", "destination": "/services", "permanent": true },
+    { "source": "/podcast-pro-packages/", "destination": "/services", "permanent": true },
+    { "source": "/contact-us", "destination": "/book", "permanent": true },
+    { "source": "/contact-us/", "destination": "/book", "permanent": true },
     { "source": "/podcast-equipment-list", "destination": "/services", "permanent": true },
     { "source": "/podcast-equipment-list/", "destination": "/services", "permanent": true },
     { "source": "/faqs", "destination": "/how-it-works", "permanent": true },

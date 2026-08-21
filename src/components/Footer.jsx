@@ -17,6 +17,9 @@ const serviceAreas = [
   { to: '/locations/podcast-studio-setup-decatur', label: 'Decatur' },
   { to: '/locations/podcast-studio-setup-alpharetta', label: 'Alpharetta' },
   { to: '/locations/podcast-studio-setup-sandy-springs', label: 'Sandy Springs' },
+  { to: '/locations/podcast-studio-setup-marietta', label: 'Marietta' },
+  { to: '/locations/podcast-studio-setup-roswell', label: 'Roswell' },
+  { to: '/locations/podcast-studio-setup-dunwoody', label: 'Dunwoody' },
 ]
 
 export default function Footer() {

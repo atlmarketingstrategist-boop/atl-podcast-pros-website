@@ -5,6 +5,13 @@ import './Home.css'
 
 const featuredClients = [
   {
+    name: "2819 Church",
+    show: "Content Studio Installation",
+    result: "Lead Pastor | In-Office Content Studio",
+    image: "/2819church.jpeg",
+    alt: "2819 Church podcast and content studio installation by ATL Podcast Pros",
+  },
+  {
     name: "Socrates Charos",
     show: "Good News With Socrates",
     result: "12K subscribers in first year",
@@ -263,7 +270,7 @@ export default function Home() {
                 ref={fadeRef}
               >
                 <div className="home-client-card__thumb">
-                  <img src={c.image} alt={c.show} loading="lazy" width="400" height="400" />
+                  <img src={c.image} alt={c.alt || c.show} loading="lazy" width="400" height="400" />
                 </div>
                 <div className="home-client-card__body">
                   <h3 className="home-client-card__show">{c.show}</h3>

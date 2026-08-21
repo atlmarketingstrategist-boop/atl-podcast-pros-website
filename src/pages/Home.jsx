@@ -37,6 +37,11 @@ const niches = [
 
 const testimonials = [
   {
+    quote: "From start to finish, Ben with ATL Podcast Pros was professional, friendly, and highly communicative. He went above and beyond, even adjusting his schedule to ensure this very important project was completed successfully and on time. We highly recommend ATL Podcast Pros for your next podcast project!",
+    name: "Executive",
+    role: "2819 Church",
+  },
+  {
     quote: "ATL Podcast Pros is truly the best of the best. They helped me to do what God has called me to do with the Good News with Socrates podcast.",
     name: "Socrates",
     role: "Good News with Socrates",

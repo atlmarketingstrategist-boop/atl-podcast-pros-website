@@ -30,6 +30,11 @@ const testimonials = [
     name: "Area 31 Podcast",
     show: "Host, Area 31",
   },
+  {
+    quote: "I appreciate their help so much. My space has been transformed beautifully and is ready to book. Very kind people with great attention to detail and execute with excellence. Highly recommended.",
+    name: "NaturaLaii",
+    show: "Google Review",
+  },
 ]
 
 const stats = [

@@ -1,0 +1,151 @@
+.bas-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bas-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+}
+
+.bas-dragging {
+  cursor: grabbing !important;
+}
+
+.bas-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.bas-after-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: clip-path;
+}
+
+.bas-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.bas-line {
+  width: 3px;
+  height: 100%;
+  background-color: #A61E31;
+  box-shadow: 0 0 8px rgba(166, 30, 49, 0.6);
+}
+
+.bas-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background-color: #A61E31;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  pointer-events: all;
+  box-shadow: 0 2px 16px rgba(166, 30, 49, 0.5), 0 0 0 3px rgba(255,255,255,0.2);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  z-index: 11;
+}
+
+.bas-handle:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 4px 24px rgba(166, 30, 49, 0.7), 0 0 0 4px rgba(255,255,255,0.3);
+}
+
+.bas-handle:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.bas-label {
+  position: absolute;
+  top: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 5px 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 9;
+  backdrop-filter: blur(4px);
+}
+
+.bas-label-before {
+  left: 16px;
+}
+
+.bas-label-after {
+  right: 16px;
+}
+
+.bas-client-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  margin-top: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .bas-container {
+    aspect-ratio: 4/3;
+    border-radius: 6px;
+  }
+
+  .bas-handle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bas-label {
+    font-size: 9px;
+    padding: 4px 8px;
+    top: 10px;
+  }
+
+  .bas-label-before {
+    left: 10px;
+  }
+
+  .bas-label-after {
+    right: 10px;
+  }
+}

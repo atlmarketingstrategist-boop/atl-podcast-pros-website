@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { useBookingModal } from '../components/BookingModal'
+import BeforeAfterSlider from '../components/BeforeAfterSlider'
 import { Link } from 'react-router-dom'
 import './OurWork.css'
 
@@ -125,41 +126,61 @@ export default function OurWork() {
         </div>
       </section>
 
-      {/* Before / After */}
-      <section className="section section-neutral">
+      {/* Transformations */}
+      <section className="section section-dark">
         <div className="container">
-          <div className="text-center mb-12 fade-up" ref={fadeRef}>
-            <div className="section-heading-wrap centered">
-              <span className="section-eyebrow">Transformations</span>
-              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', fontWeight: 800 }}>Before and After</h2>
-            </div>
-            <p style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', maxWidth: 540, margin: '16px auto 0' }}>
-              Most of our clients start with an empty bedroom, a home office, or a spare room. Here is what we do with it.
+
+          {/* Section heading */}
+          <div className="section-header" style={{ textAlign: 'center', marginBottom: '64px' }}>
+            <div className="accent-bar" style={{ margin: '0 auto 16px' }} />
+            <h2 style={{
+              fontFamily: "'Bebas Neue', sans-serif",
+              fontSize: 'clamp(36px, 5vw, 56px)',
+              color: '#FFFFFF',
+              letterSpacing: '0.03em',
+              marginBottom: '16px'
+            }}>
+              Studio Transformations
+            </h2>
+            <p style={{
+              fontFamily: "'Lato', sans-serif",
+              fontSize: '16px',
+              color: 'rgba(255,255,255,0.65)',
+              maxWidth: '520px',
+              margin: '0 auto',
+              lineHeight: '1.7'
+            }}>
+              Drag the slider to see the full transformation. Every studio is built inside a client's existing space.
             </p>
           </div>
-          <div className="before-after fade-up" ref={fadeRef}>
-            <div className="before-after__col">
-              <div className="before-after__img-wrap">
-                <img
-                  src="/Beforeafter4.png"
-                  alt="home living room before podcast studio installation"
-                  loading="lazy"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', maxWidth: '100%' }}
-                />
-              </div>
-              <p className="before-after__caption">A spare bedroom, home office, or empty corner. The starting point for every project.</p>
-            </div>
-            <div className="before-after__col">
-              <div className="before-after__img-wrap">
-                <img
-                  src="/beforeafter2.png"
-                  alt="professional podcast studio installed in Atlanta home"
-                  loading="lazy"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', maxWidth: '100%' }}
-                />
-              </div>
-              <p className="before-after__caption">A broadcast-quality studio that is camera-ready and operational with one button. No tech knowledge required.</p>
-            </div>
+
+          {/* Three sliders stacked */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '64px' }}>
+
+            <BeforeAfterSlider
+              beforeSrc="/assets/images/before2819.jpg"
+              afterSrc="/assets/images/after2819.jpg"
+              beforeLabel="Before"
+              afterLabel="After"
+              clientName="2819 Church — Content Studio"
+            />
+
+            <BeforeAfterSlider
+              beforeSrc="/assets/images/before2wc.png"
+              afterSrc="/assets/images/after2wc.png"
+              beforeLabel="Before"
+              afterLabel="After"
+              clientName="Two Waters Capital — Podcast Studio"
+            />
+
+            <BeforeAfterSlider
+              beforeSrc="/assets/images/beforebrandi.png"
+              afterSrc="/assets/images/afterbrandi.png"
+              beforeLabel="Before"
+              afterLabel="After"
+              clientName="Brandi Raines — Taking Life by the Raines"
+            />
+
           </div>
         </div>
       </section>

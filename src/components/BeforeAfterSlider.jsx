@@ -80,7 +80,7 @@ export default function BeforeAfterSlider({
         <img
           className="bas-image bas-before"
           src={beforeSrc}
-          alt={`${clientName || ''} before`}
+          alt={clientName ? `${clientName} studio` : 'Podcast studio installation'}
           onLoad={() => setImagesLoaded(true)}
           draggable={false}
         />
@@ -93,7 +93,7 @@ export default function BeforeAfterSlider({
           <img
             className="bas-image bas-after"
             src={afterSrc}
-            alt={`${clientName || ''} after`}
+            alt={clientName ? `${clientName} studio` : 'Podcast studio installation'}
             draggable={false}
           />
         </div>

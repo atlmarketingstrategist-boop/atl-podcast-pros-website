@@ -126,59 +126,41 @@ export default function OurWork() {
         </div>
       </section>
 
-      {/* Transformations */}
-      <section className="section section-dark">
+      {/* Before / After */}
+      <section className="section section-neutral">
         <div className="container">
-
-          {/* Section heading */}
-          <div className="section-header" style={{ textAlign: 'center', marginBottom: '64px' }}>
-            <div className="accent-bar" style={{ margin: '0 auto 16px' }} />
-            <h2 style={{
-              fontFamily: "'Bebas Neue', sans-serif",
-              fontSize: 'clamp(36px, 5vw, 56px)',
-              color: '#FFFFFF',
-              letterSpacing: '0.03em',
-              marginBottom: '16px'
-            }}>
-              Studio Transformations
-            </h2>
-            <p style={{
-              fontFamily: "'Lato', sans-serif",
-              fontSize: '16px',
-              color: 'rgba(255,255,255,0.65)',
-              maxWidth: '520px',
-              margin: '0 auto',
-              lineHeight: '1.7'
-            }}>
-              Drag the slider to see the full transformation. Every studio is built inside a client's existing space.
+          <div className="text-center mb-12 fade-up" ref={fadeRef}>
+            <div className="section-heading-wrap centered">
+              <span className="section-eyebrow">Transformations</span>
+              <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: 'clamp(1.8rem, 4vw, 2.6rem)', fontWeight: 800 }}>Before and After</h2>
+            </div>
+            <p style={{ color: 'var(--color-text-muted)', fontFamily: 'var(--font-body)', maxWidth: 540, margin: '16px auto 0' }}>
+              Most of our clients start with an empty bedroom, a home office, or a spare room. Here is what we do with it.
             </p>
           </div>
 
-          {/* Three sliders stacked */}
+          {/* Three interactive before/after sliders stacked */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '64px' }}>
 
             <BeforeAfterSlider
-              beforeSrc="/assets/images/before2819.jpg"
-              afterSrc="/assets/images/after2819.jpg"
+              beforeSrc="/assets/images/after2819.jpg"
+              afterSrc="/assets/images/before2819.jpg"
               beforeLabel="Before"
               afterLabel="After"
-              clientName="2819 Church — Content Studio"
             />
 
             <BeforeAfterSlider
-              beforeSrc="/assets/images/before2wc.png"
-              afterSrc="/assets/images/after2wc.png"
+              beforeSrc="/assets/images/after2wc.jpg"
+              afterSrc="/assets/images/before2wc.jpg"
               beforeLabel="Before"
               afterLabel="After"
-              clientName="Two Waters Capital — Podcast Studio"
             />
 
             <BeforeAfterSlider
-              beforeSrc="/assets/images/beforebrandi.png"
-              afterSrc="/assets/images/afterbrandi.png"
+              beforeSrc="/assets/images/afterbrandi.jpg"
+              afterSrc="/assets/images/beforebrandi.jpg"
               beforeLabel="Before"
               afterLabel="After"
-              clientName="Brandi Raines — Taking Life by the Raines"
             />
 
           </div>

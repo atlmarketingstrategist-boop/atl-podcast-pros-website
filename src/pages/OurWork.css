@@ -307,11 +307,3 @@
     gap: 48px;
   }
 }
-
-/* Accent bar for Studio Transformations heading */
-.accent-bar {
-  width: 48px;
-  height: 3px;
-  background: #A61E31;
-  border-radius: 2px;
-}

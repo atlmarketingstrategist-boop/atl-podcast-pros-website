@@ -19,6 +19,7 @@ const Book = lazy(() => import('./pages/Book'))
 const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const LocationPage = lazy(() => import('./pages/LocationPage'))
+const PodcastCalculator = lazy(() => import('./pages/PodcastCalculator'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -52,6 +53,7 @@ export default function App() {
               <Route path="/about" element={<About />} />
               <Route path="/book" element={<Book />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/podcast-budget-calculator" element={<PodcastCalculator />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/locations/:slug" element={<LocationPage locations={locationPages} />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

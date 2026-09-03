@@ -67,7 +67,7 @@ export const blogPosts = [
 
 <h2>Step 3: Equipment Basics, What You Actually Need vs Nice to Have</h2>
 
-<p>Gear is where beginners tend to overspend or freeze up entirely. The truth is that a great show needs far less equipment than you might think. Focus on a few essentials that directly affect sound quality, and treat everything else as an upgrade for later. For a full breakdown of what to buy at every budget, see our detailed <a href="/blog/podcast-equipment-list-beginners">podcast equipment list for beginners</a>, which walks through specific recommendations you can trust.</p>
+<p>Gear is where beginners tend to overspend or freeze up entirely. The truth is that a great show needs far less equipment than you might think. Focus on a few essentials that directly affect sound quality, and treat everything else as an upgrade for later. For a full breakdown of what to buy at every budget, see our detailed <a href="/blog/podcast-equipment-list-beginners">podcast equipment list for beginners</a>, which walks through specific recommendations you can trust. You can also <a href="/podcast-budget-calculator">use our free budget calculator</a> to estimate your all-in studio investment.</p>
 
 <h3>Microphone</h3>
 

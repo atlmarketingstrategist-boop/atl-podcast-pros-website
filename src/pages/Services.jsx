@@ -41,9 +41,6 @@ export default function Services() {
           <span className="section-eyebrow hero-line-1" style={{ color: 'rgba(166,30,49,0.9)' }}>Pricing and Services</span>
           <h1 className="hero-line-2">Podcast Studio Setup &amp;<br />Management Services in Atlanta</h1>
           <p className="hero-sub">Start with a studio. Add ongoing management when you are ready. No long-term commitments required.</p>
-          <p className="hero-sub" style={{ marginTop: 12 }}>
-            Not sure what your studio will cost? <Link to="/podcast-budget-calculator" style={{ color: '#fff', textDecoration: 'underline', fontWeight: 700 }}>Use our free budget calculator</Link>.
-          </p>
         </div>
       </section>
 
@@ -97,6 +94,9 @@ export default function Services() {
                   </button>
                   <p className="pricing-card__sub">Free 20-min intro call. No pressure.</p>
                 </div>
+                <p style={{ textAlign: 'center', marginTop: 18, fontFamily: 'var(--font-body)', fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>
+                  Not sure what your studio will cost? <Link to="/podcast-budget-calculator" style={{ color: 'var(--color-primary)', fontWeight: 700 }}>Use our free budget calculator &rarr;</Link>
+                </p>
               </div>
             </div>
           </div>

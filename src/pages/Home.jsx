@@ -236,6 +236,11 @@ export default function Home() {
                 <ul className="service-card__list">
                   {svc.bullets.map((b) => <li key={b}>{b}</li>)}
                 </ul>
+                {svc.title === 'Studio Setup' && (
+                  <Link to="/podcast-budget-calculator" style={{ display: 'block', marginTop: 16, fontFamily: 'var(--font-body)', fontSize: '0.85rem', color: 'rgba(255,255,255,0.55)', textDecoration: 'underline' }}>
+                    Estimate your studio budget &rarr;
+                  </Link>
+                )}
                 <Link to="/services" className="btn btn-primary" style={{ marginTop: 28 }} aria-label={`Learn more about our ${svc.title} service`}>Learn More</Link>
               </div>
             ))}

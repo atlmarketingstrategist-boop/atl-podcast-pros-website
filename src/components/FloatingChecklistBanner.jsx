@@ -30,7 +30,8 @@ export default function FloatingChecklistBanner() {
     setDismissed(true)
   }
 
-  if (dismissed || pathname.startsWith('/client/') || pathname === '/setup') return null
+  if (pathname === '/gear' || pathname === '/setup' || pathname.startsWith('/client/')) return null
+  if (dismissed) return null
 
   return (
     <aside

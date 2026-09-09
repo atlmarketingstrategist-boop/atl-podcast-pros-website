@@ -20,6 +20,7 @@ const Blog = lazy(() => import('./pages/Blog'))
 const BlogPost = lazy(() => import('./pages/BlogPost'))
 const LocationPage = lazy(() => import('./pages/LocationPage'))
 const PodcastCalculator = lazy(() => import('./pages/PodcastCalculator'))
+const SetupPage = lazy(() => import('./pages/SetupPage'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -62,6 +63,7 @@ export default function App() {
             {/* Standalone routes — no Navbar, no Footer */}
             <Route path="/client/:slug" element={<ClientPage />} />
             <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/setup" element={<SetupPage />} />
           </Routes>
         </Suspense>
         <FloatingChecklistBanner />

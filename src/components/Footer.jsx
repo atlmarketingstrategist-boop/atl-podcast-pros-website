@@ -9,6 +9,7 @@ const navLinks = [
   { to: '/about', label: 'About' },
   { to: '/book', label: 'Book a Call' },
   { to: '/blog', label: 'Blog' },
+  { to: '/gear', label: 'Gear List' },
 ]
 
 const serviceAreas = [

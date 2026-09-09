@@ -1,0 +1,308 @@
+/* ============================================================
+   /gear  PUBLIC GEAR LIST
+   ============================================================ */
+.gl {
+  background: #1A1A1A;
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 120px; /* clearance for sticky bar */
+}
+.gl * { box-sizing: border-box; }
+
+.gl-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== HERO ===== */
+.gl-hero {
+  background: #111111;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 128px 0 56px;
+}
+.gl-prelabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #A61E31;
+  margin: 0 0 14px;
+}
+.gl-h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin: 0 0 20px;
+}
+.gl-hero__sub {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.7);
+  max-width: 600px;
+  margin: 0 0 18px;
+}
+.gl-disclosure {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  margin: 0;
+}
+
+/* ===== FILTER TABS ===== */
+.gl-tabs-wrap {
+  position: sticky;
+  top: 72px;
+  z-index: 20;
+  background: #1A1A1A;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 16px 0;
+}
+.gl-tabs {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.gl-tabs::-webkit-scrollbar { display: none; }
+.gl-tab {
+  flex-shrink: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  padding: 9px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  background: #111111;
+  color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  white-space: nowrap;
+}
+.gl-tab:hover { color: #fff; }
+.gl-tab--active {
+  background: #A61E31;
+  color: #fff;
+  border-color: #A61E31;
+}
+
+/* ===== SECTIONS ===== */
+.gl-sections { padding: 44px 24px 20px; }
+.gl-section { margin-bottom: 52px; }
+.gl-section__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.gl-section__bar {
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: #A61E31;
+  margin-bottom: 10px;
+}
+.gl-section__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  margin: 0;
+}
+.gl-section__subtotal {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ===== TABLE ===== */
+.gl-table {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gl-table__head,
+.gl-row {
+  display: grid;
+  grid-template-columns: 44px 1fr 120px 110px 150px;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+}
+.gl-table__head {
+  background: #0d0d0d;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+.gl-row {
+  border-left: 3px solid transparent;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.gl-row:nth-child(odd) { background: #111111; }   /* head is child 1, so first data row (child 2) = 0f0f0f */
+.gl-row:nth-child(even) { background: #0f0f0f; }
+.gl-row:hover {
+  border-left-color: #A61E31;
+  background: #161616;
+}
+
+.gl-col-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+}
+.gl-col-name { display: flex; flex-direction: column; gap: 4px; }
+.gl-item-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.35;
+}
+.gl-item-note {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+.gl-pill {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: rgba(166,30,49,0.15);
+  color: #d16b78;
+}
+.gl-col-price {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #A61E31;
+}
+.gl-buy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: #A61E31;
+  padding: 9px 16px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+.gl-buy:hover { background: #C73248; }
+
+/* ===== STICKY TOTAL BAR ===== */
+.gl-bar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 40;
+  background: #111111;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.gl-bar--hidden {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.gl-bar__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.gl-bar__left { display: flex; flex-direction: column; gap: 3px; }
+.gl-bar__total {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+.gl-bar__note {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+}
+.gl-bar__cta {
+  flex-shrink: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  background: #A61E31;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+.gl-bar__cta:hover { background: #C73248; }
+
+/* ============================================================
+   RESPONSIVE  ->  stack table rows into cards
+   ============================================================ */
+@media (max-width: 720px) {
+  .gl-table { border: none; border-radius: 0; overflow: visible; }
+  .gl-table__head { display: none; }
+
+  .gl-row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "name name"
+      "meta meta"
+      "price buy";
+    gap: 12px;
+    padding: 18px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-left: 3px solid #A61E31;
+    border-radius: 10px;
+    background: #111111 !important;
+  }
+  .gl-col-num { display: none; }
+  .gl-col-name { grid-area: name; }
+  .gl-col-cat { grid-area: meta; }
+  .gl-col-price { grid-area: price; align-self: center; font-size: 16px; }
+  .gl-col-buy { grid-area: buy; justify-self: end; }
+  .gl-buy { padding: 11px 18px; }
+
+  .gl-section__head { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .gl-section__subtotal { text-align: left; }
+
+  .gl-bar__inner { flex-direction: column; align-items: stretch; text-align: center; gap: 10px; padding: 12px 20px; }
+  .gl-bar__left { align-items: center; }
+  .gl-bar__cta { width: 100%; }
+  .gl { padding-bottom: 150px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gl-bar, .gl-tab, .gl-buy, .gl-row { transition: none; }
+}

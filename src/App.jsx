@@ -21,6 +21,7 @@ const BlogPost = lazy(() => import('./pages/BlogPost'))
 const LocationPage = lazy(() => import('./pages/LocationPage'))
 const PodcastCalculator = lazy(() => import('./pages/PodcastCalculator'))
 const SetupPage = lazy(() => import('./pages/SetupPage'))
+const GearList = lazy(() => import('./pages/GearList'))
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -55,6 +56,7 @@ export default function App() {
               <Route path="/book" element={<Book />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/podcast-budget-calculator" element={<PodcastCalculator />} />
+              <Route path="/gear" element={<GearList />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/locations/:slug" element={<LocationPage locations={locationPages} />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

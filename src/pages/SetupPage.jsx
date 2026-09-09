@@ -3,6 +3,17 @@ import { Link } from 'react-router-dom'
 import { useBookingModal } from '../components/BookingModal'
 import './SetupPage.css'
 
+/* ---------- Benefit icons (Lucide icon paths, inline) ---------- */
+const svg = (children) => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">{children}</svg>
+)
+const Zap = () => svg(<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />)
+const Eye = () => svg(<><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" /><circle cx="12" cy="12" r="3" /></>)
+const XCircle = () => svg(<><circle cx="12" cy="12" r="10" /><path d="m15 9-6 6" /><path d="m9 9 6 6" /></>)
+const RefreshCw = () => svg(<><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" /><path d="M21 3v5h-5" /><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" /><path d="M8 16H3v5" /></>)
+const StarIcon = () => svg(<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />)
+const ShieldCheck = () => svg(<><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></>)
+
 /* ---------- Icons ---------- */
 const Shield = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
@@ -21,6 +32,14 @@ const Arrow = ({ dir }) => (
     {dir === 'left' ? <polyline points="15 18 9 12 15 6" /> : <polyline points="9 18 15 12 9 6" />}
   </svg>
 )
+const GoogleG = () => (
+  <svg width="16" height="16" viewBox="0 0 48 48" aria-hidden="true">
+    <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z" />
+    <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z" />
+    <path fill="#FBBC05" d="M11.69 28.18c-.44-1.32-.69-2.73-.69-4.18s.25-2.86.69-4.18v-5.7H4.34A21.98 21.98 0 0 0 2 24c0 3.55.85 6.91 2.34 9.88l7.35-5.7z" />
+    <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z" />
+  </svg>
+)
 
 /* ---------- Data ---------- */
 const STEPS = [
@@ -30,12 +49,12 @@ const STEPS = [
 ]
 
 const BENEFITS = [
-  { title: 'Record Without Tech Stress', body: 'A studio designed so recording is distraction-free. No troubleshooting, no delays, no tech headaches.' },
-  { title: 'Impress Every Guest', body: 'A professional studio setup creates instant confidence for both host and guests. Your space speaks before you do.' },
-  { title: 'Eliminate Trial and Error', body: 'No second-guessing about the right equipment or setup. We get it right the first time.' },
-  { title: 'Stay Consistent', body: 'A studio designed for ease of use means you will keep recording week after week for years.' },
-  { title: 'Build Instant Authority', body: 'Professional studio quality builds credible brand trust and deep connection with your audience.' },
-  { title: 'Future Proof Setup', body: 'Studio equipment and setup that will work with your growing show, audience, and platforms.' },
+  { Icon: Zap, title: 'Record Without Tech Stress', body: 'A studio designed so recording is distraction-free. No troubleshooting, no delays, no tech headaches.' },
+  { Icon: Eye, title: 'Impress Every Guest', body: 'A professional studio setup creates instant confidence for both host and guests. Your space speaks before you do.' },
+  { Icon: XCircle, title: 'Eliminate Trial and Error', body: 'No second-guessing about the right equipment or setup. We get it right the first time.' },
+  { Icon: RefreshCw, title: 'Stay Consistent', body: 'A studio designed for ease of use means you will keep recording week after week for years.' },
+  { Icon: StarIcon, title: 'Build Instant Authority', body: 'Professional studio quality builds credible brand trust and deep connection with your audience.' },
+  { Icon: ShieldCheck, title: 'Future Proof Setup', body: 'Studio equipment and setup that will work with your growing show, audience, and platforms.' },
 ]
 
 const INCLUDED = [
@@ -48,6 +67,8 @@ const INCLUDED = [
 ]
 
 const TESTIMONIALS = [
+  { quote: 'From start to finish, Ben with ATL Podcast Pros was professional, friendly, and highly communicative. He went above and beyond, even adjusting his schedule to ensure this very important project was completed successfully and on time. We highly recommend ATL Podcast Pros for your next podcast project!', name: 'Executive', role: '2819 Church', google: true },
+  { quote: 'I appreciate their help so much. My space has been transformed beautifully and is ready to book. Very kind people with great attention to detail and execute with excellence. Highly recommended.', name: "M'laiza (NaturaLaii)", role: 'Google Review', google: true },
   { quote: "I want to thank Mr. Benjamin in Atlanta. He's working behind the scenes and he put everything together. He brought the equipment here and he put together a beautiful studio for us to minister the gospel around the world.", name: 'Socrates Charos', role: 'Good News with Socrates' },
   { quote: 'Best to do it! Thank you for my setup. Professional and timely service.', name: 'Jason Stephens', role: 'Owner, 12:16 Entertainment' },
   { quote: 'Taught me not only about the equipment I need to buy but also how to set it up and have it running efficiently with great quality!', name: 'Area 31 Podcast', role: 'Host, Area 31' },
@@ -122,6 +143,8 @@ export default function SetupPage() {
   const [statsRun, setStatsRun] = useState(false)
   const [slide, setSlide] = useState(0)
   const [paused, setPaused] = useState(false)
+  const [tSlide, setTSlide] = useState(0)
+  const [tPaused, setTPaused] = useState(false)
   const [openFaq, setOpenFaq] = useState(0)
   const statsRef = useRef(null)
 
@@ -165,6 +188,13 @@ export default function SetupPage() {
     const id = setInterval(() => setSlide((s) => (s + 1) % SLIDES.length), 4000)
     return () => clearInterval(id)
   }, [paused])
+
+  /* Testimonial carousel auto-advance */
+  useEffect(() => {
+    if (tPaused) return
+    const id = setInterval(() => setTSlide((s) => (s + 1) % TESTIMONIALS.length), 5000)
+    return () => clearInterval(id)
+  }, [tPaused])
 
   const scrollToId = useCallback((id) => {
     const el = document.getElementById(id)
@@ -223,7 +253,7 @@ export default function SetupPage() {
                 <div className="su-video__frame">
                   <iframe
                     title="vimeo-player"
-                    src="https://player.vimeo.com/video/1162908588?h=f436b79bf3"
+                    src="https://player.vimeo.com/video/1162908588?h=f436b79bf3&autoplay=1&muted=1"
                     width="640"
                     height="360"
                     frameBorder="0"
@@ -231,6 +261,13 @@ export default function SetupPage() {
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                     allowFullScreen
                   />
+                </div>
+                <div className="video-float-chip">
+                  <span className="video-float-chip__icon"><Check /></span>
+                  <span className="video-float-chip__text">
+                    <span className="video-float-chip__t1">One-Button Recording</span>
+                    <span className="video-float-chip__t2">Start in seconds</span>
+                  </span>
                 </div>
               </div>
               <div className="su-chips">
@@ -250,7 +287,7 @@ export default function SetupPage() {
               <div className="su-stat__label">Years of Studio Build Experience</div>
             </div>
             <div className="su-stat">
-              <div className="su-stat__num">{hours}s</div>
+              <div className="su-stat__num">{hours}<span className="su-stat__suffix">s</span></div>
               <div className="su-stat__label">Hours of Client Content Produced</div>
             </div>
             <div className="su-stat">
@@ -279,9 +316,6 @@ export default function SetupPage() {
                 </div>
               ))}
             </div>
-            <div className="su-dots su-dots--static">
-              {STEPS.map((s, i) => <span key={i} className={`su-dot ${i === 0 ? 'su-dot--active' : ''}`} />)}
-            </div>
           </div>
         </section>
 
@@ -294,8 +328,8 @@ export default function SetupPage() {
             </div>
             <div className="su-grid su-grid--3">
               {BENEFITS.map((b, i) => (
-                <div className="su-card su-fade" key={b.title} style={{ transitionDelay: `${i * 80}ms` }}>
-                  <span className="su-card__icon"><Check /></span>
+                <div className="su-card benefit-card su-fade" key={b.title} style={{ transitionDelay: `${i * 80}ms` }}>
+                  <span className="su-card__icon"><b.Icon /></span>
                   <h3 className="su-card__title">{b.title}</h3>
                   <p className="su-card__text">{b.body}</p>
                 </div>
@@ -332,16 +366,32 @@ export default function SetupPage() {
               <p className="su-prelabel">Testimonials</p>
               <h2 className="su-h2">Trusted by <span className="su-red">Atlanta's Best</span></h2>
             </div>
-            <div className="su-grid su-grid--3">
+            <div
+              className="su-tcarousel su-fade"
+              onMouseEnter={() => setTPaused(true)}
+              onMouseLeave={() => setTPaused(false)}
+            >
+              <button type="button" className="su-tcarousel__arrow su-tcarousel__arrow--left" onClick={() => setTSlide((s) => (s - 1 + TESTIMONIALS.length) % TESTIMONIALS.length)} aria-label="Previous testimonial"><Arrow dir="left" /></button>
               {TESTIMONIALS.map((t, i) => (
-                <div className="su-tcard su-fade" key={t.name} style={{ transitionDelay: `${i * 80}ms` }}>
-                  <div className="su-tcard__stars">{[0, 1, 2, 3, 4].map((n) => <Star key={n} />)}</div>
-                  <p className="su-tcard__quote">{t.quote}</p>
-                  <div className="su-tcard__author">
-                    <span className="su-tcard__name">{t.name}</span>
-                    <span className="su-tcard__role">{t.role}</span>
+                i === tSlide ? (
+                  <div className="su-tcard" key={t.name}>
+                    <div className="su-tcard__stars">{[0, 1, 2, 3, 4].map((n) => <Star key={n} />)}</div>
+                    <p className="su-tcard__quote">{t.quote}</p>
+                    <div className="su-tcard__author">
+                      <span className="su-tcard__name">{t.name}</span>
+                      <span className="su-tcard__role">{t.role}</span>
+                    </div>
+                    {t.google && (
+                      <span className="su-tcard__google"><GoogleG /> Google Review</span>
+                    )}
                   </div>
-                </div>
+                ) : null
+              ))}
+              <button type="button" className="su-tcarousel__arrow su-tcarousel__arrow--right" onClick={() => setTSlide((s) => (s + 1) % TESTIMONIALS.length)} aria-label="Next testimonial"><Arrow dir="right" /></button>
+            </div>
+            <div className="su-dots">
+              {TESTIMONIALS.map((t, i) => (
+                <button key={t.name} type="button" className={`su-dot ${i === tSlide ? 'su-dot--active' : ''}`} onClick={() => setTSlide(i)} aria-label={`Go to testimonial ${i + 1}`} />
               ))}
             </div>
           </div>
@@ -351,7 +401,7 @@ export default function SetupPage() {
         <section className="su-section">
           <div className="su-container">
             <div className="su-head su-fade">
-              <p className="su-prelabel">Bring Your Vision</p>
+              <p className="su-prelabel">Inspo Gallery</p>
               <h2 className="su-h2">Bring Your Vision to <span className="su-red">Life</span></h2>
             </div>
             <div

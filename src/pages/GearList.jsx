@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react'
-import { useBookingModal } from '../components/BookingModal'
+import { useState } from 'react'
 import './GearList.css'
 
 const gearItems = [
@@ -44,24 +43,8 @@ const TABS = ['All', ...CATEGORIES]
 
 const usd = (n) => n.toLocaleString('en-US', { style: 'currency', currency: 'USD' })
 
-const totalValue = gearItems.reduce((sum, item) => sum + item.price, 0)
-
 export default function GearList() {
-  const { openModal } = useBookingModal()
   const [activeCategory, setActiveCategory] = useState('All')
-  const [barHidden, setBarHidden] = useState(false)
-
-  /* Hide the sticky total bar once the footer scrolls into view */
-  useEffect(() => {
-    const footer = document.querySelector('.footer')
-    if (!footer) return
-    const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => setBarHidden(e.isIntersecting)),
-      { threshold: 0 }
-    )
-    io.observe(footer)
-    return () => io.disconnect()
-  }, [])
 
   const visibleCategories = activeCategory === 'All' ? CATEGORIES : [activeCategory]
 
@@ -155,17 +138,6 @@ export default function GearList() {
               </section>
             )
           })}
-        </div>
-      </div>
-
-      {/* ===== STICKY TOTAL BAR ===== */}
-      <div className={`gl-bar ${barHidden ? 'gl-bar--hidden' : ''}`} aria-hidden={barHidden}>
-        <div className="gl-bar__inner">
-          <div className="gl-bar__left">
-            <span className="gl-bar__total">Total List Value: {usd(totalValue)}</span>
-            <span className="gl-bar__note">Individual unit prices. Quantities vary by build.</span>
-          </div>
-          <button type="button" className="gl-bar__cta" onClick={openModal}>Schedule a Free Call</button>
         </div>
       </div>
     </>

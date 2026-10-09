@@ -1475,7 +1475,7 @@ export const blogPosts = [
 
       <h2>What Podcast Studio Rental Actually Costs in Atlanta</h2>
 
-      <p>Professional podcast studio rental rates in Atlanta generally run from $75 to $200 per hour depending on the space, the equipment, and whether an engineer is included. A well-equipped studio with multiple broadcast microphones, camera coverage, and a producer on hand sits at the higher end of that range. A basic room with a couple of mics sits at the lower end.</p>
+      <p>Professional podcast studio rental rates in Atlanta generally run from $75 to $200 per hour depending on the space, the equipment, and whether an engineer is included &mdash; see <a href="https://podcastrental.com/studios/georgia/atlanta-georgia/" target="_blank" rel="noopener noreferrer">current Atlanta podcast studio rental rates</a> for an up-to-date list of 26 local studios. A well-equipped studio with multiple broadcast microphones, camera coverage, and a producer on hand sits at the higher end of that range. A basic room with a couple of mics sits at the lower end.</p>
 
       <p>Now apply that to a realistic recording habit. A serious podcaster records two to four episodes a month. Sessions usually run two to three hours once you account for setup, the actual recording, and a little overrun. Take a middle-of-the-road example: three episodes a month, two hours per session, at $125 per hour. That is $250 per session and $750 per month. If you add an engineer or record longer sessions, you can easily clear $1,000 in a single month.</p>
 

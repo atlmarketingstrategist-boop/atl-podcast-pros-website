@@ -2425,6 +2425,8 @@ export const blogPosts = [
         <li><a href="/blog/podcast-microphone-home-studio-guide">How to Choose the Right Podcast Microphone</a></li>
         <li><a href="/blog/acoustic-treatment-home-podcast-studio">Acoustic Treatment for Home Podcast Studios</a></li>
       </ul>
+
+      <p>Related reading: PodcastRental's guide to <a href="https://podcastrental.com/how-to-build-a-podcast-studio-at-home/" target="_blank" rel="noopener noreferrer">what a home podcast studio really costs</a> breaks the build budget down piece by piece.</p>
     `,
   },
   {

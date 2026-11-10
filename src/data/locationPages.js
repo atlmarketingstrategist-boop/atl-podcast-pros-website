@@ -5,8 +5,8 @@ export const locationPages = [
     location: 'Buckhead',
     state: 'GA',
     heroHeading: 'In-Home Podcast Studio Setup in Buckhead, Atlanta',
-    metaTitle: 'Podcast Studio Setup Buckhead Atlanta | ATL Podcast Pros',
-    metaDescription: 'Professional in-home podcast studio setup and management in Buckhead, Atlanta. We install your studio and handle everything. Starting at $10K. Book a free call.',
+    metaTitle: 'Podcast Studio Installation in Buckhead, Atlanta GA',
+    metaDescription: 'Done-for-you podcast studio installation for Buckhead professionals, built into your home or office in Atlanta. Hands-off management after launch.',
     intro: `Buckhead is home to some of Atlanta's most successful executives, entrepreneurs, and faith leaders. If you have been thinking about launching a podcast to build your authority, share your story, or grow your ministry, ATL Podcast Pros brings the studio to you. We design, install, and manage professional podcast studios inside Buckhead homes and offices so you never have to leave your neighborhood to record.`,
     audienceDescription: 'Buckhead executives, real estate professionals, faith leaders, and entrepreneurs',
     faqs: [
@@ -21,8 +21,8 @@ export const locationPages = [
     location: 'Midtown',
     state: 'GA',
     heroHeading: 'In-Home Podcast Studio Setup in Midtown Atlanta',
-    metaTitle: 'Podcast Studio Setup in Midtown Atlanta | ATL Podcast Pros',
-    metaDescription: 'Professional in-home podcast studio setup in Midtown Atlanta. Done-for-you installation and ongoing management. Starting at $10K. Book your free call today.',
+    metaTitle: 'Midtown Atlanta Podcast Studio Installation & Setup',
+    metaDescription: 'Custom podcast studio installation for Midtown Atlanta founders and creators. We design it, install it, and run it so you only press record.',
     intro: `Midtown Atlanta is a hub for creatives, professionals, and thought leaders who have something important to say. ATL Podcast Pros installs professional podcast studios inside Midtown condos, townhomes, and offices so you can record with one button and never think about the tech. Whether you are a business consultant, a therapist, a pastor, or an entrepreneur, we build your studio around your space and your brand.`,
     audienceDescription: 'Midtown Atlanta creatives, consultants, therapists, business owners, and thought leaders',
     faqs: [

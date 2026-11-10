@@ -1550,8 +1550,8 @@ export const blogPosts = [
     date: 'August 21, 2026',
     readTime: '6 min read',
     image: '/assets/images/blog-default.jpg',
-    metaTitle: 'Executive Podcast Production Atlanta 2026 | ATL Podcast Pros',
-    metaDescription: 'Atlanta executives and business leaders are using podcasts to build authority, attract clients, and grow their brand. Here is how the best ones do it.',
+    metaTitle: 'Executive Podcast Production for Atlanta Thought Leaders',
+    metaDescription: 'Done-for-you podcast production for Atlanta executives and thought leaders. We handle the studio install, recording, and management. See how it works.',
     content: `
       <p>Something has shifted in how Atlanta business leaders build their reputations. A decade ago, an executive who wanted to be seen as an authority hired a public relations firm, chased press mentions, and waited to be quoted in someone else's article. In 2026, the most influential executives are not waiting to be discovered at all. They are building their own media platforms, and more often than not, that platform is a podcast.</p>
 

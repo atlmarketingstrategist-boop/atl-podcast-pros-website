@@ -210,11 +210,11 @@ export default function SetupPage() {
 
   return (
     <>
-      <title>Professional Podcast Studio Setup Built and Installed in Your Home | ATL Podcast Pros</title>
-      <meta name="description" content="ATL Podcast Pros designs and installs professional podcast studios inside your home or office in Atlanta. One-button recording. Done in one day. Starting at $10,000." />
+      <title>Custom Podcast Studio Setup in Atlanta: What Is Included</title>
+      <meta name="description" content="See exactly what a custom podcast studio installation includes in Atlanta: audio, video, lighting, and acoustics, designed and installed for you." />
       <link rel="canonical" href="https://atlpodcastpros.com/setup" />
-      <meta property="og:title" content="Professional Podcast Studio Setup | ATL Podcast Pros" />
-      <meta property="og:description" content="Done-for-you podcast studio setup in Atlanta. Professional audio, video, and lighting installed in your home office." />
+      <meta property="og:title" content="Custom Podcast Studio Setup in Atlanta: What Is Included" />
+      <meta property="og:description" content="See exactly what a custom podcast studio installation includes in Atlanta: audio, video, lighting, and acoustics, designed and installed for you." />
       <meta property="og:url" content="https://atlpodcastpros.com/setup" />
 
       <div className="su">

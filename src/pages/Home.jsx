@@ -93,13 +93,13 @@ export default function Home() {
 
   return (
     <>
-      <title>In-Home Podcast Studio Setup Atlanta | ATL Podcast Pros</title>
+      <title>Done-For-You Podcast Studio Installation in Atlanta</title>
       <link rel="canonical" href="https://atlpodcastpros.com/" />
-      <meta name="description" content="Atlanta's done-for-you in-home podcast studio service. We design, install and manage your studio. One button to record. Book your free intro call." />
+      <meta name="description" content="We design, install, and manage done-for-you podcast studios in Atlanta homes and offices, hands-off after launch. Start with a free intro call." />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="ATL Podcast Pros" />
-      <meta property="og:title" content="In-Home Podcast Studio Setup Atlanta | ATL Podcast Pros" />
-      <meta property="og:description" content="Atlanta's done-for-you in-home podcast studio service. We design, install and manage your studio. One button to record. Starting at $10K. Book your free intro call today." />
+      <meta property="og:title" content="Done-For-You Podcast Studio Installation in Atlanta" />
+      <meta property="og:description" content="We design, install, and manage done-for-you podcast studios in Atlanta homes and offices, hands-off after launch. Start with a free intro call." />
       <meta property="og:url" content="https://atlpodcastpros.com/" />
       <meta property="og:image" content="https://atlpodcastpros.com/assets/images/home-hero2.jpeg" />
 

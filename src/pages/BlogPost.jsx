@@ -36,6 +36,8 @@ export default function BlogPost() {
   if (!post) {
     return (
       <div className="blog-post-404">
+        <title>Article Not Found | ATL Podcast Pros</title>
+        <meta name="robots" content="noindex, follow" />
         <h1>Article Not Found</h1>
         <p>The article you are looking for does not exist or may have moved.</p>
         <Link to="/blog" className="btn btn-primary">Back to Blog</Link>

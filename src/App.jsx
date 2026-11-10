@@ -9,6 +9,7 @@ import { locationPages } from './data/locationPages'
 import ClientPage from './pages/ClientPage'
 import ThankYou from './pages/ThankYou'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import NotFound from './pages/NotFound'
 
 const Home = lazy(() => import('./pages/Home'))
 const HowItWorks = lazy(() => import('./pages/HowItWorks'))
@@ -60,6 +61,7 @@ export default function App() {
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/locations/:slug" element={<LocationPage locations={locationPages} />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="*" element={<NotFound />} />
             </Route>
 
             {/* Standalone routes — no Navbar, no Footer */}

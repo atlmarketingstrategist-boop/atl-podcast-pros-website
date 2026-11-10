@@ -53,6 +53,8 @@ export default function LocationPage({ locations }) {
   if (!loc) {
     return (
       <div className="loc-404">
+        <title>Page Not Found | ATL Podcast Pros</title>
+        <meta name="robots" content="noindex, follow" />
         <h1>Page Not Found</h1>
         <p>The location page you are looking for does not exist.</p>
         <Link to="/" className="btn btn-primary">Go Home</Link>

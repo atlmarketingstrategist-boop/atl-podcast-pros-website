@@ -16,7 +16,8 @@ export const locationPages = [
     ],
     relatedReading: [
       { to: '/blog/in-home-podcast-studio-setup-atlanta', label: 'How in-home studio installation works across metro Atlanta' },
-      { to: '/blog/podcast-studio-setup-cost-2026', label: 'What a podcast studio setup costs in 2026' }
+      { to: '/blog/podcast-studio-setup-cost-2026', label: 'What a podcast studio setup costs in 2026' },
+      { to: '/church-podcast-studio-atlanta', label: 'Studio installation for Buckhead churches and ministries' }
     ]
   },
   {
@@ -36,7 +37,8 @@ export const locationPages = [
     ],
     relatedReading: [
       { to: '/blog/in-home-podcast-studio-setup-atlanta', label: 'The Atlanta room types we build in, including condos and lofts' },
-      { to: '/blog/podcast-studio-setup-cost-2026', label: 'What changes the price of a studio installation' }
+      { to: '/blog/podcast-studio-setup-cost-2026', label: 'What changes the price of a studio installation' },
+      { to: '/church-podcast-studio-atlanta', label: 'Studio installation for Midtown churches and ministries' }
     ]
   },
   {

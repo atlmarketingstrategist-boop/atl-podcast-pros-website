@@ -1396,7 +1396,7 @@ export const blogPosts = [
 
       <p>Another example is closer to the heart of what a home studio can do for an individual faith leader. Socrates Charos is a 77-year-old pastor who came to us with no technical background at all. He had a message and a calling, and not much interest in learning audio software or camera settings. Our team installed his complete podcast studio in his home in a single day. He launched Good News with Socrates, and within his first year the show grew to more than 12,000 YouTube subscribers and became monetized within months. None of that required him to become a producer. It required a studio he could actually use and a team handling everything behind the scenes.</p>
 
-      <p>The lesson from both examples is the same. The barrier for faith leaders has never been the message. It has been the technology and the time. Remove those, and the reach follows.</p>
+      <p>The lesson from both examples is the same. The barrier for faith leaders has never been the message. It has been the technology and the time. Remove those, and the reach follows. If your ministry is weighing a permanent setup, our page on <a href="/church-podcast-studio-atlanta">church podcast studio installation in Atlanta</a> covers where we install, what the build includes, and what we manage afterward.</p>
 
       <h2>What a Faith Leader Podcast Looks Like in Practice</h2>
 

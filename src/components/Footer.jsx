@@ -11,6 +11,7 @@ const navLinks = [
   { to: '/blog', label: 'Blog' },
   { to: '/gear', label: 'Gear List' },
   { to: '/setup', label: 'Studio Setup' },
+  { to: '/church-podcast-studio-atlanta', label: 'Church Podcast Studios' },
 ]
 
 const serviceAreas = [

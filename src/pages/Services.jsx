@@ -79,7 +79,7 @@ export default function Services() {
                   You retain full ownership of your studio and all assets
                 </div>
                 <p className="service-block__resources" style={{ marginTop: 24, fontSize: '0.95rem' }}>
-                  Working out your budget first? Read <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link> and what moves the price, or see how <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home studio installation works across metro Atlanta</Link>.
+                  Working out your budget first? Read <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link> and what moves the price, or see how <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home studio installation works across metro Atlanta</Link>. Churches and ministries can start with our <Link to="/church-podcast-studio-atlanta">church podcast studio installation</Link> page.
                 </p>
               </div>
               <div className="service-block__pricing">

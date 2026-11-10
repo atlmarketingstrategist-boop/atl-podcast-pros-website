@@ -1,0 +1,339 @@
+/* Church and ministry landing page. Namespaced cps- to match the loc- and su- page conventions. */
+
+.cps-hero {
+  position: relative;
+  padding: clamp(120px, 18vw, 180px) 0 clamp(64px, 10vw, 100px);
+  background: #1A1A1A url('/2819church.jpeg') center / cover no-repeat;
+}
+
+.cps-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.82) 0%, rgba(26, 26, 26, 0.92) 100%);
+}
+
+.cps-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.cps-hero__inner {
+  max-width: 820px;
+}
+
+.cps-hero__title {
+  color: #fff;
+  font-size: clamp(2.1rem, 5.6vw, 3.6rem);
+  line-height: 1.08;
+  margin: 10px 0 18px;
+}
+
+.cps-hero__sub {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  max-width: 60ch;
+  margin-bottom: 26px;
+}
+
+.cps-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.cps-chips li {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 7px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cps-hero__btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.cps-lede {
+  max-width: 68ch;
+  margin: 18px auto 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.cps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 22px;
+}
+
+.cps-card {
+  padding: 28px 26px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+.cps-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cps-card p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.cps-card--dark {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.09);
+}
+
+.cps-card--dark h3 {
+  color: #fff;
+}
+
+.cps-card--dark p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.cps-split {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(28px, 5vw, 56px);
+  align-items: start;
+}
+
+.cps-price {
+  padding: 32px 28px;
+  background: #1A1A1A;
+  border-radius: 14px;
+  border-left: 4px solid var(--color-primary, #A61E31);
+}
+
+.cps-price__label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cps-price__amount {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0 16px;
+}
+
+.cps-price__from {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cps-price__num {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 7vw, 3.2rem);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.cps-price__note {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.92rem;
+}
+
+.cps-price__btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.cps-manage {
+  padding-top: 0;
+}
+
+.cps-manage__note {
+  font-weight: 600;
+  margin-top: 18px;
+}
+
+.cps-steps {
+  padding: clamp(24px, 4vw, 34px);
+  background: #F6F4F1;
+  border-radius: 14px;
+}
+
+.cps-step {
+  display: flex;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cps-step:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cps-step__n {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-primary, #A61E31);
+  flex: 0 0 auto;
+}
+
+.cps-step h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cps-step p {
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.cps-proof {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 24px;
+}
+
+.cps-proof__card {
+  padding: 30px 28px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+}
+
+.cps-proof__card h3 {
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.cps-proof__meta {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary, #A61E31);
+  margin-bottom: 16px;
+}
+
+.cps-proof__card p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.95rem;
+}
+
+.cps-proof__card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.cps-proof__card blockquote {
+  margin: 18px 0 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--color-primary, #A61E31);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.cps-proof__card cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.82rem;
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cps-proof__link {
+  display: inline-block;
+  margin-top: 18px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cps-faq {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.cps-faq__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cps-faq__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1A1A1A;
+}
+
+.cps-faq__icon {
+  flex: 0 0 auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-primary, #A61E31);
+  line-height: 1;
+}
+
+.cps-faq__a {
+  padding: 0 0 22px;
+}
+
+.cps-faq__a p {
+  margin: 0;
+  font-size: 0.95rem;
+  max-width: 70ch;
+}
+
+@media (max-width: 420px) {
+  .cps-hero {
+    padding-top: 108px;
+  }
+
+  .cps-price,
+  .cps-proof__card,
+  .cps-card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cps-faq__q {
+    font-size: 0.95rem;
+  }
+}

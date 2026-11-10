@@ -500,7 +500,7 @@ export default function SetupPage() {
             <button type="button" className="su-btn su-btn--primary su-btn--lg" onClick={openModal}>Schedule a Call</button>
             <p className="su-final__trust">No commitment required. This is just a chance to explore what is possible for you.</p>
             <p className="su-final__trust">
-              Want the detail first? Read <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link> or how <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home installation works across metro Atlanta</Link>.
+              Want the detail first? Read <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link>, how <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home installation works across metro Atlanta</Link>, or our <Link to="/church-podcast-studio-atlanta">church podcast studio installation</Link> page.
             </p>
           </div>
         </section>

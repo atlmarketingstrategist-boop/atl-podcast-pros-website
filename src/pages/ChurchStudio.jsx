@@ -378,8 +378,9 @@ export default function ChurchStudio() {
                 and was monetized within months, and he has been a client ever since.
               </p>
               <blockquote>
-                I want to thank Mr. Benjamin in Atlanta. He put together a beautiful studio for us to minister the
-                gospel around the world.
+                I want to thank Mr. Benjamin in Atlanta. He's working behind the scenes and he put everything
+                together. He brought the equipment here and he put together a beautiful studio for us to minister
+                the gospel around the world.
                 <cite>Socrates Charos, Good News with Socrates</cite>
               </blockquote>
               <Link to="/blog/faith-leader-podcast-launch-atlanta" className="cps-proof__link">

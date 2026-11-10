@@ -78,6 +78,9 @@ export default function Services() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                   You retain full ownership of your studio and all assets
                 </div>
+                <p className="service-block__resources" style={{ marginTop: 24, fontSize: '0.95rem' }}>
+                  Working out your budget first? Read <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link> and what moves the price, or see how <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home studio installation works across metro Atlanta</Link>.
+                </p>
               </div>
               <div className="service-block__pricing">
                 <div className="pricing-card">

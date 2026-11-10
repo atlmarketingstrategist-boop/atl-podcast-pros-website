@@ -301,6 +301,16 @@ export default function LocationPage({ locations }) {
               </Link>
             ))}
           </div>
+          {loc.relatedReading && (
+            <p className="loc-fade" style={{ marginTop: 28, textAlign: 'center', color: 'rgba(255,255,255,0.75)', fontSize: '0.95rem' }}>
+              {loc.relatedReading.map((r, i) => (
+                <span key={r.to}>
+                  {i > 0 && ' Also: '}
+                  <Link to={r.to} style={{ color: '#fff', textDecoration: 'underline' }}>{r.label}</Link>.
+                </span>
+              ))}
+            </p>
+          )}
         </div>
       </section>
 

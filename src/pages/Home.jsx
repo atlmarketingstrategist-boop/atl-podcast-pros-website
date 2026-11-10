@@ -140,7 +140,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SCROLL ANIMATION PLACEHOLDER — Re-insert ScrollAnimation component here when new video is ready */}
+      {/* SCROLL ANIMATION PLACEHOLDER: re-insert ScrollAnimation component here when new video is ready */}
 
       {/* ======= HOW IT WORKS TEASER ======= */}
       <section className="section section-neutral" style={{ paddingTop: '48px' }}>
@@ -252,7 +252,7 @@ export default function Home() {
       <section className="marquee-section">
         <div className="marquee-section__label">Trusted by Podcasters Across Various Niches</div>
         <div className="marquee-track" aria-hidden="true">
-          {/* Four copies: animation moves translateX(-25%) so first copy exits as fourth enters — zero gap, zero pause */}
+          {/* Four copies: animation moves translateX(-25%) so first copy exits as fourth enters. Zero gap, zero pause */}
           <div className="marquee-inner">
             {[...niches, ...niches, ...niches, ...niches].map((name, i) => (
               <span className="marquee-chip" key={i}>{name}</span>
@@ -322,6 +322,17 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ======= RESOURCES ======= */}
+      <section className="section section-neutral" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div className="fade-up" ref={fadeRef} style={{ textAlign: 'center' }}>
+            <p style={{ fontSize: '1rem', margin: 0 }}>
+              Still researching? Learn more about <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home podcast studio installation across metro Atlanta</Link> or <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link>.
+            </p>
           </div>
         </div>
       </section>

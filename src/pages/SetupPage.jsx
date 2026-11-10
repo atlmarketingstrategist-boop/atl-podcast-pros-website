@@ -499,6 +499,9 @@ export default function SetupPage() {
             <p className="su-final__sub">Schedule a free consultation and let's discuss how we can transform your space into a professional podcast studio.</p>
             <button type="button" className="su-btn su-btn--primary su-btn--lg" onClick={openModal}>Schedule a Call</button>
             <p className="su-final__trust">No commitment required. This is just a chance to explore what is possible for you.</p>
+            <p className="su-final__trust">
+              Want the detail first? Read <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link> or how <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home installation works across metro Atlanta</Link>.
+            </p>
           </div>
         </section>
 

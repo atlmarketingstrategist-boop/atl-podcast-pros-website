@@ -13,6 +13,10 @@ export const locationPages = [
       { q: 'Do you service all of Buckhead including Tuxedo Park and Chastain Park areas?', a: 'Yes. We serve all Buckhead neighborhoods including Tuxedo Park, Chastain Park, Garden Hills, and Peachtree Hills. Our team comes to your home or office wherever you are in the area.' },
       { q: 'How long does the studio installation take in Buckhead?', a: 'Most installations are completed in a single day. We arrive in the morning, unbox and install all equipment, calibrate every setting, and walk you through your new one-button recording workflow before we leave.' },
       { q: 'Can you work around a busy Buckhead executive schedule?', a: 'Absolutely. We schedule installations and ongoing support around your availability. Most of our Buckhead clients record on their own schedule with zero coordination required from our team after setup.' }
+    ],
+    relatedReading: [
+      { to: '/blog/in-home-podcast-studio-setup-atlanta', label: 'How in-home studio installation works across metro Atlanta' },
+      { to: '/blog/podcast-studio-setup-cost-2026', label: 'What a podcast studio setup costs in 2026' }
     ]
   },
   {
@@ -29,6 +33,10 @@ export const locationPages = [
       { q: 'Can you set up a podcast studio in a Midtown condo or apartment?', a: 'Yes. We work in condos, apartments, townhomes, and offices throughout Midtown. We assess your space on the intro call and design a setup that works perfectly within your available square footage.' },
       { q: 'What neighborhoods near Midtown do you serve?', a: 'We serve all of Midtown Atlanta including areas near Piedmont Park, the Arts Center, Virginia Highland, Old Fourth Ward, and West Midtown. If you are within the Midtown area, we come to you.' },
       { q: 'Do I need a dedicated room for a podcast studio in Midtown?', a: 'No. Many of our Midtown clients record in a home office, a living room corner, or a bedroom. We design the setup to work within your existing space without requiring a dedicated room.' }
+    ],
+    relatedReading: [
+      { to: '/blog/in-home-podcast-studio-setup-atlanta', label: 'The Atlanta room types we build in, including condos and lofts' },
+      { to: '/blog/podcast-studio-setup-cost-2026', label: 'What changes the price of a studio installation' }
     ]
   },
   {

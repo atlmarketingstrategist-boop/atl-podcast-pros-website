@@ -258,7 +258,7 @@ export default function PodcastCalculator() {
 
                 <h2 className="pc-result__heading">Your All-In Studio Estimate</h2>
                 <div className="pc-result__range">
-                  ${animLow.toLocaleString()} &mdash; ${animHigh.toLocaleString()}
+                  ${animLow.toLocaleString()} to ${animHigh.toLocaleString()}
                 </div>
                 <p className="pc-result__sub">
                   This estimate includes professional installation, equipment sourcing, setup, calibration, and your first episode launch. No hidden fees.

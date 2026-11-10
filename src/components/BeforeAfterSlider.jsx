@@ -76,7 +76,7 @@ export default function BeforeAfterSlider({
         onClick={handleContainerClick}
         style={{ cursor: isDragging ? 'grabbing' : 'col-resize' }}
       >
-        {/* Before image — base layer */}
+        {/* Before image: base layer */}
         <img
           className="bas-image bas-before"
           src={beforeSrc}
@@ -85,7 +85,7 @@ export default function BeforeAfterSlider({
           draggable={false}
         />
 
-        {/* After image — revealed layer using clip-path */}
+        {/* After image: revealed layer using clip-path */}
         <div
           className="bas-after-wrapper"
           style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
@@ -106,7 +106,7 @@ export default function BeforeAfterSlider({
           {/* Vertical line */}
           <div className="bas-line" />
 
-          {/* Handle knob — styled after Elfsight example 4 */}
+          {/* Handle knob: styled after Elfsight example 4 */}
           <div
             className="bas-handle"
             onMouseDown={handleMouseDown}

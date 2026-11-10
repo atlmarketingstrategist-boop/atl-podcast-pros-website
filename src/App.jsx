@@ -64,7 +64,7 @@ export default function App() {
               <Route path="*" element={<NotFound />} />
             </Route>
 
-            {/* Standalone routes — no Navbar, no Footer */}
+            {/* Standalone routes: no Navbar, no Footer */}
             <Route path="/client/:slug" element={<ClientPage />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/setup" element={<SetupPage />} />

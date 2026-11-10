@@ -1,5 +1,5 @@
 /* ==========================================
-   HOME PAGE — Premium Design
+   HOME PAGE: Premium Design
    ========================================== */
 
 /* ---- HERO ---- */
@@ -28,7 +28,7 @@
   z-index: 1;
 }
 
-/* Grain texture sits in global .grain-overlay::after — z-index 1 */
+/* Grain texture sits in global .grain-overlay::after, z-index 1 */
 
 .home-hero__content {
   position: relative;

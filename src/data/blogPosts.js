@@ -1309,7 +1309,7 @@ export const blogPosts = [
       <h3>Tier 2: Semi-Professional Self-Managed ($2,000 to $6,000)</h3>
       <p>The middle tier upgrades the gear meaningfully. Better microphones, a more capable interface, a proper camera for video, real lighting, and more serious acoustic treatment. The equipment is genuinely good. The catch is that you are still doing everything yourself: sourcing, installing, calibrating, and maintaining it all, then handling production week after week. Many people who start here end up with quality gear they never fully learn to use, because the technical learning curve competes with the demands of their actual job.</p>
 
-      <h3>Tier 3: Done-for-You Professional Installation ($8,000 to $15,000+)</h3>
+      <h3>Tier 3: Done-for-You Professional Installation (Starting at $10,000)</h3>
       <p>The top tier is a complete done-for-you installation, which is what ATL Podcast Pros delivers. A team assesses your space, sources broadcast-quality equipment, installs and calibrates everything, and hands you a studio that records with one button. You never research a microphone or configure a camera. This tier is built for professionals who want a studio that looks and sounds excellent from the first episode and who would rather invest money than spend months learning audio engineering. Our complete installations start at $10,000.</p>
 
       <h2>Detailed Cost Breakdown for a Professional Atlanta Studio</h2>
@@ -1475,7 +1475,7 @@ export const blogPosts = [
 
       <h2>What Podcast Studio Rental Actually Costs in Atlanta</h2>
 
-      <p>Professional podcast studio rental rates in Atlanta generally run from $75 to $200 per hour depending on the space, the equipment, and whether an engineer is included &mdash; see <a href="https://podcastrental.com/studios/georgia/atlanta-georgia/" target="_blank" rel="noopener noreferrer">current Atlanta podcast studio rental rates</a> for an up-to-date list of 26 local studios. A well-equipped studio with multiple broadcast microphones, camera coverage, and a producer on hand sits at the higher end of that range. A basic room with a couple of mics sits at the lower end.</p>
+      <p>Professional podcast studio rental rates in Atlanta generally run from $75 to $200 per hour depending on the space, the equipment, and whether an engineer is included. See <a href="https://podcastrental.com/studios/georgia/atlanta-georgia/" target="_blank" rel="noopener noreferrer">current Atlanta podcast studio rental rates</a> for an up-to-date list of 26 local studios. A well-equipped studio with multiple broadcast microphones, camera coverage, and a producer on hand sits at the higher end of that range. A basic room with a couple of mics sits at the lower end.</p>
 
       <p>Now apply that to a realistic recording habit. A serious podcaster records two to four episodes a month. Sessions usually run two to three hours once you account for setup, the actual recording, and a little overrun. Take a middle-of-the-road example: three episodes a month, two hours per session, at $125 per hour. That is $250 per session and $750 per month. If you add an engineer or record longer sessions, you can easily clear $1,000 in a single month.</p>
 
@@ -2308,7 +2308,7 @@ export const blogPosts = [
 
       <h2>What Does Studio Rental Actually Cost?</h2>
 
-      <p>Podcast studio rental prices vary by market, but in most major metros, you are looking at $40 to $150 per hour for a single-host booth, and $75 to $250 per hour for a multi-person setup with video capability. In Atlanta specifically, hourly rates at quality studios typically run $60 to $120 per hour. For professionals in areas like <a href="/locations/podcast-studio-setup-buckhead">Buckhead</a> or <a href="/locations/podcast-studio-setup-sandy-springs">Sandy Springs</a>, the commute to a rental studio adds even more cost in time.</p>
+      <p>Podcast studio rental prices vary by market, but in most major metros, you are looking at $40 to $150 per hour for a single-host booth, and $75 to $250 per hour for a multi-person setup with video capability. In Atlanta specifically, hourly rates at quality studios typically run $75 to $200 per hour. For professionals in areas like <a href="/locations/podcast-studio-setup-buckhead">Buckhead</a> or <a href="/locations/podcast-studio-setup-sandy-springs">Sandy Springs</a>, the commute to a rental studio adds even more cost in time.</p>
 
       <p>At a glance, those numbers seem reasonable. But let us model out what a consistent podcasting schedule actually costs over a year.</p>
 
@@ -2316,7 +2316,7 @@ export const blogPosts = [
       <p>If you are publishing weekly episodes and spending one hour in the studio each time, that is 52 sessions per year. At $80 per hour, that is $4,160 per year in studio time alone. At $120 per hour, it is $6,240 per year. And that does not account for travel time, parking, or the scheduling friction of booking around the studio's availability calendar.</p>
 
       <h3>Scenario 2: Twice Weekly, 90 Minutes Per Session</h3>
-      <p>Some podcasters record multiple episodes per session to batch their content. Two sessions per week at 90 minutes each equals 156 sessions per year. At $80 per 90-minute block, that is $12,480 per year. For a professional who values their time and needs flexibility, this rapidly approaches the cost of a fully equipped in-home studio.</p>
+      <p>Some podcasters record multiple episodes per session to batch their content. Two sessions per week at 90 minutes each equals 104 sessions per year. At $120 per 90-minute block, which is $80 per hour, that is $12,480 per year. For a professional who values their time and needs flexibility, this rapidly approaches the cost of a fully equipped in-home studio.</p>
 
       <h3>Scenario 3: Once Per Month</h3>
       <p>Even a casual podcaster publishing monthly will spend $960 to $1,440 per year on studio time. At this frequency, buying a basic setup outright would recoup its cost within the first year and cost nothing per session after that.</p>
@@ -2339,7 +2339,7 @@ export const blogPosts = [
 
       <h2>What Does Building Your Own Studio Cost?</h2>
 
-      <p>A professional in-home podcast studio, fully equipped with quality microphones, an audio interface, acoustic treatment, camera, lighting, and proper cable management, typically costs between $3,500 and $8,000 when done by a professional team. A high-end broadcast-quality setup might run $10,000 to $15,000.</p>
+      <p>A complete professional done-for-you installation, fully equipped with quality microphones, an audio interface, acoustic treatment, camera, lighting, and proper cable management, starts at $10,000. Where a specific project lands above that comes down to three things: whether you are recording video as well as audio, how many people sit at the table, and how much acoustic work your room needs.</p>
 
       <p>But here is the key point: those are one-time costs. Once the studio is built, your per-episode cost approaches zero. The equipment depreciates slowly, and quality gear lasts five to ten years or more with proper care.</p>
 
@@ -2347,13 +2347,13 @@ export const blogPosts = [
       <p>Let us model the break-even analysis for a professional who records weekly.</p>
       <ul>
         <li>Studio rental: $80 per hour x 52 sessions per year = $4,160 per year</li>
-        <li>Professional in-home setup: $5,500 one-time cost</li>
-        <li>Break-even: approximately 13 to 14 months</li>
+        <li>Professional in-home setup: $10,000 one-time cost</li>
+        <li>Break-even: approximately 29 months</li>
       </ul>
-      <p>After month 14, every session in the home studio is free. By year three, you have spent $12,480 on rentals, or $5,500 total for ownership. The savings are significant, and they compound every year.</p>
+      <p>After month 29, every session in the home studio is free. By year three you have spent $12,480 on rentals against $10,000 once for ownership, and the gap widens every year after that. By year five the renter is past $20,000 and still owns nothing.</p>
 
       <h3>What About DIY vs. Professional Installation?</h3>
-      <p>You can absolutely build your own studio for less than $5,500 if you are willing to research, source, and install everything yourself. A capable DIY setup might run $1,500 to $3,000 in gear costs. But the total cost also includes your time, the inevitable mistakes, and the performance gap that comes from not having a professional acoustic design and equipment tuning. Many clients who came to us after a DIY attempt told us they spent 20 to 40 hours building something that still did not sound as good as a professionally installed setup.</p>
+      <p>You can absolutely build your own studio for less than $10,000 if you are willing to research, source, and install everything yourself. A capable DIY setup might run $1,500 to $3,000 in gear costs. But the total cost also includes your time, the inevitable mistakes, and the performance gap that comes from not having a professional acoustic design and equipment tuning. Many clients who came to us after a DIY attempt told us they spent 20 to 40 hours building something that still did not sound as good as a professionally installed setup.</p>
 
       <h2>When Does Renting Make Sense?</h2>
 

@@ -398,9 +398,16 @@ export default function ChurchStudio() {
                 loading="lazy"
               />
               <p>
-                Our team built an in-house content studio for Pastor Phillip Anthony Mitchell at 2819 Church. The
+                Our team built an in-house content studio for Pastor Philip Anthony Mitchell at 2819 Church. The
                 ministry uses the space to produce content for the YouVersion Bible App.
               </p>
+              <blockquote>
+                From start to finish, Ben with ATL Podcast Pros was professional, friendly, and highly
+                communicative. He went above and beyond, even adjusting his schedule to ensure this very important
+                project was completed successfully and on time. We highly recommend ATL Podcast Pros for your next
+                podcast project!
+                <cite>Executive, 2819 Church</cite>
+              </blockquote>
               <Link to="/our-work" className="cps-proof__link">
                 See this project in our portfolio
               </Link>

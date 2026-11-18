@@ -4,11 +4,13 @@ import ClientPasswordGate from '../components/ClientPasswordGate';
 import { sfaPartnersPage } from '../data/clientPages/sfaPartners';
 import { missionFieldPage } from '../data/clientPages/missionField';
 import { jonAlwinsonPage } from '../data/clientPages/jonAlwinson';
+import { diaryOfACfoPage } from '../data/clientPages/diaryOfACfo';
 
 const clientPages = {
   'sfa-partners': sfaPartnersPage,
   'mission-field': missionFieldPage,
   'jon-alwinson': jonAlwinsonPage,
+  'diary-of-a-cfo': diaryOfACfoPage,
 };
 
 export default function ClientPage() {
@@ -29,6 +31,8 @@ export default function ClientPage() {
 
   if (!page) return <Navigate to="/" replace />;
 
+  const doc = <div className="client-page-doc" dangerouslySetInnerHTML={{ __html: page.htmlContent }} />;
+
   return (
     <>
       <title>{`${page.clientName} | ATL Podcast Pros`}</title>
@@ -37,9 +41,13 @@ export default function ClientPage() {
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap"
         rel="stylesheet"
       />
-      <ClientPasswordGate slug={page.slug} correctPassword={page.password}>
-        <div className="client-page-doc" dangerouslySetInnerHTML={{ __html: page.htmlContent }} />
-      </ClientPasswordGate>
+      {page.passwordProtected === false ? (
+        doc
+      ) : (
+        <ClientPasswordGate slug={page.slug} correctPassword={page.password}>
+          {doc}
+        </ClientPasswordGate>
+      )}
     </>
   );
 }

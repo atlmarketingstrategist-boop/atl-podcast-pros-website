@@ -8,10 +8,10 @@ const CATEGORIES = [
     cls: 'cat-video',
     optional: false,
     items: [
-      { name: 'Sony ZV-E10 II Mirrorless Camera (Body Only)', desc: 'Super 35 mirrorless body, 4K video, Sony E-mount. Primary camera for the setup.', qty: 1, unit: 1038.00, url: 'https://www.amazon.com/dp/B0D92VDW76?tag=benjaminpaul-20' },
-      { name: 'Sigma 18-50mm F2.8 DC DN Lens (Sony E)', desc: 'Fast constant aperture zoom. Flexible framing in a compact room.', qty: 1, unit: 555.00, url: 'https://www.amazon.com/dp/B09JVBB36L?tag=benjaminpaul-20' },
+      { name: 'Sony ZV-E10 II Mirrorless Camera (Body Only)', desc: 'Super 35 mirrorless body, 4K video, Sony E-mount. Primary camera for the setup.', qty: 1, unit: 1298.00, url: 'https://www.amazon.com/dp/B0D92VDW76?tag=benjaminpaul-20' },
+      { name: 'Sigma 18-50mm F2.8 DC DN Lens (Sony E)', desc: 'Fast constant aperture zoom. Flexible framing in a compact room.', qty: 1, unit: 499.00, url: 'https://www.amazon.com/dp/B09JVBB36L?tag=benjaminpaul-20' },
       { name: 'NP-FW50 Dummy Battery / AC Adapter', desc: 'Continuous power to the camera so recording is never limited by battery life.', qty: 1, unit: 26.89, url: 'https://www.amazon.com/dp/B01D67LTIK?tag=benjaminpaul-20' },
-      { name: 'RODECaster Video Production Console', desc: 'Video and audio production console. Switching, recording, and routing in one unit.', qty: 1, unit: 844.95, url: 'https://www.amazon.com/dp/B0DP7SCRYB?tag=benjaminpaul-20' },
+      { name: 'RODECaster Video Production Console', desc: 'Video and audio production console. Switching, recording, and routing in one unit.', qty: 1, unit: 899.00, url: 'https://www.amazon.com/dp/B0DP7SCRYB?tag=benjaminpaul-20' },
       { name: 'Selens Tabletop Camera Desk Mount', desc: 'Desk mounted camera support. Keeps the floor clear and framing repeatable.', qty: 1, unit: 32.99, url: 'https://www.amazon.com/dp/B0BM4PBKZL?tag=benjaminpaul-20' },
       { name: 'Micro HDMI to HDMI Cable', desc: 'Connects the camera to the production console.', qty: 1, unit: 34.19, url: 'https://www.amazon.com/dp/B0CQSYB8YW?tag=benjaminpaul-20' },
       { name: '4K HDMI Cable 10ft', desc: 'Console to display run for monitoring.', qty: 1, unit: 8.54, url: 'https://www.amazon.com/dp/B07X37CG9V?tag=benjaminpaul-20' },
@@ -22,7 +22,7 @@ const CATEGORIES = [
     cls: 'cat-audio',
     optional: false,
     items: [
-      { name: 'RODE PSA1+ Boom Arm', desc: 'Studio boom arm for the existing RODE PodMic. Smooth positioning, no desk vibration.', qty: 1, unit: 112.00, url: 'https://www.amazon.com/dp/B09JBVR5B4?tag=benjaminpaul-20' },
+      { name: 'RODE PSA1+ Boom Arm', desc: 'Studio boom arm for the existing RODE PodMic. Smooth positioning, no desk vibration.', qty: 1, unit: 136.00, url: 'https://www.amazon.com/dp/B09JBVR5B4?tag=benjaminpaul-20' },
       { name: 'Cable Matters XLR Cable 6ft (2-Pack)', desc: 'Balanced XLR runs from microphone to console.', qty: 1, unit: 17.99, url: 'https://www.amazon.com/dp/B00KO8VYMG?tag=benjaminpaul-20' },
     ],
   },

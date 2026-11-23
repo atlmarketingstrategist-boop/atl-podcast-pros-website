@@ -100,11 +100,11 @@ const DESIGN_TEAM = [
 
 // The five items that double for a second camera angle, in the order shown in the callout.
 const SECOND_CAM = [
-  'Sony ZV-E10 II Mirrorless Camera (Body Only)',
-  'Sigma 18-50mm F2.8 DC DN Lens (Sony E)',
-  'NP-FW50 Dummy Battery / AC Adapter',
-  'Micro HDMI to HDMI Cable',
-  'Selens Tabletop Camera Desk Mount',
+  { name: 'Sony ZV-E10 II Mirrorless Camera (Body Only)' },
+  { name: 'Sigma 18-50mm F2.8 DC DN Lens (Sony E)' },
+  { name: 'NP-FW50 Dummy Battery / AC Adapter' },
+  { name: 'Micro HDMI to HDMI Cable', label: 'Micro HDMI to HDMI Cable (camera to RODECaster)' },
+  { name: 'Selens Tabletop Camera Desk Mount' },
 ];
 
 const cents = (n) => Math.round(n * 100);
@@ -119,21 +119,22 @@ const optionalCents = CATEGORIES.filter((c) => c.optional).reduce((s, c) => s + 
 const itemCount = CATEGORIES.reduce((s, c) => s + c.items.length, 0);
 
 const allItems = CATEGORIES.flatMap((c) => c.items);
-const secondCamItems = SECOND_CAM.map((name) => {
-  const found = allItems.find((i) => i.name === name);
-  if (!found) throw new Error('Second camera item not found in data: ' + name);
-  return found;
+const secondCamItems = SECOND_CAM.map((entry) => {
+  const found = allItems.find((i) => i.name === entry.name);
+  if (!found) throw new Error('Second camera item not found in data: ' + entry.name);
+  return { ...found, label: entry.label || found.name };
 });
 const secondCamCents = secondCamItems.reduce((sum, i) => sum + cents(i.unit), 0);
 
 const designBuyCents = DESIGN_PURCHASE.filter((i) => i.counted).reduce((sum, i) => sum + cents(i.unit) * i.qty, 0);
 const designTeamCents = DESIGN_TEAM.filter((i) => i.counted).reduce((sum, i) => sum + cents(i.unit), 0);
-const designTotalCents = designBuyCents + designTeamCents;
+// Design team materials are billed separately in advance, so they stay out of every page total.
+const designCountedCents = designBuyCents;
 
 const core1Cents = coreCents;
 const core2Cents = coreCents + secondCamCents;
-const grand1Cents = core1Cents + designTotalCents;
-const grand2Cents = core2Cents + designTotalCents;
+const grand1Cents = core1Cents + designCountedCents;
+const grand2Cents = core2Cents + designCountedCents;
 const grand1OptCents = grand1Cents + optionalCents;
 const grand2OptCents = grand2Cents + optionalCents;
 
@@ -160,7 +161,7 @@ function rowsFor(cat) {
 
 function secondCamCallout() {
   const lines = secondCamItems
-    .map((i) => `        <li><span>${esc(i.name)}</span><span class="num">${money(cents(i.unit))}</span></li>`)
+    .map((i) => `        <li><span>${esc(i.label)}</span><span class="num">${money(cents(i.unit))}</span></li>`)
     .join('\n');
   return `    <div class="callout">
       <div class="callout-title">Optional: second camera angle</div>
@@ -209,7 +210,7 @@ function designSection() {
   return `  <section class="cat-block design-block">
     <div class="cat-head cat-design">
       <h2 class="cat-title">Studio Design &amp; Decor</h2>
-      <div class="cat-subtotal"><span>Section total</span><strong>${money(designTotalCents)}</strong></div>
+      <div class="cat-subtotal"><span>Your purchases</span><strong>${money(designBuyCents)}</strong></div>
     </div>
     <p class="design-sub">Design items selected by our design team for Wassia's on-camera set (Tier 1).</p>
 
@@ -232,7 +233,7 @@ ${designRows()}
     </div>
     <div class="design-subtotal"><span>Subtotal, counted items only</span><strong>${money(designBuyCents)}</strong></div>
 
-    <h3 class="design-head">Handled by our design team</h3>
+    <h3 class="design-head">Purchased by our design team (billed separately in advance)</h3>
     <ul class="team-list">
 ${designTeamRows()}
     </ul>
@@ -250,10 +251,10 @@ function compareTable() {
       </thead>
       <tbody>
 ${row('Recording equipment (core)', money(core1Cents), money(core2Cents))}
-${row('Studio design &amp; decor', money(designTotalCents), money(designTotalCents))}
-${row('Grand total', money(grand1Cents), money(grand2Cents), 'compare-strong')}
+${row('Design &amp; decor items (your purchases)', money(designBuyCents), money(designBuyCents))}
+${row('Your total', money(grand1Cents), money(grand2Cents), 'compare-strong')}
 ${row('Optional Control &amp; Storage', '+' + money(optionalCents), '+' + money(optionalCents))}
-${row('Grand total with optional Control &amp; Storage', money(grand1OptCents), money(grand2OptCents), 'compare-strong')}
+${row('Your total with optional Control &amp; Storage', money(grand1OptCents), money(grand2OptCents), 'compare-strong')}
       </tbody>
     </table>
   </div>`;
@@ -320,8 +321,8 @@ const htmlContent = `
     </div>
     <div class="stat-cell">
       <div class="stat-label">Design &amp; Decor</div>
-      <div class="stat-val">${money(designTotalCents)}</div>
-      <div class="stat-sub">On-camera set</div>
+      <div class="stat-val">${money(designBuyCents)}</div>
+      <div class="stat-sub">Your purchases</div>
     </div>
     <div class="stat-cell">
       <div class="stat-label">Grand Total</div>
@@ -337,7 +338,15 @@ ${designSection()}
   <h2 class="totals-head">Your Totals</h2>
 ${compareTable()}
 
-  <p class="small-print">Totals exclude the alternate burgundy chair and the custom wall sign (pending). Amazon and Wayfair prices are subject to change. Prices as of November 23, 2026. Taxes and shipping not included.</p>
+  <div class="callout callout--billing">
+    <div class="callout-title">Billed separately by ATL Podcast Pros</div>
+    <ul class="callout-list">
+      <li><span>Setup services: not included in the totals above. Billed separately.</span></li>
+      <li><span>Design materials (paint, supplies and shelf decor): ${money(designTeamCents)}, billed separately in advance.</span></li>
+    </ul>
+  </div>
+
+  <p class="small-print">Totals reflect items you purchase from the links on this page. They exclude the alternate burgundy chair, the custom wall sign (pending), setup services and design materials. Amazon and Wayfair prices are subject to change. Prices as of November 23, 2026. Taxes and shipping not included.</p>
 
   <div class="notes">
     <p>As an Amazon Associate, ATL Podcast Pros earns from qualifying purchases at no extra cost to you.</p>
@@ -367,7 +376,7 @@ export const diaryOfACfoPage = {
   passwordProtected: false,
   totals: {
     coreCents, optionalCents, itemCount,
-    secondCamCents, designBuyCents, designTeamCents, designTotalCents,
+    secondCamCents, designBuyCents, designTeamCents,
     core1Cents, core2Cents, grand1Cents, grand2Cents, grand1OptCents, grand2OptCents,
   },
   pageStyles: `

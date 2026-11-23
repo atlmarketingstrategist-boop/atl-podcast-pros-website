@@ -27,6 +27,14 @@ const CATEGORIES = [
     ],
   },
   {
+    name: 'Teleprompter',
+    cls: 'cat-prompter',
+    optional: false,
+    items: [
+      { name: 'Elgato Prompter Teleprompter with Built-in Screen', desc: 'Reads naturally to camera. Built-in screen keeps eyeline on the lens.', qty: 1, unit: 219.99, url: 'https://www.amazon.com/dp/B0CH3P9K1X?tag=benjaminpaul-20' },
+    ],
+  },
+  {
     name: 'Lighting',
     cls: 'cat-lighting',
     optional: false,
@@ -71,6 +79,34 @@ const CATEGORIES = [
   },
 ];
 
+// Studio design and decor. counted:false items stay visible but out of every total.
+const DESIGN_PURCHASE = [
+  { name: 'Pink Barrel Accent Armchair (Latitude Run)', qty: 1, unit: 229.00, counted: true, badge: 'Selected', vendor: 'wayfair',
+    url: 'https://www.wayfair.com/furniture/pdp/latitude-run-double-layer-upholstered-armchair-barrel-accent-chair-w113952065.html?piid=59484712' },
+  { name: 'Burgundy Velvet Armchair (Mercer41)', qty: 1, unit: 299.00, counted: false, badge: 'Alternate option', vendor: 'wayfair',
+    note: 'Choose one chair. Final pick pending dimensions.',
+    url: 'https://www.wayfair.com/furniture/pdp/mercer41-modern-velvet-upholstered-chair-a-chair-with-armrests-suitable-for-living-room-or-bedroom-with-soft-cushions-w117038564.html?piid=529713293' },
+  { name: 'Faux Olive Tree, 6 ft', qty: 1, unit: 86.00, counted: true, vendor: 'amazon', url: 'https://www.amazon.com/dp/B0FVS7RRRP?tag=benjaminpaul-20' },
+  { name: 'Arched Accent Wall Panels', qty: 2, unit: 105.99, counted: true, vendor: 'amazon', url: 'https://www.amazon.com/dp/B0GZWMR5HB?tag=benjaminpaul-20' },
+  { name: 'Floor LED Corner Light', qty: 1, unit: 35.00, counted: true, vendor: 'amazon', url: 'https://www.amazon.com/dp/B0DRFPCJ49?tag=benjaminpaul-20' },
+  { name: 'Burgundy Abstract Area Rug, 6x9', qty: 1, unit: 140.00, counted: true, vendor: 'amazon', url: 'https://www.amazon.com/dp/B0H99BW8ZY?tag=benjaminpaul-20' },
+];
+
+const DESIGN_TEAM = [
+  { name: 'Paint and supplies', unit: 180.00, counted: true },
+  { name: 'Shelf decor (styled with Wassia\'s existing award and bow)', unit: 100.00, counted: true },
+  { name: 'Custom branded wall sign', unit: null, counted: false, note: 'On hold until the final podcast name is chosen' },
+];
+
+// The five items that double for a second camera angle, in the order shown in the callout.
+const SECOND_CAM = [
+  'Sony ZV-E10 II Mirrorless Camera (Body Only)',
+  'Sigma 18-50mm F2.8 DC DN Lens (Sony E)',
+  'NP-FW50 Dummy Battery / AC Adapter',
+  'Micro HDMI to HDMI Cable',
+  'Selens Tabletop Camera Desk Mount',
+];
+
 const cents = (n) => Math.round(n * 100);
 const lineCents = (item) => cents(item.unit) * item.qty;
 const catCents = (cat) => cat.items.reduce((sum, item) => sum + lineCents(item), 0);
@@ -80,8 +116,26 @@ const money = (c) =>
 
 const coreCents = CATEGORIES.filter((c) => !c.optional).reduce((s, c) => s + catCents(c), 0);
 const optionalCents = CATEGORIES.filter((c) => c.optional).reduce((s, c) => s + catCents(c), 0);
-const withOptionalCents = coreCents + optionalCents;
 const itemCount = CATEGORIES.reduce((s, c) => s + c.items.length, 0);
+
+const allItems = CATEGORIES.flatMap((c) => c.items);
+const secondCamItems = SECOND_CAM.map((name) => {
+  const found = allItems.find((i) => i.name === name);
+  if (!found) throw new Error('Second camera item not found in data: ' + name);
+  return found;
+});
+const secondCamCents = secondCamItems.reduce((sum, i) => sum + cents(i.unit), 0);
+
+const designBuyCents = DESIGN_PURCHASE.filter((i) => i.counted).reduce((sum, i) => sum + cents(i.unit) * i.qty, 0);
+const designTeamCents = DESIGN_TEAM.filter((i) => i.counted).reduce((sum, i) => sum + cents(i.unit), 0);
+const designTotalCents = designBuyCents + designTeamCents;
+
+const core1Cents = coreCents;
+const core2Cents = coreCents + secondCamCents;
+const grand1Cents = core1Cents + designTotalCents;
+const grand2Cents = core2Cents + designTotalCents;
+const grand1OptCents = grand1Cents + optionalCents;
+const grand2OptCents = grand2Cents + optionalCents;
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const LINK_REL = 'sponsored noopener';
@@ -102,6 +156,107 @@ function rowsFor(cat) {
       </tr>`;
     })
     .join('\n');
+}
+
+function secondCamCallout() {
+  const lines = secondCamItems
+    .map((i) => `        <li><span>${esc(i.name)}</span><span class="num">${money(cents(i.unit))}</span></li>`)
+    .join('\n');
+  return `    <div class="callout">
+      <div class="callout-title">Optional: second camera angle</div>
+      <p class="callout-body">We recommend a 2-camera setup so your episodes can cut between a close-up and a wide shot. If you decide to add the second camera, you do not need any new products. Simply change the quantity to 2 for these five items when ordering:</p>
+      <ul class="callout-list">
+${lines}
+      </ul>
+      <div class="callout-total"><span>Second camera add-on</span><strong>${money(secondCamCents)}</strong></div>
+    </div>`;
+}
+
+function designRows() {
+  return DESIGN_PURCHASE.map((i) => {
+    const wayfair = i.vendor === 'wayfair';
+    const rel = wayfair ? 'noopener' : LINK_REL;
+    const label = wayfair ? 'Buy on Wayfair' : 'Buy on Amazon';
+    const badge = i.badge ? ` <span class="item-badge${i.counted ? '' : ' item-badge--alt'}">${esc(i.badge)}</span>` : '';
+    const note = i.note ? `<div class="item-desc">${esc(i.note)}</div>` : '';
+    const unitCell = i.qty > 1 ? `${money(cents(i.unit))} ea` : money(cents(i.unit));
+    const lineCell = i.counted ? money(cents(i.unit) * i.qty) : `<span class="not-counted">${money(cents(i.unit) * i.qty)}</span>`;
+    return `      <tr>
+        <td>
+          <a class="item-name" href="${i.url}" target="_blank" rel="${rel}">${esc(i.name)}</a>${badge}
+          ${note}
+        </td>
+        <td class="num qty">${i.qty}</td>
+        <td class="num">${unitCell}</td>
+        <td class="num strong">${lineCell}</td>
+        <td class="buy"><a class="btn-amazon" href="${i.url}" target="_blank" rel="${rel}">${label}</a></td>
+      </tr>`;
+  }).join('\n');
+}
+
+function designTeamRows() {
+  return DESIGN_TEAM.map((i) => {
+    const price = i.unit === null ? 'TBD' : money(cents(i.unit));
+    const note = i.note ? `<div class="item-desc">${esc(i.note)}</div>` : '';
+    return `      <li class="team-row">
+        <span class="team-name">${esc(i.name)}${note}</span>
+        <span class="num strong">${price}</span>
+      </li>`;
+  }).join('\n');
+}
+
+function designSection() {
+  return `  <section class="cat-block design-block">
+    <div class="cat-head cat-design">
+      <h2 class="cat-title">Studio Design &amp; Decor</h2>
+      <div class="cat-subtotal"><span>Section total</span><strong>${money(designTotalCents)}</strong></div>
+    </div>
+    <p class="design-sub">Design items selected by our design team for Wassia's on-camera set (Tier 1).</p>
+
+    <h3 class="design-head">Items Wassia purchases</h3>
+    <div class="gear-table-wrap">
+      <table class="gear-table">
+        <thead>
+          <tr>
+            <th class="col-item">Item</th>
+            <th class="col-qty">Qty</th>
+            <th class="col-unit">Unit Price</th>
+            <th class="col-total">Line Total</th>
+            <th class="col-buy">Purchase</th>
+          </tr>
+        </thead>
+        <tbody>
+${designRows()}
+        </tbody>
+      </table>
+    </div>
+    <div class="design-subtotal"><span>Subtotal, counted items only</span><strong>${money(designBuyCents)}</strong></div>
+
+    <h3 class="design-head">Handled by our design team</h3>
+    <ul class="team-list">
+${designTeamRows()}
+    </ul>
+    <div class="design-subtotal"><span>Subtotal</span><strong>${money(designTeamCents)}</strong></div>
+  </section>`;
+}
+
+function compareTable() {
+  const row = (label, a, b, cls = '') =>
+    `        <tr class="${cls}"><th scope="row">${label}</th><td class="num">${a}</td><td class="num">${b}</td></tr>`;
+  return `  <div class="compare-wrap">
+    <table class="compare-table">
+      <thead>
+        <tr><th scope="col">&nbsp;</th><th scope="col">1 Camera</th><th scope="col">2 Cameras</th></tr>
+      </thead>
+      <tbody>
+${row('Recording equipment (core)', money(core1Cents), money(core2Cents))}
+${row('Studio design &amp; decor', money(designTotalCents), money(designTotalCents))}
+${row('Grand total', money(grand1Cents), money(grand2Cents), 'compare-strong')}
+${row('Optional Control &amp; Storage', '+' + money(optionalCents), '+' + money(optionalCents))}
+${row('Grand total with optional Control &amp; Storage', money(grand1OptCents), money(grand2OptCents), 'compare-strong')}
+      </tbody>
+    </table>
+  </div>`;
 }
 
 function tableFor(cat) {
@@ -127,6 +282,7 @@ ${rowsFor(cat)}
         </tbody>
       </table>
     </div>
+${cat.name === 'Camera & Video' ? secondCamCallout() : ''}
   </section>`;
 }
 
@@ -155,40 +311,35 @@ const htmlContent = `
     <div class="stat-cell">
       <div class="stat-label">Total Items</div>
       <div class="stat-val">${itemCount}</div>
-      <div class="stat-sub">Across ${CATEGORIES.length} categories</div>
+      <div class="stat-sub">Equipment, ${CATEGORIES.length} categories</div>
     </div>
     <div class="stat-cell">
-      <div class="stat-label">Core Equipment</div>
-      <div class="stat-val">${money(coreCents)}</div>
-      <div class="stat-sub">Required items</div>
+      <div class="stat-label">Recording Equipment</div>
+      <div class="stat-val">${money(core1Cents)}</div>
+      <div class="stat-sub">One camera</div>
     </div>
     <div class="stat-cell">
-      <div class="stat-label">Optional Add On</div>
-      <div class="stat-val">${money(optionalCents)}</div>
-      <div class="stat-sub">Control and storage</div>
+      <div class="stat-label">Design &amp; Decor</div>
+      <div class="stat-val">${money(designTotalCents)}</div>
+      <div class="stat-sub">On-camera set</div>
     </div>
     <div class="stat-cell">
-      <div class="stat-label">With Optional</div>
-      <div class="stat-val">${money(withOptionalCents)}</div>
-      <div class="stat-sub">Everything listed</div>
+      <div class="stat-label">Grand Total</div>
+      <div class="stat-val">${money(grand1Cents)}</div>
+      <div class="stat-sub">One camera</div>
     </div>
   </div>
 
 ${CATEGORIES.map(tableFor).join('\n\n')}
 
-  <div class="totals-block">
-    <div class="totals-inner">
-      <div class="totals-row"><span>Core equipment</span><span>${money(coreCents)}</span></div>
-      <div class="totals-row"><span>Control &amp; Storage, optional</span><span>${money(optionalCents)}</span></div>
-      <div class="totals-grand">
-        <div class="totals-grand-label">With optional Control &amp; Storage</div>
-        <div class="totals-grand-val">${money(withOptionalCents)}</div>
-      </div>
-    </div>
-  </div>
+${designSection()}
+
+  <h2 class="totals-head">Your Totals</h2>
+${compareTable()}
+
+  <p class="small-print">Totals exclude the alternate burgundy chair and the custom wall sign (pending). Amazon and Wayfair prices are subject to change. Prices as of November 23, 2026. Taxes and shipping not included.</p>
 
   <div class="notes">
-    <p>Amazon prices are subject to change. Prices as of November 18, 2026.</p>
     <p>As an Amazon Associate, ATL Podcast Pros earns from qualifying purchases at no extra cost to you.</p>
   </div>
 
@@ -214,7 +365,11 @@ export const diaryOfACfoPage = {
   slug: 'diary-of-a-cfo',
   clientName: 'The Diary of a CFO',
   passwordProtected: false,
-  totals: { coreCents, optionalCents, withOptionalCents, itemCount },
+  totals: {
+    coreCents, optionalCents, itemCount,
+    secondCamCents, designBuyCents, designTeamCents, designTotalCents,
+    core1Cents, core2Cents, grand1Cents, grand2Cents, grand1OptCents, grand2OptCents,
+  },
   pageStyles: `
     .client-page-doc *, .client-page-doc *::before, .client-page-doc *::after { box-sizing: border-box; margin: 0; padding: 0; }
     .client-page-doc {
@@ -294,7 +449,45 @@ export const diaryOfACfoPage = {
     .client-page-doc .totals-grand-label { font-family: var(--font-head); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,0.7); }
     .client-page-doc .totals-grand-val { font-family: var(--font-display); font-size: 32px; color: #fff; line-height: 1; }
 
-    .client-page-doc .notes { border-top: 1px solid var(--border); padding-top: 16px; }
+    .client-page-doc .callout { background: #FFF; border: 1px solid var(--border); border-left: 4px solid var(--crimson); padding: 18px 20px; margin-top: 14px; }
+    .client-page-doc .callout-title { font-family: var(--font-head); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--crimson); }
+    .client-page-doc .callout-body { font-size: 13px; color: #444; margin-top: 8px; }
+    .client-page-doc .callout-list { list-style: none; margin: 12px 0 0; padding: 0; }
+    .client-page-doc .callout-list li { display: flex; justify-content: space-between; gap: 14px; font-size: 13px; padding: 6px 0; border-bottom: 1px dotted var(--border); }
+    .client-page-doc .callout-list li:last-child { border-bottom: 0; }
+    .client-page-doc .callout-list .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .client-page-doc .callout-total { display: flex; justify-content: space-between; gap: 14px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); font-family: var(--font-head); font-size: 13px; font-weight: 700; }
+    .client-page-doc .callout-total strong { color: var(--crimson); font-variant-numeric: tabular-nums; }
+
+    .client-page-doc .item-badge { display: inline-block; margin-left: 6px; background: var(--crimson); color: #fff; font-family: var(--font-head); font-size: 8.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 2px 7px; border-radius: 100px; vertical-align: middle; }
+    .client-page-doc .item-badge--alt { background: var(--muted); }
+    .client-page-doc .not-counted { color: var(--muted); text-decoration: line-through; font-weight: 400; }
+
+    .client-page-doc .design-sub { font-size: 13px; color: var(--muted); margin: 12px 0 4px; }
+    .client-page-doc .design-head { font-family: var(--font-head); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--charcoal); margin: 20px 0 10px; }
+    .client-page-doc .design-subtotal { display: flex; justify-content: flex-end; gap: 12px; align-items: baseline; margin-top: 10px; font-family: var(--font-head); font-size: 12px; letter-spacing: .04em; color: var(--muted); }
+    .client-page-doc .design-subtotal strong { font-size: 15px; color: var(--charcoal); font-variant-numeric: tabular-nums; }
+
+    .client-page-doc .team-list { list-style: none; margin: 0; padding: 0; background: #fff; border: 1px solid var(--border); }
+    .client-page-doc .team-row { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding: 12px 14px; border-bottom: 1px solid var(--border); font-size: 13px; }
+    .client-page-doc .team-row:last-child { border-bottom: 0; }
+    .client-page-doc .team-name { font-family: var(--font-head); font-weight: 700; font-size: 13px; }
+    .client-page-doc .team-row .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+    .client-page-doc .totals-head { font-family: var(--font-display); font-size: 28px; margin: 34px 0 12px; letter-spacing: .01em; }
+    .client-page-doc .compare-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .client-page-doc .compare-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--border); min-width: 420px; }
+    .client-page-doc .compare-table thead th { font-family: var(--font-head); font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #fff; background: var(--charcoal); padding: 12px 14px; text-align: right; }
+    .client-page-doc .compare-table thead th:first-child { text-align: left; width: 46%; }
+    .client-page-doc .compare-table tbody th { font-family: var(--font-body); font-size: 13px; font-weight: 400; text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); color: #333; }
+    .client-page-doc .compare-table tbody td { font-size: 13.5px; padding: 12px 14px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .client-page-doc .compare-table tbody tr:last-child th, .client-page-doc .compare-table tbody tr:last-child td { border-bottom: 0; }
+    .client-page-doc .compare-strong th { font-family: var(--font-head); font-weight: 800; color: var(--charcoal); }
+    .client-page-doc .compare-strong td { font-family: var(--font-head); font-weight: 800; font-size: 15px; color: var(--crimson); background: rgba(166,30,49,0.05); }
+
+    .client-page-doc .small-print { font-size: 11.5px; color: var(--muted); margin-top: 12px; line-height: 1.6; }
+
+    .client-page-doc .notes { border-top: 1px solid var(--border); padding-top: 16px; margin-top: 20px; }
     .client-page-doc .notes p { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
 
     .client-page-doc .cta { background: var(--white); border: 1px solid var(--border); border-left: 4px solid var(--crimson); padding: 22px 24px; margin-top: 24px; }
@@ -325,6 +518,14 @@ export const diaryOfACfoPage = {
       .client-page-doc .btn-amazon { padding: 8px 10px; font-size: 10px; }
       .client-page-doc .header-title { font-size: 30px; }
       .client-page-doc .totals-grand-val { font-size: 28px; }
+      .client-page-doc .compare-table { min-width: 340px; }
+      .client-page-doc .compare-table thead th, .client-page-doc .compare-table tbody th, .client-page-doc .compare-table tbody td { padding: 10px; }
+      .client-page-doc .compare-table tbody th { font-size: 12px; }
+      .client-page-doc .compare-table tbody td { font-size: 12.5px; }
+      .client-page-doc .compare-strong td { font-size: 13.5px; }
+      .client-page-doc .totals-head { font-size: 24px; }
+      .client-page-doc .callout { padding: 16px; }
+      .client-page-doc .team-row { flex-wrap: wrap; gap: 6px; }
     }
   `,
   htmlContent,

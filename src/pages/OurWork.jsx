@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useBookingModal } from '../components/BookingModal'
 import BeforeAfterSlider from '../components/BeforeAfterSlider'
+import LazyVideo from '../components/LazyVideo'
 import { Link } from 'react-router-dom'
 import './OurWork.css'
 
@@ -144,29 +145,67 @@ export default function OurWork() {
             </p>
           </div>
 
-          {/* Three interactive before/after sliders stacked */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '64px' }}>
+          {/* Each row pairs the before and after slider with host media from the finished studio */}
+          <div className="work-pairs">
 
-            <BeforeAfterSlider
-              beforeSrc="/assets/images/after2819.jpg"
-              afterSrc="/assets/images/before2819.jpg"
-              beforeLabel="Before"
-              afterLabel="After"
-            />
+            <div className="work-pair">
+              <div className="work-pair__slider">
+                <BeforeAfterSlider
+                  beforeSrc="/assets/images/after2819.jpg"
+                  afterSrc="/assets/images/before2819.jpg"
+                  beforeLabel="Before"
+                  afterLabel="After"
+                />
+              </div>
+              <div className="work-pair__media">
+                <img
+                  className="work-pair__still"
+                  src="/assets/work/2819-church/2819-church-host-still.jpg"
+                  alt="Pastor Philip Anthony Mitchell recording in the finished 2819 Church content studio"
+                  width="1376"
+                  height="768"
+                  loading="lazy"
+                />
+              </div>
+            </div>
 
-            <BeforeAfterSlider
-              beforeSrc="/assets/images/after2wc.jpg"
-              afterSrc="/assets/images/before2wc.jpg"
-              beforeLabel="Before"
-              afterLabel="After"
-            />
+            <div className="work-pair">
+              <div className="work-pair__slider">
+                <BeforeAfterSlider
+                  beforeSrc="/assets/images/after2wc.jpg"
+                  afterSrc="/assets/images/before2wc.jpg"
+                  beforeLabel="Before"
+                  afterLabel="After"
+                />
+              </div>
+              <div className="work-pair__media">
+                <LazyVideo
+                  className="work-pair__reel"
+                  src="/assets/work/lthw/lthw-host-reel.mp4"
+                  poster="/assets/work/lthw/lthw-host-reel-poster.jpg"
+                  label="Short video from the Lessons the Hard Way studio"
+                />
+              </div>
+            </div>
 
-            <BeforeAfterSlider
-              beforeSrc="/assets/images/afterbrandi.jpg"
-              afterSrc="/assets/images/beforebrandi.jpg"
-              beforeLabel="Before"
-              afterLabel="After"
-            />
+            <div className="work-pair">
+              <div className="work-pair__slider">
+                <BeforeAfterSlider
+                  beforeSrc="/assets/images/afterbrandi.jpg"
+                  afterSrc="/assets/images/beforebrandi.jpg"
+                  beforeLabel="Before"
+                  afterLabel="After"
+                />
+              </div>
+              <div className="work-pair__media">
+                <LazyVideo
+                  className="work-pair__reel"
+                  src="/assets/work/brandi/brandi-host-reel.mp4"
+                  poster="/assets/work/brandi/brandi-host-reel-poster.jpg"
+                  label="Short video from Brandi's finished podcast studio"
+                />
+              </div>
+            </div>
 
           </div>
         </div>

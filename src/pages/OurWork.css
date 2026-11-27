@@ -307,3 +307,75 @@
     gap: 48px;
   }
 }
+
+/* ===== BEFORE AND AFTER PAIRED WITH HOST MEDIA ===== */
+.work-pairs {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.work-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(200px, 23%, 280px);
+  gap: 32px;
+  align-items: center;
+}
+
+/* The slider carries its own 900px cap, so release it inside the pair. */
+.work-pair__slider {
+  min-width: 0;
+}
+
+.work-pair__slider .bas-wrapper {
+  max-width: none;
+}
+
+.work-pair__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+/* Vertical reel. aspect-ratio reserves the box so nothing shifts while loading. */
+.work-pair__reel {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 9 / 16;
+  max-height: 520px;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Landscape still, matched to the slider corner radius and shadow. */
+.work-pair__still {
+  width: 100%;
+  height: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .work-pair {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .work-pair__reel {
+    max-width: 320px;
+    max-height: none;
+  }
+
+  .work-pair__still {
+    max-height: none;
+    aspect-ratio: 16 / 9;
+  }
+
+  .work-pairs {
+    gap: 48px;
+  }
+}

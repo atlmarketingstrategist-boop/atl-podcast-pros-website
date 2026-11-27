@@ -3,3 +3,7 @@
 *.prproj
 *.wav
 *.zip
+
+# Site video assets must ship with the deployment. The *.mp4 rule above keeps
+# editing masters out of the upload, so the served clips are re-included here.
+!public/assets/videos/*.mp4

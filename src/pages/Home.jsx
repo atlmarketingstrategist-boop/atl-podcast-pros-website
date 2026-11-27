@@ -327,10 +327,10 @@ export default function Home() {
       </section>
 
       {/* ======= RESOURCES ======= */}
-      <section className="section section-neutral" style={{ paddingTop: 0 }}>
+      <section className="section section-neutral home-resources">
         <div className="container">
-          <div className="fade-up" ref={fadeRef} style={{ textAlign: 'center' }}>
-            <p style={{ fontSize: '1rem', margin: 0 }}>
+          <div className="fade-up" ref={fadeRef}>
+            <p className="home-resources__text">
               Still researching? Learn more about <Link to="/blog/in-home-podcast-studio-setup-atlanta">in-home podcast studio installation across metro Atlanta</Link>, <Link to="/blog/podcast-studio-setup-cost-2026">what a podcast studio setup costs in 2026</Link>, or our work with <Link to="/church-podcast-studio-atlanta">churches and ministries in Atlanta</Link>.
             </p>
           </div>

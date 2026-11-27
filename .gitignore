@@ -27,5 +27,3 @@ dist-ssr
 # Local masters, not deployed
 .originals/
 
-# Site video assets must ship with the build, so they are exempt from the *.mp4 rule above.
-!public/assets/videos/*.mp4

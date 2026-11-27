@@ -18,6 +18,28 @@ export default function Services() {
 
   const fadeRef = (el) => { if (el && !fadeRefs.current.includes(el)) fadeRefs.current.push(el) }
 
+  // Play the showcase clip only while it is on screen, and pause it otherwise.
+  const videoRef = useRef(null)
+  useEffect(() => {
+    const el = videoRef.current
+    if (!el) return
+    if (typeof IntersectionObserver === 'undefined') {
+      el.play().catch(() => {})
+      return
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) el.play().catch(() => {})
+          else el.pause()
+        })
+      },
+      { threshold: 0.25 }
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+
 
   return (
     <>
@@ -166,27 +188,21 @@ export default function Services() {
               </ul>
 
               {/* Short-form content video example */}
-              <div style={{
-                width: '100%',
-                maxWidth: '320px',
-                margin: '0 auto',
-                borderRadius: '16px',
-                overflow: 'hidden',
-                boxShadow: '0 20px 60px rgba(0,0,0,0.4)'
-              }}>
+              <div className="shortform-clip">
                 <video
+                  ref={videoRef}
+                  className="shortform-clip__video"
                   src="/assets/videos/shortform-example.mp4"
+                  poster="/assets/images/shortform-poster.jpg"
+                  preload="metadata"
                   autoPlay
                   muted
                   loop
                   playsInline
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    display: 'block'
-                  }}
+                  disablePictureInPicture
+                  aria-label="Example of short-form social clips produced by ATL Podcast Pros"
                 >
-                  Your browser does not support the video tag.
+                  <img src="/assets/images/shortform-poster.jpg" alt="Example of short-form social clips produced by ATL Podcast Pros" />
                 </video>
               </div>
 

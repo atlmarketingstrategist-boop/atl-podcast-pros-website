@@ -27,3 +27,5 @@ dist-ssr
 # Local masters, not deployed
 .originals/
 
+# Staging folder for client media masters, never committed.
+_incoming/

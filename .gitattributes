@@ -4,3 +4,4 @@
 # Site video assets must ship in the repo itself. Vercel does not fetch LFS
 # objects at build time, so an LFS pointer here is served as the SPA fallback.
 public/assets/videos/*.mp4 !filter !diff !merge
+public/assets/work/*/*.mp4 !filter !diff !merge

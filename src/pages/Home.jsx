@@ -145,8 +145,8 @@ export default function Home() {
       {/* ======= HOW IT WORKS TEASER ======= */}
       <section className="section section-neutral" style={{ paddingTop: '48px' }}>
         <div className="container">
-          <div className="text-center mb-12" ref={fadeRef}>
-            <div className="fade-up section-heading-wrap centered">
+          <div className="text-center mb-12 fade-up" ref={fadeRef}>
+            <div className="section-heading-wrap centered">
               <span className="section-eyebrow">The Process</span>
               <h2 className="steps-heading">Studio-Quality Sound in Three Steps</h2>
               <p style={{ color: 'var(--color-text-muted)', maxWidth: 520, margin: '16px auto 0', fontFamily: 'var(--font-body)' }}>
